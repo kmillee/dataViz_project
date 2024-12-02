@@ -1,0 +1,1049 @@
+{
+    "name": "QB13_9",
+    "data": [
+        {
+            "id": "EU27",
+            "number_of_respondents": 26399,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.03,
+                    "2": 0.02,
+                    "3": 0.02,
+                    "4": 0.02,
+                    "5": 0.06,
+                    "6": 0.04,
+                    "7": 0.06,
+                    "8": 0.09,
+                    "9": 0.1,
+                    "10 Totally comfortable": 0.53,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.02
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 928,
+                    "2": 432,
+                    "3": 489,
+                    "4": 582,
+                    "5": 1479,
+                    "6": 1099,
+                    "7": 1533,
+                    "8": 2315,
+                    "9": 2680,
+                    "10 Tout a fait a l'aise": 13901,
+                    "Indifferent.e (SPONTANe)": 358,
+                    "Cela depend (SPONTANe)": 154,
+                    "Ne sait pas": 450
+                }
+            }
+        },
+        {
+            "id": "BE",
+            "number_of_respondents": 1011,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.04,
+                    "2": 0.02,
+                    "3": 0.01,
+                    "4": 0.02,
+                    "5": 0.07,
+                    "6": 0.05,
+                    "7": 0.09,
+                    "8": 0.12,
+                    "9": 0.09,
+                    "10 Totally comfortable": 0.48,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 40,
+                    "2": 17,
+                    "3": 6,
+                    "4": 26,
+                    "5": 67,
+                    "6": 48,
+                    "7": 88,
+                    "8": 118,
+                    "9": 93,
+                    "10 Tout a fait a l'aise": 486,
+                    "Indifferent.e (SPONTANe)": 5,
+                    "Cela depend (SPONTANe)": 3,
+                    "Ne sait pas": 15
+                }
+            }
+        },
+        {
+            "id": "BG",
+            "number_of_respondents": 1012,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.1,
+                    "2": 0.03,
+                    "3": 0.04,
+                    "4": 0.04,
+                    "5": 0.07,
+                    "6": 0.07,
+                    "7": 0.09,
+                    "8": 0.1,
+                    "9": 0.06,
+                    "10 Totally comfortable": 0.33,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "It depends (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.05
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 104,
+                    "2": 32,
+                    "3": 44,
+                    "4": 44,
+                    "5": 70,
+                    "6": 65,
+                    "7": 93,
+                    "8": 101,
+                    "9": 61,
+                    "10 Tout a fait a l'aise": 333,
+                    "Indifferent.e (SPONTANe)": 10,
+                    "Cela depend (SPONTANe)": 10,
+                    "Ne sait pas": 45
+                }
+            }
+        },
+        {
+            "id": "CZ",
+            "number_of_respondents": 1025,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.03,
+                    "2": "-",
+                    "3": "-",
+                    "4": 0.01,
+                    "5": 0.05,
+                    "6": 0.02,
+                    "7": 0.02,
+                    "8": 0.03,
+                    "9": 0.06,
+                    "10 Totally comfortable": 0.74,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.03
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 34,
+                    "2": 5,
+                    "3": 6,
+                    "4": 6,
+                    "5": 50,
+                    "6": 20,
+                    "7": 20,
+                    "8": 28,
+                    "9": 58,
+                    "10 Tout a fait a l'aise": 755,
+                    "Indifferent.e (SPONTANe)": 9,
+                    "Cela depend (SPONTANe)": 4,
+                    "Ne sait pas": 30
+                }
+            }
+        },
+        {
+            "id": "DK",
+            "number_of_respondents": 1019,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.03,
+                    "2": 0.01,
+                    "3": 0.01,
+                    "4": "-",
+                    "5": 0.03,
+                    "6": 0.02,
+                    "7": 0.03,
+                    "8": 0.04,
+                    "9": 0.04,
+                    "10 Totally comfortable": 0.76,
+                    "Indifferent (SPONTANEOUS)": 0.02,
+                    "It depends (SPONTANEOUS)": 0.01,
+                    "Don't know": "-"
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 31,
+                    "2": 9,
+                    "3": 7,
+                    "4": 5,
+                    "5": 27,
+                    "6": 23,
+                    "7": 30,
+                    "8": 38,
+                    "9": 46,
+                    "10 Tout a fait a l'aise": 770,
+                    "Indifferent.e (SPONTANe)": 17,
+                    "Cela depend (SPONTANe)": 11,
+                    "Ne sait pas": 4
+                }
+            }
+        },
+        {
+            "id": "D-W",
+            "number_of_respondents": 1227,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.04,
+                    "2": 0.01,
+                    "3": 0.01,
+                    "4": 0.02,
+                    "5": 0.09,
+                    "6": 0.04,
+                    "7": 0.05,
+                    "8": 0.09,
+                    "9": 0.08,
+                    "10 Totally comfortable": 0.51,
+                    "Indifferent (SPONTANEOUS)": 0.03,
+                    "It depends (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.02
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 51,
+                    "2": 9,
+                    "3": 10,
+                    "4": 31,
+                    "5": 111,
+                    "6": 47,
+                    "7": 63,
+                    "8": 109,
+                    "9": 93,
+                    "10 Tout a fait a l'aise": 629,
+                    "Indifferent.e (SPONTANe)": 42,
+                    "Cela depend (SPONTANe)": 12,
+                    "Ne sait pas": 20
+                }
+            }
+        },
+        {
+            "id": "D-E",
+            "number_of_respondents": 298,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.04,
+                    "2": 0.01,
+                    "3": 0.01,
+                    "4": "-",
+                    "5": 0.09,
+                    "6": 0.04,
+                    "7": 0.05,
+                    "8": 0.15,
+                    "9": 0.12,
+                    "10 Totally comfortable": 0.38,
+                    "Indifferent (SPONTANEOUS)": 0.03,
+                    "It depends (SPONTANEOUS)": 0.03,
+                    "Don't know": 0.05
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 11,
+                    "2": 4,
+                    "3": 3,
+                    "4": 2,
+                    "5": 26,
+                    "6": 12,
+                    "7": 15,
+                    "8": 45,
+                    "9": 35,
+                    "10 Tout a fait a l'aise": 112,
+                    "Indifferent.e (SPONTANe)": 8,
+                    "Cela depend (SPONTANe)": 8,
+                    "Ne sait pas": 16
+                }
+            }
+        },
+        {
+            "id": "EE",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.05,
+                    "2": 0.02,
+                    "3": 0.02,
+                    "4": 0.01,
+                    "5": 0.08,
+                    "6": 0.04,
+                    "7": 0.04,
+                    "8": 0.08,
+                    "9": 0.12,
+                    "10 Totally comfortable": 0.48,
+                    "Indifferent (SPONTANEOUS)": 0.02,
+                    "It depends (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.03
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 51,
+                    "2": 16,
+                    "3": 22,
+                    "4": 15,
+                    "5": 81,
+                    "6": 40,
+                    "7": 42,
+                    "8": 78,
+                    "9": 121,
+                    "10 Tout a fait a l'aise": 483,
+                    "Indifferent.e (SPONTANe)": 22,
+                    "Cela depend (SPONTANe)": 12,
+                    "Ne sait pas": 27
+                }
+            }
+        },
+        {
+            "id": "IE",
+            "number_of_respondents": 1016,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.02,
+                    "2": 0.01,
+                    "3": 0.01,
+                    "4": 0.01,
+                    "5": 0.03,
+                    "6": 0.02,
+                    "7": 0.05,
+                    "8": 0.1,
+                    "9": 0.1,
+                    "10 Totally comfortable": 0.61,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "It depends (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.03
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 17,
+                    "2": 8,
+                    "3": 10,
+                    "4": 8,
+                    "5": 35,
+                    "6": 25,
+                    "7": 52,
+                    "8": 102,
+                    "9": 103,
+                    "10 Tout a fait a l'aise": 622,
+                    "Indifferent.e (SPONTANe)": 3,
+                    "Cela depend (SPONTANe)": 7,
+                    "Ne sait pas": 26
+                }
+            }
+        },
+        {
+            "id": "EL",
+            "number_of_respondents": 1014,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.1,
+                    "2": 0.04,
+                    "3": 0.04,
+                    "4": 0.05,
+                    "5": 0.07,
+                    "6": 0.05,
+                    "7": 0.09,
+                    "8": 0.11,
+                    "9": 0.14,
+                    "10 Totally comfortable": 0.3,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": "-"
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 95,
+                    "2": 42,
+                    "3": 34,
+                    "4": 53,
+                    "5": 71,
+                    "6": 55,
+                    "7": 86,
+                    "8": 115,
+                    "9": 144,
+                    "10 Tout a fait a l'aise": 305,
+                    "Indifferent.e (SPONTANe)": 10,
+                    "Cela depend (SPONTANe)": 2,
+                    "Ne sait pas": 1
+                }
+            }
+        },
+        {
+            "id": "ES",
+            "number_of_respondents": 1004,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.01,
+                    "2": 0.01,
+                    "3": 0.01,
+                    "4": 0.01,
+                    "5": 0.03,
+                    "6": 0.02,
+                    "7": 0.07,
+                    "8": 0.1,
+                    "9": 0.16,
+                    "10 Totally comfortable": 0.57,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 8,
+                    "2": 7,
+                    "3": 11,
+                    "4": 7,
+                    "5": 30,
+                    "6": 22,
+                    "7": 74,
+                    "8": 105,
+                    "9": 156,
+                    "10 Tout a fait a l'aise": 574,
+                    "Indifferent.e (SPONTANe)": 0,
+                    "Cela depend (SPONTANe)": 0,
+                    "Ne sait pas": 9
+                }
+            }
+        },
+        {
+            "id": "FR",
+            "number_of_respondents": 1006,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.02,
+                    "2": 0.01,
+                    "3": 0.01,
+                    "4": 0.01,
+                    "5": 0.02,
+                    "6": 0.02,
+                    "7": 0.02,
+                    "8": 0.07,
+                    "9": 0.07,
+                    "10 Totally comfortable": 0.7,
+                    "Indifferent (SPONTANEOUS)": 0.02,
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.03
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 23,
+                    "2": 10,
+                    "3": 5,
+                    "4": 6,
+                    "5": 25,
+                    "6": 20,
+                    "7": 21,
+                    "8": 75,
+                    "9": 71,
+                    "10 Tout a fait a l'aise": 703,
+                    "Indifferent.e (SPONTANe)": 18,
+                    "Cela depend (SPONTANe)": 3,
+                    "Ne sait pas": 26
+                }
+            }
+        },
+        {
+            "id": "HR",
+            "number_of_respondents": 1012,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.09,
+                    "2": 0.02,
+                    "3": 0.02,
+                    "4": 0.04,
+                    "5": 0.1,
+                    "6": 0.05,
+                    "7": 0.07,
+                    "8": 0.08,
+                    "9": 0.13,
+                    "10 Totally comfortable": 0.38,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.02
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 86,
+                    "2": 22,
+                    "3": 21,
+                    "4": 38,
+                    "5": 100,
+                    "6": 45,
+                    "7": 75,
+                    "8": 81,
+                    "9": 134,
+                    "10 Tout a fait a l'aise": 385,
+                    "Indifferent.e (SPONTANe)": 3,
+                    "Cela depend (SPONTANe)": 1,
+                    "Ne sait pas": 23
+                }
+            }
+        },
+        {
+            "id": "IT",
+            "number_of_respondents": 1027,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.02,
+                    "2": 0.01,
+                    "3": 0.02,
+                    "4": 0.02,
+                    "5": 0.02,
+                    "6": 0.04,
+                    "7": 0.07,
+                    "8": 0.11,
+                    "9": 0.16,
+                    "10 Totally comfortable": 0.51,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 17,
+                    "2": 12,
+                    "3": 18,
+                    "4": 21,
+                    "5": 21,
+                    "6": 44,
+                    "7": 69,
+                    "8": 116,
+                    "9": 165,
+                    "10 Tout a fait a l'aise": 521,
+                    "Indifferent.e (SPONTANe)": 9,
+                    "Cela depend (SPONTANe)": 5,
+                    "Ne sait pas": 8
+                }
+            }
+        },
+        {
+            "id": "CY",
+            "number_of_respondents": 504,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.21,
+                    "2": 0.05,
+                    "3": 0.05,
+                    "4": 0.06,
+                    "5": 0.13,
+                    "6": 0.05,
+                    "7": 0.04,
+                    "8": 0.06,
+                    "9": 0.06,
+                    "10 Totally comfortable": 0.28,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 107,
+                    "2": 27,
+                    "3": 27,
+                    "4": 29,
+                    "5": 66,
+                    "6": 24,
+                    "7": 21,
+                    "8": 27,
+                    "9": 31,
+                    "10 Tout a fait a l'aise": 141,
+                    "Indifferent.e (SPONTANe)": 1,
+                    "Cela depend (SPONTANe)": 0,
+                    "Ne sait pas": 2
+                }
+            }
+        },
+        {
+            "id": "LV",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.06,
+                    "2": 0.01,
+                    "3": 0.01,
+                    "4": 0.02,
+                    "5": 0.1,
+                    "6": 0.04,
+                    "7": 0.05,
+                    "8": 0.04,
+                    "9": 0.08,
+                    "10 Totally comfortable": 0.55,
+                    "Indifferent (SPONTANEOUS)": 0.02,
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.02
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 63,
+                    "2": 13,
+                    "3": 13,
+                    "4": 19,
+                    "5": 99,
+                    "6": 34,
+                    "7": 45,
+                    "8": 42,
+                    "9": 79,
+                    "10 Tout a fait a l'aise": 558,
+                    "Indifferent.e (SPONTANe)": 22,
+                    "Cela depend (SPONTANe)": 3,
+                    "Ne sait pas": 19
+                }
+            }
+        },
+        {
+            "id": "LT",
+            "number_of_respondents": 1005,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.07,
+                    "2": 0.01,
+                    "3": 0.02,
+                    "4": 0.02,
+                    "5": 0.09,
+                    "6": 0.04,
+                    "7": 0.05,
+                    "8": 0.08,
+                    "9": 0.14,
+                    "10 Totally comfortable": 0.47,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 70,
+                    "2": 10,
+                    "3": 19,
+                    "4": 21,
+                    "5": 93,
+                    "6": 36,
+                    "7": 47,
+                    "8": 82,
+                    "9": 137,
+                    "10 Tout a fait a l'aise": 470,
+                    "Indifferent.e (SPONTANe)": 2,
+                    "Cela depend (SPONTANe)": 3,
+                    "Ne sait pas": 14
+                }
+            }
+        },
+        {
+            "id": "LU",
+            "number_of_respondents": 508,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.01,
+                    "2": "-",
+                    "3": 0.01,
+                    "4": 0.01,
+                    "5": 0.02,
+                    "6": 0.01,
+                    "7": 0.04,
+                    "8": 0.08,
+                    "9": 0.03,
+                    "10 Totally comfortable": 0.73,
+                    "Indifferent (SPONTANEOUS)": 0.04,
+                    "It depends (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 6,
+                    "2": 2,
+                    "3": 3,
+                    "4": 5,
+                    "5": 11,
+                    "6": 5,
+                    "7": 20,
+                    "8": 38,
+                    "9": 16,
+                    "10 Tout a fait a l'aise": 370,
+                    "Indifferent.e (SPONTANe)": 19,
+                    "Cela depend (SPONTANe)": 6,
+                    "Ne sait pas": 7
+                }
+            }
+        },
+        {
+            "id": "HU",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.05,
+                    "2": 0.03,
+                    "3": 0.04,
+                    "4": 0.04,
+                    "5": 0.09,
+                    "6": 0.06,
+                    "7": 0.1,
+                    "8": 0.11,
+                    "9": 0.11,
+                    "10 Totally comfortable": 0.35,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 51,
+                    "2": 28,
+                    "3": 42,
+                    "4": 40,
+                    "5": 98,
+                    "6": 57,
+                    "7": 100,
+                    "8": 108,
+                    "9": 115,
+                    "10 Tout a fait a l'aise": 363,
+                    "Indifferent.e (SPONTANe)": 8,
+                    "Cela depend (SPONTANe)": 2,
+                    "Ne sait pas": 9
+                }
+            }
+        },
+        {
+            "id": "MT",
+            "number_of_respondents": 514,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.14,
+                    "2": 0.03,
+                    "3": 0.04,
+                    "4": 0.04,
+                    "5": 0.15,
+                    "6": 0.04,
+                    "7": 0.06,
+                    "8": 0.05,
+                    "9": 0.05,
+                    "10 Totally comfortable": 0.37,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.02
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 70,
+                    "2": 16,
+                    "3": 23,
+                    "4": 23,
+                    "5": 79,
+                    "6": 19,
+                    "7": 29,
+                    "8": 26,
+                    "9": 26,
+                    "10 Tout a fait a l'aise": 188,
+                    "Indifferent.e (SPONTANe)": 3,
+                    "Cela depend (SPONTANe)": 1,
+                    "Ne sait pas": 11
+                }
+            }
+        },
+        {
+            "id": "NL",
+            "number_of_respondents": 1004,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.01,
+                    "2": "-",
+                    "3": 0.01,
+                    "4": 0.01,
+                    "5": 0.02,
+                    "6": 0.01,
+                    "7": 0.03,
+                    "8": 0.06,
+                    "9": 0.05,
+                    "10 Totally comfortable": 0.78,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "It depends (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 10,
+                    "2": 2,
+                    "3": 5,
+                    "4": 15,
+                    "5": 25,
+                    "6": 10,
+                    "7": 26,
+                    "8": 56,
+                    "9": 54,
+                    "10 Tout a fait a l'aise": 781,
+                    "Indifferent.e (SPONTANe)": 1,
+                    "Cela depend (SPONTANe)": 7,
+                    "Ne sait pas": 10
+                }
+            }
+        },
+        {
+            "id": "AT",
+            "number_of_respondents": 1012,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.09,
+                    "2": 0.03,
+                    "3": 0.03,
+                    "4": 0.03,
+                    "5": 0.06,
+                    "6": 0.07,
+                    "7": 0.06,
+                    "8": 0.08,
+                    "9": 0.07,
+                    "10 Totally comfortable": 0.38,
+                    "Indifferent (SPONTANEOUS)": 0.05,
+                    "It depends (SPONTANEOUS)": 0.02,
+                    "Don't know": 0.03
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 86,
+                    "2": 30,
+                    "3": 28,
+                    "4": 34,
+                    "5": 58,
+                    "6": 65,
+                    "7": 64,
+                    "8": 85,
+                    "9": 72,
+                    "10 Tout a fait a l'aise": 387,
+                    "Indifferent.e (SPONTANe)": 52,
+                    "Cela depend (SPONTANe)": 23,
+                    "Ne sait pas": 27
+                }
+            }
+        },
+        {
+            "id": "PL",
+            "number_of_respondents": 1015,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.05,
+                    "2": 0.05,
+                    "3": 0.05,
+                    "4": 0.04,
+                    "5": 0.09,
+                    "6": 0.09,
+                    "7": 0.09,
+                    "8": 0.07,
+                    "9": 0.1,
+                    "10 Totally comfortable": 0.35,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 46,
+                    "2": 51,
+                    "3": 53,
+                    "4": 44,
+                    "5": 89,
+                    "6": 91,
+                    "7": 92,
+                    "8": 74,
+                    "9": 104,
+                    "10 Tout a fait a l'aise": 359,
+                    "Indifferent.e (SPONTANe)": 4,
+                    "Cela depend (SPONTANe)": 3,
+                    "Ne sait pas": 6
+                }
+            }
+        },
+        {
+            "id": "PT",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.01,
+                    "2": 0.02,
+                    "3": 0.02,
+                    "4": 0.02,
+                    "5": 0.08,
+                    "6": 0.04,
+                    "7": 0.04,
+                    "8": 0.05,
+                    "9": 0.11,
+                    "10 Totally comfortable": 0.59,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 13,
+                    "2": 16,
+                    "3": 18,
+                    "4": 18,
+                    "5": 82,
+                    "6": 42,
+                    "7": 42,
+                    "8": 51,
+                    "9": 113,
+                    "10 Tout a fait a l'aise": 606,
+                    "Indifferent.e (SPONTANe)": 5,
+                    "Cela depend (SPONTANe)": 2,
+                    "Ne sait pas": 13
+                }
+            }
+        },
+        {
+            "id": "RO",
+            "number_of_respondents": 1053,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.09,
+                    "2": 0.04,
+                    "3": 0.06,
+                    "4": 0.08,
+                    "5": 0.11,
+                    "6": 0.12,
+                    "7": 0.12,
+                    "8": 0.09,
+                    "9": 0.08,
+                    "10 Totally comfortable": 0.17,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "It depends (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.03
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 91,
+                    "2": 42,
+                    "3": 68,
+                    "4": 81,
+                    "5": 118,
+                    "6": 123,
+                    "7": 124,
+                    "8": 98,
+                    "9": 84,
+                    "10 Tout a fait a l'aise": 175,
+                    "Indifferent.e (SPONTANe)": 6,
+                    "Cela depend (SPONTANe)": 12,
+                    "Ne sait pas": 31
+                }
+            }
+        },
+        {
+            "id": "SI",
+            "number_of_respondents": 1000,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.06,
+                    "2": 0.02,
+                    "3": 0.01,
+                    "4": 0.02,
+                    "5": 0.1,
+                    "6": 0.05,
+                    "7": 0.06,
+                    "8": 0.1,
+                    "9": 0.08,
+                    "10 Totally comfortable": 0.45,
+                    "Indifferent (SPONTANEOUS)": 0.02,
+                    "It depends (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.02
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 61,
+                    "2": 24,
+                    "3": 15,
+                    "4": 24,
+                    "5": 97,
+                    "6": 50,
+                    "7": 58,
+                    "8": 95,
+                    "9": 83,
+                    "10 Tout a fait a l'aise": 449,
+                    "Indifferent.e (SPONTANe)": 16,
+                    "Cela depend (SPONTANe)": 8,
+                    "Ne sait pas": 20
+                }
+            }
+        },
+        {
+            "id": "SK",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.05,
+                    "2": 0.03,
+                    "3": 0.02,
+                    "4": 0.02,
+                    "5": 0.08,
+                    "6": 0.06,
+                    "7": 0.05,
+                    "8": 0.05,
+                    "9": 0.12,
+                    "10 Totally comfortable": 0.49,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.02
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 54,
+                    "2": 26,
+                    "3": 23,
+                    "4": 22,
+                    "5": 83,
+                    "6": 56,
+                    "7": 46,
+                    "8": 50,
+                    "9": 120,
+                    "10 Tout a fait a l'aise": 503,
+                    "Indifferent.e (SPONTANe)": 14,
+                    "Cela depend (SPONTANe)": 2,
+                    "Ne sait pas": 22
+                }
+            }
+        },
+        {
+            "id": "FI",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.02,
+                    "2": 0.01,
+                    "3": 0.01,
+                    "4": 0.01,
+                    "5": 0.03,
+                    "6": 0.02,
+                    "7": 0.02,
+                    "8": 0.05,
+                    "9": 0.07,
+                    "10 Totally comfortable": 0.71,
+                    "Indifferent (SPONTANEOUS)": 0.02,
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.03
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 23,
+                    "2": 7,
+                    "3": 10,
+                    "4": 11,
+                    "5": 28,
+                    "6": 24,
+                    "7": 20,
+                    "8": 46,
+                    "9": 75,
+                    "10 Tout a fait a l'aise": 711,
+                    "Indifferent.e (SPONTANe)": 17,
+                    "Cela depend (SPONTANe)": 4,
+                    "Ne sait pas": 32
+                }
+            }
+        },
+        {
+            "id": "SE",
+            "number_of_respondents": 1019,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.02,
+                    "2": "-",
+                    "3": 0.01,
+                    "4": "-",
+                    "5": 0.02,
+                    "6": 0.01,
+                    "7": 0.02,
+                    "8": 0.03,
+                    "9": 0.04,
+                    "10 Totally comfortable": 0.84,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 18,
+                    "2": 2,
+                    "3": 9,
+                    "4": 4,
+                    "5": 22,
+                    "6": 8,
+                    "7": 23,
+                    "8": 34,
+                    "9": 41,
+                    "10 Tout a fait a l'aise": 850,
+                    "Indifferent.e (SPONTANe)": 1,
+                    "Cela depend (SPONTANe)": 1,
+                    "Ne sait pas": 6
+                }
+            }
+        }
+    ]
+}
