@@ -3,48 +3,34 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CSC_51052 - 2024 - Lab 06-1</title>
+    <title>EU Survey Project</title>
     <!-- https://d3js.org/ -->
     <script type="text/javascript" src="js/d3.v7.min.js"></script>
     <!-- Your code -->
     <script type="text/javascript" src="js/main.js"></script>
-    <style type="text/css">
-        .countryArea {
-            fill: rgb(232, 232, 232);
-        }
-
-        .countryArea:hover {
-            fill: rgb(200, 200, 200);
-        }
-
-        .nutsArea {
-            fill: darkgray;
-        }
-
-        .nutsArea:hover {
-            opacity: 0.7;
-        }
-
-        .countryBorder {
-            fill: none;
-            stroke-width: 1px;
-            stroke: rgb(70, 70, 70);
-        }
-
-        .nutsBorder {
-            fill: none;
-            stroke-width: 1px;
-            stroke: rgb(140, 140, 140);
-        }
-
-        .thinBorder {
-            stroke-width: 0.5px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body onload="createViz()">
     <div id="mapContainer">
+        <div id="buttonsContainer">
+            <button class="homeButton" onclick="changeText('global')">
+                <img src="icons/home.png" alt="Home" />
+            </button>
+            <button class="mapButton" onclick="changeText('ethnie')">Ethnie</button>
+            <button class="mapButton" onclick="changeText('orientation')">Orientation sexuelle</button>
+            <button class="mapButton" onclick="changeText('religion')">Religion</button>
+        </div>
+    </div>
+    <div id="textContainer">
+        <div id="descriptionContainer">
+            <h2>Discriminations au sein de l'UE</h2>
+            <p>
+                La carte ci-contre montre l'indice global de discrimination dans les différents pays de l'union européenne.
+                Cet indice regroupe les discriminations liées à l'ethnie, à l'orientation sexuelle et à la religion.
+            </p>
+        </div>
+        <div id="dropdownsContainer"></div>
     </div>
 </body>
 

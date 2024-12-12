@@ -2,6 +2,11 @@ const ctx = {
     MAP_W: 1024,
     MAP_H: 1024,
     YEAR: "2020",
+    defaultDescription: `
+        <h2>Discriminations au sein de l'UE</h2>
+        <p>La carte ci-contre montre l'indice global de discrimination dans les différents pays de l'union européenne.
+        Cet indice regroupe les discriminations liées à l'ethnie, à l'orientation sexuelle et à la religion.</p>
+    `
 };
 
 function makeMap(){
@@ -46,7 +51,6 @@ function makeMap(){
 
 };
 
-
 function loadData(){
     let promises = [d3.json("data/gra.geojson"),
                     d3.json("data/cleaned_eu_countries.geojson"),
@@ -60,11 +64,107 @@ function loadData(){
 
 function createViz() {
     console.log("Using D3 v" + d3.version);
+
+    const mapContainer = document.getElementById("mapContainer");
+    ctx.MAP_W = mapContainer.clientWidth;
+    ctx.MAP_H = mapContainer.clientHeight;
+
     d3.select("#mapContainer").append("svg")
                               .attr("width", ctx.MAP_W)
                               .attr("height", ctx.MAP_H);
     loadData();
 };
+
+function goHome() {
+    console.log("Home button clicked!");
+}
+
+function changeText(type) {
+    const descriptionContainer = document.getElementById("descriptionContainer");
+    const dropdownContainer = document.getElementById("dropdownsContainer");
+
+    if (type == 'global') {
+        console.log("ici");
+        descriptionContainer.innerHTML = ctx.defaultDescription;
+        dropdownContainer.innerHTML = '';
+        return
+    }
+
+    descriptionContainer.innerHTML = `<h2>${dropdownData[type].title}</h2>`;
+
+    // Create dropdowns for the selected type
+    let dropdownHTML = '';
+    dropdownData[type].questions.forEach((q, i) => {
+        dropdownHTML += `
+            <p>${q["question"]}</p>
+        `;
+        q["options"].forEach((option, j) => {
+            console.log(option);
+            dropdownHTML += `
+            <div>
+                <input type="radio" id="radio_${j}" name="question${j}" value='${option.label}' onclick="updateMapData()">
+                <label for="radio_${j}">${option.label}</label>
+                <br>
+            </div>
+        `;
+        })
+    });
+
+    dropdownContainer.innerHTML = dropdownHTML;
+}
+
+
+    // TODO: créer un fichier séparé pour répertorier questions, options et dataKeys
+    const dropdownData = {
+        ethnie: {
+            title: "Discrimination ethnique",
+            questions: [
+                { question: "Que vous travailliez ou non, pouvez-vous me dire si vous vous sentiriez à l'aise ou non avec le fait qu'un collègue, avec lequel vous êtes quotidiennement en contact, appartienne à chacun des groupes suivants en utilisant une échelle allant de 1 à 10 ?",
+                  options: [
+                    { 
+                        label: "Une personne noire",
+                        dataKey: "QB12_2" 
+                    },
+                    { 
+                        label: "Une personne asiatique", 
+                        dataKey: "QB12_3" 
+                    }]},
+            ],
+        },
+        orientation: {
+            title: "Discrimination liée à l'orientation sexuelle",
+            questions: [
+                { question: "Que vous travailliez ou non, pouvez-vous me dire si vous vous sentiriez à l'aise ou non avec le fait qu'un collègue, avec lequel vous êtes quotidiennement en contact, appartienne à chacun des groupes suivants en utilisant une échelle allant de 1 à 10 ?",
+                  options: [
+                    { 
+                        label: "Une personne lesbienne, gay ou bisexuelle",
+                        dataKey: "QB12_10" 
+                    },
+                    { 
+                        label: "Une personne transgenre ou intersexe", 
+                        dataKey: "QB12_11" 
+                    }]},
+            ],
+        },
+        religion: {
+            title: "Discrimination religieuse",
+            questions: [
+                { question: "Que vous travailliez ou non, pouvez-vous me dire si vous vous sentiriez à l'aise ou non avec le fait qu'un collègue, avec lequel vous êtes quotidiennement en contact, appartienne à chacun des groupes suivants en utilisant une échelle allant de 1 à 10 ?",
+                  options: [
+                    {
+                        label:  "Une personne juive",
+                        dataKey: "QB12_5" 
+
+                    },
+                    {
+                        label:  "Une personne musulmane",
+                        dataKey: "QB12_6" 
+
+                    }]},
+            ],
+        },
+    };
+
 
 // NUTS data as JSON from https://github.com/eurostat/Nuts2json (translated from topojson to geojson)
 // density data from https://data.europa.eu/data/datasets/gngfvpqmfu5n6akvxqkpw?locale=en
