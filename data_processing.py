@@ -11,6 +11,9 @@ euCountriesISO3 = ["AUT", "BEL", "BGR", "HRV", "CYP", "CZE", "DNK", "EST", "FIN"
                    "DEU", "GRC", "HUN", "IRL", "ITA", "LVA", "LTU", "LUX", "MLT", "NLD", 
                    "POL", "PRT", "ROU", "SVK", "SVN", "ESP", "SWE"]
 
+euCountriesCNTR_ID = ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "D-E", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE"]
+
+
 def load_data(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
         return json.load(f)
@@ -34,7 +37,7 @@ def refactor_survey(survey_name, survey_data):
         "data" : [] 
     }
 
-    for i in range (2, len(survey_data[0]) + 1):
+    for i in range (2, len(survey_data[0]) + 2):
         country_code = {"id": survey_data[0][f"{i}"],
                         "number_of_respondents": survey_data[1][f"{i}"],
                         "responses": {
@@ -42,16 +45,16 @@ def refactor_survey(survey_name, survey_data):
                             "cardinal": {},
                         }}
         refactored["data"].append(country_code)
+
     
     for i in range (2, len(survey_data)):
-        for j in range (2, len(survey_data[0]) + 1):
+        for j in range (2, len(survey_data[0]) + 2):
             if (i % 2 == 0):
                 refactored["data"][j-2]["responses"]["cardinal"][f"{survey_data[i]['1']}"] = survey_data[i][f"{j}"]
             else:
                 refactored["data"][j-2]["responses"]["percentage"][f"{survey_data[i]['1']}"] = survey_data[i][f"{j}"]
-            
+      
     return refactored
-
 
 
 #################################################################################################################################
@@ -64,9 +67,9 @@ with open('cleaned_eu_countries.geojson', 'w', encoding='utf-8') as outfile:
     json.dump(clean_data, outfile, indent=4)"""
 
 
-survey_data = load_data("lgbt_full.json")
-refactored_data = refactor_survey("QB12_10", survey_data)
+survey_data = load_data("raw_data/QB13_11_full.json")
+refactored_data = refactor_survey("QB13_11", survey_data)
 
-with open('data/QB12_10.json', 'w', encoding='utf-8') as outfile: 
+with open('data_clean/QB13_11.json', 'w', encoding='utf-8') as outfile: 
     json.dump(refactored_data, outfile, indent=4)
 
