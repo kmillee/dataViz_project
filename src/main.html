@@ -7,12 +7,27 @@
     <!-- https://d3js.org/ -->
     <script type="text/javascript" src="js/d3-examples.js"></script>
     <script type="text/javascript" src="js/d3.v7.min.js"></script>
+    <!-- https://vega.github.io/vega-lite/ -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.21.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
     <!-- Your code -->
     <script type="text/javascript" src="js/main.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body onload="createViz()">
+    <div id="overlay"></div>
+    <div id="modal">
+        <div id="modalContent">
+            <span id="closeModal">&times;</span>
+            <div id="modalTitle"></div>
+            <div id="modalBody">
+                <div id="modalViz"></div>
+                <div id="modalText"></div>
+            </div>
+        </div>
+    </div>
     <div id="mapContainer">
         <div id="buttonsContainer">
             <button class="homeButton" onclick="changeText('global')">

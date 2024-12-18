@@ -5,12 +5,104 @@ const ctx = {
     legendWidth: 300,
     legendHeight: 60,
     legendMargin: { top: 10, right: 10, bottom: 20, left: 30 },
+    current_key: "none",
     defaultDescription: `
         <h2>Discriminations au sein de l'UE</h2>
         <p>La carte ci-contre montre l'indice global de discrimination dans les différents pays de l'union européenne.
         Cet indice regroupe les discriminations liées à l'ethnie, à l'orientation sexuelle et à la religion.</p>
     `
 };
+
+function addWindow(countryCode) {
+    let country = document.querySelector(`#${countryCode}`);
+    let countryName = country ? country.querySelector("title").textContent : "Unknown Country";
+    const modalTitle = document.getElementById("modalTitle");
+    const modalText = document.getElementById("modalText");
+
+    if (ctx.current_key == "none") {
+        modalTitle.innerHTML = `<p>Select a question</p>`;
+    } else {
+        modalTitle.innerHTML = `<h2>${countryName}</h2>`;
+        let dataFile = 'data/' + ctx.current_key + '.json';
+
+        let number_of_respondents;
+        let transformedData;
+
+        // find data corresponding to the country
+        fetch(dataFile)
+        .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+        })
+        .then(data => {
+            const countryData = data.data.find(item => item.id === countryCode);
+            if (countryData) {
+
+                number_of_respondents = countryData["number_of_respondents"];
+                modalText.innerHTML = `<p>Number of respondents: ${number_of_respondents}</p>`;
+
+                // refactor data
+                transformedData = Object.entries(countryData["responses"]["cardinal"]).map((d, i) => ({
+                    level: i + 1,   
+                    cardinal: d[1]  
+                }));
+
+                transformedData = transformedData.filter((d) => d.level < 11);
+                console.log(transformedData);
+
+                // add bar chart to modal
+                vlSpec = {
+                    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+                    "data": {
+                        "values": transformedData,
+                    },
+                    "mark": "bar",
+                    "encoding": {
+                        "y": {
+                            "field": "level",
+                            "type": "ordinal",  
+                            "axis": {"title": "Level of comfort"} 
+                        },
+                        "x": {
+                            "field": "cardinal",
+                            "type": "quantitative", 
+                            "axis": {"title": "Number of responses"}  
+                        },
+                    }
+                
+                };
+                vlOpts = {width:300, height:300, actions:false};
+                vegaEmbed("#modalViz", vlSpec, vlOpts);
+
+            } else {
+                console.log(`No data found for country code: ${countryCode}`);
+            }
+        })
+        .catch(error => {
+            console.error('Error loading JSON file:', error);
+        });
+    }
+
+    document.getElementById("overlay").style.display = "block";
+    document.getElementById("modal").style.display = "block";
+
+    document.getElementById("closeModal").onclick = function () {
+        closeModal();
+    };
+
+    document.getElementById("overlay").onclick = function () {
+        closeModal();
+    };
+}
+
+function closeModal() {
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById("modal").style.display = "none";
+}
+
 
 
 function makeMap(){
@@ -48,7 +140,7 @@ function makeMap(){
         .on("click", function(event, d) { 
            const countryCode = d.properties.CNTR_ID; 
            console.log("Country code:", countryCode);
-           // updateMapData(countryCode); 
+           addWindow(countryCode);
         });
 
   
@@ -150,6 +242,8 @@ function createLegend() {
 
 
 function updateMapData(dataKey) {
+    ctx.current_key = dataKey;
+    console.log(dataKey);
     const data_filename = 'data/' + dataKey + '.json';
 
     d3.json(data_filename)
@@ -164,7 +258,7 @@ function updateMapData(dataKey) {
                 countryMedians[d.id] = median;
             });
 
-            console.log("Country averages:", countryMedians);
+            //console.log("Country averages:", countryMedians);
 
         
             d3.selectAll(".countryArea")
@@ -231,10 +325,10 @@ function precomputeColorScale() {
             });
         });
 
-        console.log("Medians per question and country:", questionCountryMedians);
+        //console.log("Medians per question and country:", questionCountryMedians);
 
         const extent = d3.extent(allMedians);
-        console.log("Global extent of medians:", extent);
+        //console.log("Global extent of medians:", extent);
         ctx.rescale = d3.scaleLinear(extent, [0,1]);
 
         ctx.questionCountryMedians = questionCountryMedians;
@@ -248,7 +342,7 @@ function precomputeColorScale() {
         ethnie: {
             title: "Discrimination ethnique",
             questions: [
-                { question: "Que vous travailliez ou non, pouvez-vous me dire si vous vous sentiriez à l'aise ou non avec le fait qu'un collègue, avec lequel vous êtes quotidiennement en contact, appartienne à chacun des groupes suivants en utilisant une échelle allant de 1 à 10 ?",
+                { question: "Vous sentiriez à l'aise ou non avec le fait qu'un collègue, avec lequel vous êtes quotidiennement en contact, appartienne à chacun des groupes suivants ?",
                   options: [
                     { 
                         label: "Une personne noire",
@@ -273,7 +367,7 @@ function precomputeColorScale() {
         orientation: {
             title: "Discrimination liée à l'orientation sexuelle",
             questions: [
-                { question: "Que vous travailliez ou non, pouvez-vous me dire si vous vous sentiriez à l'aise ou non avec le fait qu'un collègue, avec lequel vous êtes quotidiennement en contact, appartienne à chacun des groupes suivants en utilisant une échelle allant de 1 à 10 ?",
+                { question: "Vous sentiriez-vous à l'aise ou non avec le fait qu'un collègue, avec lequel vous êtes quotidiennement en contact, appartienne à chacun des groupes suivants ?",
                   options: [
                     { 
                         label: "Une personne lesbienne, gay ou bisexuelle",
@@ -288,7 +382,7 @@ function precomputeColorScale() {
         religion: {
             title: "Discrimination religieuse",
             questions: [
-                { question: "Que vous travailliez ou non, pouvez-vous me dire si vous vous sentiriez à l'aise ou non avec le fait qu'un collègue, avec lequel vous êtes quotidiennement en contact, appartienne à chacun des groupes suivants en utilisant une échelle allant de 1 à 10 ?",
+                { question: "Vous sentiriez-vous à l'aise ou non avec le fait qu'un collègue, avec lequel vous êtes quotidiennement en contact, appartienne à chacun des groupes suivants ?",
                   options: [
                     {
                         label:  "Une personne juive",
