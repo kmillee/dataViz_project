@@ -1,5 +1,5 @@
 {
-    "name": "QB12_9",
+    "name": "QB12_8",
     "data": [
         {
             "id": "EU27",
@@ -1042,6 +1042,42 @@
                     "Indifferent.e (SPONTANe)": 0,
                     "Cela depend (SPONTANe)": 1,
                     "Ne sait pas": 3
+                }
+            }
+        },
+        {
+            "id": "DE",
+            "number_of_respondents": 1525,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.02,
+                    "2": 0.01,
+                    "3": 0.01,
+                    "4": 0.02,
+                    "5": 0.07,
+                    "6": 0.03,
+                    "7": 0.04,
+                    "8": 0.08,
+                    "9": 0.09,
+                    "10 Totally comfortable": 0.57,
+                    "Indifferent (SPONTANEOUS)": 0.03,
+                    "It depends (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.02
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 27,
+                    "2": 10,
+                    "3": 9,
+                    "4": 30,
+                    "5": 113,
+                    "6": 41,
+                    "7": 70,
+                    "8": 125,
+                    "9": 145,
+                    "10 Tout a fait a l'aise": 873,
+                    "Indifferent.e (SPONTANe)": 41,
+                    "Cela depend (SPONTANe)": 15,
+                    "Ne sait pas": 26
                 }
             }
         }

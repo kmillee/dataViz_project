@@ -1044,6 +1044,42 @@
                     "Ne sait pas": 12
                 }
             }
+        },
+        {
+            "id": "DE",
+            "number_of_respondents": 1525,
+            "responses": {
+                "percentage": {
+                    "1 Not at all comfortable": 0.06,
+                    "2": 0.01,
+                    "3": 0.02,
+                    "4": 0.03,
+                    "5": 0.09,
+                    "6": 0.06,
+                    "7": 0.06,
+                    "8": 0.09,
+                    "9": 0.08,
+                    "10 Totally comfortable": 0.43,
+                    "Indifferent (SPONTANEOUS)": 0.03,
+                    "It depends (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.03
+                },
+                "cardinal": {
+                    "1 Tres mal a l'aise": 87,
+                    "2": 21,
+                    "3": 30,
+                    "4": 39,
+                    "5": 140,
+                    "6": 86,
+                    "7": 95,
+                    "8": 136,
+                    "9": 126,
+                    "10 Tout a fait a l'aise": 655,
+                    "Indifferent.e (SPONTANe)": 50,
+                    "Cela depend (SPONTANe)": 21,
+                    "Ne sait pas": 39
+                }
+            }
         }
     ]
 }
