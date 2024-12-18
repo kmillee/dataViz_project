@@ -38,11 +38,20 @@ function makeMap(){
          .attr("d", path4proj)
          .attr("class", "countryArea")
          .attr("id", d => `${d.properties.CNTR_ID}`)
-         .on("click", function(event, d) { 
-            const countryCode = d.properties.CNTR_ID; 
-            console.log("Country code:", countryCode);
-            //updateMapData(countryCode); 
+         .append("title")
+         .text(function(d) { 
+            return d.properties.NAME_ENGL; 
         });
+
+
+        svgEl.selectAll("path.countryArea")
+        .on("click", function(event, d) { 
+           const countryCode = d.properties.CNTR_ID; 
+           console.log("Country code:", countryCode);
+           // updateMapData(countryCode); 
+        });
+
+  
         
     // country borders
     svgEl.append("g")
