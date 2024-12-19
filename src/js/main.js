@@ -24,7 +24,7 @@ function addWindow(countryCode) {
         modalTitle.innerHTML = `<p>Select a question</p>`;
     } else {
         modalTitle.innerHTML = `<h2>${countryName}</h2>`;
-        let dataFile = 'data/' + ctx.current_key + '.json';
+        let dataFile = 'data/surveyData/' + ctx.current_key + '.json';
 
         let number_of_respondents;
         let transformedData;
@@ -158,9 +158,9 @@ function makeMap(){
 };
 
 function loadData(){
-    let promises = [d3.json("data/gra.geojson"),
-                    d3.json("data/cleaned_eu_countries.geojson"),
-                    d3.json("data/CNTR_BN_20M_2024_3035.geojson")];
+    let promises = [d3.json("data/mapData/gra.geojson"),
+                    d3.json("data/mapData/cleaned_eu_countries.geojson"),
+                    d3.json("data/mapData/CNTR_BN_20M_2024_3035.geojson")];
     Promise.all(promises).then(function(data){
         
         ctx.data = data;
@@ -243,7 +243,7 @@ function createLegend() {
 function updateMapData(dataKey) {
     ctx.current_key = dataKey;
     console.log(dataKey);
-    const data_filename = 'data/' + dataKey + '.json';
+    const data_filename = 'data/surveyData/' + dataKey + '.json';
 
     d3.json(data_filename)
         .then(function (data) {
@@ -302,7 +302,7 @@ function computeMedian(d) {
 function precomputeColorScale() {
 
     let surveyFiles = ["QB12_2", "QB12_3", "QB12_4", "QB12_5", "QB12_5", "QB12_6", "QB12_7", "QB12_8", "QB12_9", "QB12_10", "QB12_11", "QB13_2", "QB13_3", "QB13_4", "QB13_5", "QB13_6", "QB13_7", "QB13_8", "QB13_9", "QB13_10", "QB13_11"];
-    let promises = surveyFiles.map(key => d3.json(`data/${key}.json`));
+    let promises = surveyFiles.map(key => d3.json(`data/surveyData/${key}.json`));
 
     // we want a color scale that does not change accross different survey questions for consistency and smoother transitions
     // therefore the color scale is computed with answers to all the survey questions
@@ -341,7 +341,7 @@ function precomputeColorScale() {
         }*/
         //ctx.rescale = d3.scaleLinear(extent, [0,1]);
         //ctx.color = d3.scaleOrdinal(ctx.levels, d3.schemePiYG[ctx.levels.length]);
-        ctx.color = d3.scaleOrdinal([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], d3.schemePiYG[10]);
+        ctx.color = d3.scaleOrdinal([4, 5, 6, 7, 8, 9, 10], d3.schemePiYG[7]);
 
         createLegend();
         console.log(ctx.color(10))

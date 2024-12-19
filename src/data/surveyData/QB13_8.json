@@ -1,0 +1,1085 @@
+{
+    "name": "QB13_8",
+    "data": [
+        {
+            "id": "EU27",
+            "number_of_respondents": 26399,
+            "responses": {
+                "percentage": {
+                    "2": 0.01,
+                    "3": 0.01,
+                    "4": 0.01,
+                    "5": 0.04,
+                    "6": 0.03,
+                    "7": 0.05,
+                    "8": 0.09,
+                    "9": 0.11,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "It depends (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.01,
+                    "1": 0.01,
+                    "10": 0.61
+                },
+                "cardinal": {
+                    "2": 182,
+                    "3": 264,
+                    "4": 348,
+                    "5": 1008,
+                    "6": 796,
+                    "7": 1369,
+                    "8": 2393,
+                    "9": 2982,
+                    "Indifferent.e (SPONTANe)": 335,
+                    "Cela depend (SPONTANe)": 146,
+                    "Ne sait pas": 353,
+                    "1": 268,
+                    "10": 15955
+                }
+            }
+        },
+        {
+            "id": "BE",
+            "number_of_respondents": 1011,
+            "responses": {
+                "percentage": {
+                    "2": "-",
+                    "3": "-",
+                    "4": 0.03,
+                    "5": 0.04,
+                    "6": 0.06,
+                    "7": 0.09,
+                    "8": 0.12,
+                    "9": 0.13,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.01,
+                    "1": 0.01,
+                    "10": 0.5
+                },
+                "cardinal": {
+                    "2": 2,
+                    "3": 3,
+                    "4": 30,
+                    "5": 42,
+                    "6": 57,
+                    "7": 94,
+                    "8": 117,
+                    "9": 127,
+                    "Indifferent.e (SPONTANe)": 6,
+                    "Cela depend (SPONTANe)": 1,
+                    "Ne sait pas": 15,
+                    "1": 7,
+                    "10": 510
+                }
+            }
+        },
+        {
+            "id": "BG",
+            "number_of_respondents": 1012,
+            "responses": {
+                "percentage": {
+                    "2": 0.01,
+                    "3": 0.01,
+                    "4": 0.02,
+                    "5": 0.03,
+                    "6": 0.03,
+                    "7": 0.05,
+                    "8": 0.11,
+                    "9": 0.08,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "It depends (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.02,
+                    "1": 0.02,
+                    "10": 0.61
+                },
+                "cardinal": {
+                    "2": 13,
+                    "3": 11,
+                    "4": 24,
+                    "5": 29,
+                    "6": 29,
+                    "7": 48,
+                    "8": 113,
+                    "9": 79,
+                    "Indifferent.e (SPONTANe)": 5,
+                    "Cela depend (SPONTANe)": 7,
+                    "Ne sait pas": 18,
+                    "1": 17,
+                    "10": 619
+                }
+            }
+        },
+        {
+            "id": "CZ",
+            "number_of_respondents": 1025,
+            "responses": {
+                "percentage": {
+                    "2": "-",
+                    "3": 0.01,
+                    "4": 0.01,
+                    "5": 0.05,
+                    "6": 0.02,
+                    "7": 0.02,
+                    "8": 0.03,
+                    "9": 0.05,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.03,
+                    "1": 0.03,
+                    "10": 0.74
+                },
+                "cardinal": {
+                    "2": 2,
+                    "3": 7,
+                    "4": 7,
+                    "5": 49,
+                    "6": 23,
+                    "7": 26,
+                    "8": 29,
+                    "9": 49,
+                    "Indifferent.e (SPONTANe)": 10,
+                    "Cela depend (SPONTANe)": 4,
+                    "Ne sait pas": 30,
+                    "1": 31,
+                    "10": 758
+                }
+            }
+        },
+        {
+            "id": "DK",
+            "number_of_respondents": 1019,
+            "responses": {
+                "percentage": {
+                    "2": 0.01,
+                    "3": "-",
+                    "4": "-",
+                    "5": 0.01,
+                    "6": 0.02,
+                    "7": 0.01,
+                    "8": 0.03,
+                    "9": 0.04,
+                    "Indifferent (SPONTANEOUS)": 0.02,
+                    "It depends (SPONTANEOUS)": 0.01,
+                    "Don't know": "-",
+                    "1": 0.02,
+                    "10": 0.83
+                },
+                "cardinal": {
+                    "2": 6,
+                    "3": 4,
+                    "4": 4,
+                    "5": 13,
+                    "6": 15,
+                    "7": 14,
+                    "8": 33,
+                    "9": 46,
+                    "Indifferent.e (SPONTANe)": 15,
+                    "Cela depend (SPONTANe)": 9,
+                    "Ne sait pas": 3,
+                    "1": 18,
+                    "10": 841
+                }
+            }
+        },
+        {
+            "id": "D-W",
+            "number_of_respondents": 1227,
+            "responses": {
+                "percentage": {
+                    "2": "-",
+                    "3": 0.01,
+                    "4": 0.01,
+                    "5": 0.04,
+                    "6": 0.02,
+                    "7": 0.04,
+                    "8": 0.1,
+                    "9": 0.1,
+                    "Indifferent (SPONTANEOUS)": 0.03,
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.01,
+                    "1": 0.01,
+                    "10": 0.63
+                },
+                "cardinal": {
+                    "2": 0,
+                    "3": 6,
+                    "4": 13,
+                    "5": 52,
+                    "6": 25,
+                    "7": 51,
+                    "8": 119,
+                    "9": 128,
+                    "Indifferent.e (SPONTANe)": 36,
+                    "Cela depend (SPONTANe)": 4,
+                    "Ne sait pas": 15,
+                    "1": 10,
+                    "10": 768
+                }
+            }
+        },
+        {
+            "id": "D-E",
+            "number_of_respondents": 298,
+            "responses": {
+                "percentage": {
+                    "2": "-",
+                    "3": "-",
+                    "4": 0.03,
+                    "5": 0.09,
+                    "6": 0.03,
+                    "7": 0.09,
+                    "8": 0.16,
+                    "9": 0.11,
+                    "Indifferent (SPONTANEOUS)": 0.02,
+                    "It depends (SPONTANEOUS)": 0.03,
+                    "Don't know": 0.05,
+                    "1": 0.01,
+                    "10": 0.38
+                },
+                "cardinal": {
+                    "2": 0,
+                    "3": 1,
+                    "4": 9,
+                    "5": 27,
+                    "6": 8,
+                    "7": 26,
+                    "8": 48,
+                    "9": 34,
+                    "Indifferent.e (SPONTANe)": 6,
+                    "Cela depend (SPONTANe)": 8,
+                    "Ne sait pas": 15,
+                    "1": 2,
+                    "10": 113
+                }
+            }
+        },
+        {
+            "id": "EE",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "2": 0.01,
+                    "3": 0.01,
+                    "4": 0.01,
+                    "5": 0.08,
+                    "6": 0.04,
+                    "7": 0.06,
+                    "8": 0.07,
+                    "9": 0.13,
+                    "Indifferent (SPONTANEOUS)": 0.02,
+                    "It depends (SPONTANEOUS)": 0.02,
+                    "Don't know": 0.02,
+                    "1": 0.02,
+                    "10": 0.51
+                },
+                "cardinal": {
+                    "2": 12,
+                    "3": 9,
+                    "4": 10,
+                    "5": 80,
+                    "6": 39,
+                    "7": 58,
+                    "8": 72,
+                    "9": 128,
+                    "Indifferent.e (SPONTANe)": 21,
+                    "Cela depend (SPONTANe)": 20,
+                    "Ne sait pas": 19,
+                    "1": 22,
+                    "10": 520
+                }
+            }
+        },
+        {
+            "id": "IE",
+            "number_of_respondents": 1016,
+            "responses": {
+                "percentage": {
+                    "2": "-",
+                    "3": "-",
+                    "4": "-",
+                    "5": 0.02,
+                    "6": 0.02,
+                    "7": 0.05,
+                    "8": 0.12,
+                    "9": 0.11,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "It depends (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.02,
+                    "1": "-",
+                    "10": 0.65
+                },
+                "cardinal": {
+                    "2": 1,
+                    "3": 5,
+                    "4": 1,
+                    "5": 23,
+                    "6": 15,
+                    "7": 49,
+                    "8": 120,
+                    "9": 106,
+                    "Indifferent.e (SPONTANe)": 2,
+                    "Cela depend (SPONTANe)": 7,
+                    "Ne sait pas": 24,
+                    "1": 4,
+                    "10": 660
+                }
+            }
+        },
+        {
+            "id": "EL",
+            "number_of_respondents": 1014,
+            "responses": {
+                "percentage": {
+                    "2": "-",
+                    "3": "-",
+                    "4": "-",
+                    "5": 0.02,
+                    "6": 0.01,
+                    "7": 0.02,
+                    "8": 0.06,
+                    "9": 0.15,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": "-",
+                    "1": "-",
+                    "10": 0.74
+                },
+                "cardinal": {
+                    "2": 3,
+                    "3": 2,
+                    "4": 0,
+                    "5": 14,
+                    "6": 13,
+                    "7": 22,
+                    "8": 62,
+                    "9": 149,
+                    "Indifferent.e (SPONTANe)": 2,
+                    "Cela depend (SPONTANe)": 0,
+                    "Ne sait pas": 1,
+                    "1": 2,
+                    "10": 745
+                }
+            }
+        },
+        {
+            "id": "ES",
+            "number_of_respondents": 1004,
+            "responses": {
+                "percentage": {
+                    "2": "-",
+                    "3": "-",
+                    "4": "-",
+                    "5": 0.02,
+                    "6": 0.01,
+                    "7": 0.06,
+                    "8": 0.13,
+                    "9": 0.17,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.01,
+                    "1": 0.01,
+                    "10": 0.59
+                },
+                "cardinal": {
+                    "2": 3,
+                    "3": 2,
+                    "4": 3,
+                    "5": 22,
+                    "6": 14,
+                    "7": 64,
+                    "8": 126,
+                    "9": 170,
+                    "Indifferent.e (SPONTANe)": 2,
+                    "Cela depend (SPONTANe)": 0,
+                    "Ne sait pas": 5,
+                    "1": 5,
+                    "10": 587
+                }
+            }
+        },
+        {
+            "id": "FR",
+            "number_of_respondents": 1006,
+            "responses": {
+                "percentage": {
+                    "2": "-",
+                    "3": "-",
+                    "4": "-",
+                    "5": 0.04,
+                    "6": 0.02,
+                    "7": 0.01,
+                    "8": 0.08,
+                    "9": 0.1,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "It depends (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.02,
+                    "1": 0.01,
+                    "10": 0.7
+                },
+                "cardinal": {
+                    "2": 3,
+                    "3": 4,
+                    "4": 1,
+                    "5": 39,
+                    "6": 16,
+                    "7": 15,
+                    "8": 77,
+                    "9": 98,
+                    "Indifferent.e (SPONTANe)": 14,
+                    "Cela depend (SPONTANe)": 5,
+                    "Ne sait pas": 23,
+                    "1": 11,
+                    "10": 701
+                }
+            }
+        },
+        {
+            "id": "HR",
+            "number_of_respondents": 1012,
+            "responses": {
+                "percentage": {
+                    "2": 0.01,
+                    "3": 0.01,
+                    "4": 0.02,
+                    "5": 0.05,
+                    "6": 0.02,
+                    "7": 0.02,
+                    "8": 0.04,
+                    "9": 0.08,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.02,
+                    "1": 0.01,
+                    "10": 0.72
+                },
+                "cardinal": {
+                    "2": 7,
+                    "3": 14,
+                    "4": 18,
+                    "5": 46,
+                    "6": 22,
+                    "7": 21,
+                    "8": 45,
+                    "9": 85,
+                    "Indifferent.e (SPONTANe)": 2,
+                    "Cela depend (SPONTANe)": 1,
+                    "Ne sait pas": 16,
+                    "1": 7,
+                    "10": 726
+                }
+            }
+        },
+        {
+            "id": "IT",
+            "number_of_respondents": 1027,
+            "responses": {
+                "percentage": {
+                    "2": 0.01,
+                    "3": 0.02,
+                    "4": 0.02,
+                    "5": 0.01,
+                    "6": 0.05,
+                    "7": 0.07,
+                    "8": 0.11,
+                    "9": 0.16,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "It depends (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.01,
+                    "1": 0.01,
+                    "10": 0.51
+                },
+                "cardinal": {
+                    "2": 11,
+                    "3": 18,
+                    "4": 17,
+                    "5": 15,
+                    "6": 46,
+                    "7": 75,
+                    "8": 117,
+                    "9": 167,
+                    "Indifferent.e (SPONTANe)": 13,
+                    "Cela depend (SPONTANe)": 6,
+                    "Ne sait pas": 7,
+                    "1": 12,
+                    "10": 524
+                }
+            }
+        },
+        {
+            "id": "CY",
+            "number_of_respondents": 504,
+            "responses": {
+                "percentage": {
+                    "2": "-",
+                    "3": "-",
+                    "4": 0.01,
+                    "5": 0.01,
+                    "6": 0.02,
+                    "7": 0.01,
+                    "8": 0.06,
+                    "9": 0.11,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": "-",
+                    "1": "-",
+                    "10": 0.77
+                },
+                "cardinal": {
+                    "2": 2,
+                    "3": 2,
+                    "4": 3,
+                    "5": 5,
+                    "6": 11,
+                    "7": 5,
+                    "8": 32,
+                    "9": 52,
+                    "Indifferent.e (SPONTANe)": 2,
+                    "Cela depend (SPONTANe)": 0,
+                    "Ne sait pas": 1,
+                    "1": 2,
+                    "10": 387
+                }
+            }
+        },
+        {
+            "id": "LV",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "2": "-",
+                    "3": "-",
+                    "4": 0.01,
+                    "5": 0.06,
+                    "6": 0.02,
+                    "7": 0.04,
+                    "8": 0.06,
+                    "9": 0.07,
+                    "Indifferent (SPONTANEOUS)": 0.02,
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.01,
+                    "1": 0.02,
+                    "10": 0.69
+                },
+                "cardinal": {
+                    "2": 4,
+                    "3": 3,
+                    "4": 5,
+                    "5": 60,
+                    "6": 25,
+                    "7": 39,
+                    "8": 59,
+                    "9": 73,
+                    "Indifferent.e (SPONTANe)": 15,
+                    "Cela depend (SPONTANe)": 2,
+                    "Ne sait pas": 11,
+                    "1": 19,
+                    "10": 694
+                }
+            }
+        },
+        {
+            "id": "LT",
+            "number_of_respondents": 1005,
+            "responses": {
+                "percentage": {
+                    "2": "-",
+                    "3": "-",
+                    "4": 0.01,
+                    "5": 0.03,
+                    "6": 0.01,
+                    "7": 0.01,
+                    "8": 0.05,
+                    "9": 0.1,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": "-",
+                    "1": 0.01,
+                    "10": 0.78
+                },
+                "cardinal": {
+                    "2": 2,
+                    "3": 3,
+                    "4": 4,
+                    "5": 32,
+                    "6": 10,
+                    "7": 11,
+                    "8": 47,
+                    "9": 98,
+                    "Indifferent.e (SPONTANe)": 0,
+                    "Cela depend (SPONTANe)": 3,
+                    "Ne sait pas": 3,
+                    "1": 10,
+                    "10": 782
+                }
+            }
+        },
+        {
+            "id": "LU",
+            "number_of_respondents": 508,
+            "responses": {
+                "percentage": {
+                    "2": "-",
+                    "3": "-",
+                    "4": "-",
+                    "5": 0.02,
+                    "6": 0.02,
+                    "7": 0.04,
+                    "8": 0.07,
+                    "9": 0.03,
+                    "Indifferent (SPONTANEOUS)": 0.04,
+                    "It depends (SPONTANEOUS)": 0.02,
+                    "Don't know": 0.02,
+                    "1": "-",
+                    "10": 0.74
+                },
+                "cardinal": {
+                    "2": 2,
+                    "3": 0,
+                    "4": 1,
+                    "5": 10,
+                    "6": 8,
+                    "7": 21,
+                    "8": 36,
+                    "9": 15,
+                    "Indifferent.e (SPONTANe)": 21,
+                    "Cela depend (SPONTANe)": 8,
+                    "Ne sait pas": 8,
+                    "1": "-",
+                    "10": 377
+                }
+            }
+        },
+        {
+            "id": "HU",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "2": "-",
+                    "3": 0.01,
+                    "4": 0.02,
+                    "5": 0.06,
+                    "6": 0.06,
+                    "7": 0.08,
+                    "8": 0.12,
+                    "9": 0.12,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": "-",
+                    "1": "-",
+                    "10": 0.52
+                },
+                "cardinal": {
+                    "2": 5,
+                    "3": 11,
+                    "4": 23,
+                    "5": 57,
+                    "6": 57,
+                    "7": 80,
+                    "8": 123,
+                    "9": 124,
+                    "Indifferent.e (SPONTANe)": 6,
+                    "Cela depend (SPONTANe)": 3,
+                    "Ne sait pas": 3,
+                    "1": 5,
+                    "10": 526
+                }
+            }
+        },
+        {
+            "id": "MT",
+            "number_of_respondents": 514,
+            "responses": {
+                "percentage": {
+                    "2": "-",
+                    "3": "-",
+                    "4": 0.01,
+                    "5": 0.04,
+                    "6": 0.01,
+                    "7": 0.04,
+                    "8": 0.05,
+                    "9": 0.08,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.02,
+                    "1": "-",
+                    "10": 0.75
+                },
+                "cardinal": {
+                    "2": 1,
+                    "3": 0,
+                    "4": 4,
+                    "5": 19,
+                    "6": 3,
+                    "7": 19,
+                    "8": 26,
+                    "9": 41,
+                    "Indifferent.e (SPONTANe)": 3,
+                    "Cela depend (SPONTANe)": 1,
+                    "Ne sait pas": 10,
+                    "1": 3,
+                    "10": 385
+                }
+            }
+        },
+        {
+            "id": "NL",
+            "number_of_respondents": 1004,
+            "responses": {
+                "percentage": {
+                    "2": "-",
+                    "3": "-",
+                    "4": 0.01,
+                    "5": 0.02,
+                    "6": 0.01,
+                    "7": 0.04,
+                    "8": 0.07,
+                    "9": 0.04,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "It depends (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.01,
+                    "1": "-",
+                    "10": 0.79
+                },
+                "cardinal": {
+                    "2": 2,
+                    "3": 2,
+                    "4": 5,
+                    "5": 23,
+                    "6": 6,
+                    "7": 36,
+                    "8": 71,
+                    "9": 39,
+                    "Indifferent.e (SPONTANe)": 1,
+                    "Cela depend (SPONTANe)": 13,
+                    "Ne sait pas": 8,
+                    "1": 5,
+                    "10": 793
+                }
+            }
+        },
+        {
+            "id": "AT",
+            "number_of_respondents": 1012,
+            "responses": {
+                "percentage": {
+                    "2": 0.02,
+                    "3": 0.01,
+                    "4": 0.02,
+                    "5": 0.06,
+                    "6": 0.02,
+                    "7": 0.05,
+                    "8": 0.08,
+                    "9": 0.08,
+                    "Indifferent (SPONTANEOUS)": 0.05,
+                    "It depends (SPONTANEOUS)": 0.03,
+                    "Don't know": 0.02,
+                    "1": 0.04,
+                    "10": 0.52
+                },
+                "cardinal": {
+                    "2": 18,
+                    "3": 14,
+                    "4": 21,
+                    "5": 57,
+                    "6": 24,
+                    "7": 55,
+                    "8": 85,
+                    "9": 78,
+                    "Indifferent.e (SPONTANe)": 46,
+                    "Cela depend (SPONTANe)": 26,
+                    "Ne sait pas": 16,
+                    "1": 40,
+                    "10": 530
+                }
+            }
+        },
+        {
+            "id": "PL",
+            "number_of_respondents": 1015,
+            "responses": {
+                "percentage": {
+                    "2": 0.03,
+                    "3": 0.02,
+                    "4": 0.03,
+                    "5": 0.06,
+                    "6": 0.06,
+                    "7": 0.08,
+                    "8": 0.06,
+                    "9": 0.1,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": "-",
+                    "1": 0.01,
+                    "10": 0.54
+                },
+                "cardinal": {
+                    "2": 31,
+                    "3": 24,
+                    "4": 30,
+                    "5": 60,
+                    "6": 56,
+                    "7": 78,
+                    "8": 59,
+                    "9": 98,
+                    "Indifferent.e (SPONTANe)": 11,
+                    "Cela depend (SPONTANe)": 4,
+                    "Ne sait pas": 4,
+                    "1": 15,
+                    "10": 545
+                }
+            }
+        },
+        {
+            "id": "PT",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "2": "-",
+                    "3": 0.01,
+                    "4": 0.01,
+                    "5": 0.05,
+                    "6": 0.03,
+                    "7": 0.07,
+                    "8": 0.06,
+                    "9": 0.12,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.01,
+                    "1": "-",
+                    "10": 0.64
+                },
+                "cardinal": {
+                    "2": 2,
+                    "3": 6,
+                    "4": 8,
+                    "5": 48,
+                    "6": 34,
+                    "7": 67,
+                    "8": 66,
+                    "9": 120,
+                    "Indifferent.e (SPONTANe)": 5,
+                    "Cela depend (SPONTANe)": 1,
+                    "Ne sait pas": 10,
+                    "1": 1,
+                    "10": 651
+                }
+            }
+        },
+        {
+            "id": "RO",
+            "number_of_respondents": 1053,
+            "responses": {
+                "percentage": {
+                    "2": 0.02,
+                    "3": 0.05,
+                    "4": 0.05,
+                    "5": 0.07,
+                    "6": 0.1,
+                    "7": 0.09,
+                    "8": 0.07,
+                    "9": 0.1,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "It depends (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.02,
+                    "1": 0.01,
+                    "10": 0.41
+                },
+                "cardinal": {
+                    "2": 23,
+                    "3": 53,
+                    "4": 49,
+                    "5": 77,
+                    "6": 102,
+                    "7": 94,
+                    "8": 75,
+                    "9": 110,
+                    "Indifferent.e (SPONTANe)": 4,
+                    "Cela depend (SPONTANe)": 8,
+                    "Ne sait pas": 23,
+                    "1": 8,
+                    "10": 427
+                }
+            }
+        },
+        {
+            "id": "SI",
+            "number_of_respondents": 1000,
+            "responses": {
+                "percentage": {
+                    "2": 0.01,
+                    "3": "-",
+                    "4": 0.01,
+                    "5": 0.07,
+                    "6": 0.03,
+                    "7": 0.05,
+                    "8": 0.1,
+                    "9": 0.1,
+                    "Indifferent (SPONTANEOUS)": 0.02,
+                    "It depends (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.02,
+                    "1": 0.01,
+                    "10": 0.57
+                },
+                "cardinal": {
+                    "2": 7,
+                    "3": 4,
+                    "4": 15,
+                    "5": 68,
+                    "6": 28,
+                    "7": 48,
+                    "8": 104,
+                    "9": 104,
+                    "Indifferent.e (SPONTANe)": 15,
+                    "Cela depend (SPONTANe)": 12,
+                    "Ne sait pas": 20,
+                    "1": 7,
+                    "10": 569
+                }
+            }
+        },
+        {
+            "id": "SK",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "2": "-",
+                    "3": "-",
+                    "4": "-",
+                    "5": 0.05,
+                    "6": 0.04,
+                    "7": 0.06,
+                    "8": 0.07,
+                    "9": 0.16,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.02,
+                    "1": 0.02,
+                    "10": 0.57
+                },
+                "cardinal": {
+                    "2": 1,
+                    "3": 3,
+                    "4": 1,
+                    "5": 50,
+                    "6": 39,
+                    "7": 60,
+                    "8": 71,
+                    "9": 165,
+                    "Indifferent.e (SPONTANe)": 15,
+                    "Cela depend (SPONTANe)": 1,
+                    "Ne sait pas": 16,
+                    "1": 18,
+                    "10": 582
+                }
+            }
+        },
+        {
+            "id": "FI",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "2": "-",
+                    "3": "-",
+                    "4": "-",
+                    "5": 0.01,
+                    "6": "-",
+                    "7": 0.01,
+                    "8": 0.03,
+                    "9": 0.07,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "It depends (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.03,
+                    "1": "-",
+                    "10": 0.83
+                },
+                "cardinal": {
+                    "2": 0,
+                    "3": 1,
+                    "4": 1,
+                    "5": 6,
+                    "6": 4,
+                    "7": 10,
+                    "8": 27,
+                    "9": 68,
+                    "Indifferent.e (SPONTANe)": 14,
+                    "Cela depend (SPONTANe)": 8,
+                    "Ne sait pas": 26,
+                    "1": 5,
+                    "10": 839
+                }
+            }
+        },
+        {
+            "id": "SE",
+            "number_of_respondents": 1019,
+            "responses": {
+                "percentage": {
+                    "2": "-",
+                    "3": 0.01,
+                    "4": 0.01,
+                    "5": 0.02,
+                    "6": 0.01,
+                    "7": 0.03,
+                    "8": 0.08,
+                    "9": 0.04,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "It depends (SPONTANEOUS)": "-",
+                    "Don't know": 0.01,
+                    "1": 0.01,
+                    "10": 0.78
+                },
+                "cardinal": {
+                    "2": "-",
+                    "3": 6,
+                    "4": 7,
+                    "5": 22,
+                    "6": 15,
+                    "7": 34,
+                    "8": 84,
+                    "9": 45,
+                    "Indifferent.e (SPONTANe)": 1,
+                    "Cela depend (SPONTANe)": 1,
+                    "Ne sait pas": 5,
+                    "1": 8,
+                    "10": 792
+                }
+            }
+        },
+        {
+            "id": "DE",
+            "number_of_respondents": 1525,
+            "responses": {
+                "percentage": {
+                    "2": "-",
+                    "3": "-",
+                    "4": 0.01,
+                    "5": 0.05,
+                    "6": 0.02,
+                    "7": 0.05,
+                    "8": 0.11,
+                    "9": 0.11,
+                    "Indifferent (SPONTANEOUS)": 0.03,
+                    "It depends (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.02,
+                    "1": 0.01,
+                    "10": 0.58
+                },
+                "cardinal": {
+                    "2": 0,
+                    "3": 7,
+                    "4": 22,
+                    "5": 79,
+                    "6": 33,
+                    "7": 77,
+                    "8": 167,
+                    "9": 162,
+                    "Indifferent.e (SPONTANe)": 41,
+                    "Cela depend (SPONTANe)": 12,
+                    "Ne sait pas": 30,
+                    "1": 12,
+                    "10": 881
+                }
+            }
+        }
+    ]
+}
