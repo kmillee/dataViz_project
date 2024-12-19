@@ -1,9 +1,6 @@
 import json
 import os
-<<<<<<< HEAD
-=======
 import jsonConverter
->>>>>>> ca6932178f5cf3d75381ad8249cf9308ed195011
 
 clean_data = {
     "type": "FeatureCollection",
@@ -70,7 +67,6 @@ clean_data_from_raw(raw_data)
 with open('cleaned_eu_countries.geojson', 'w', encoding='utf-8') as outfile: 
     json.dump(clean_data, outfile, indent=4)"""
 
-<<<<<<< HEAD
 ##################################################################################################################################
 
 surveyFiles = ["QB12_2", "QB12_3", "QB12_4", "QB12_5", "QB12_5", "QB12_6", "QB12_7", "QB12_8", "QB12_9", "QB12_10", "QB12_11", "QB13_2", "QB13_3", "QB13_4", "QB13_5", "QB13_6", "QB13_7", "QB13_8", "QB13_9", "QB13_10", "QB13_11"]
@@ -117,13 +113,9 @@ refactored_data = refactor_survey("QB13_11", survey_data)
 
 with open('data_clean/QB13_11.json', 'w', encoding='utf-8') as outfile: 
     json.dump(refactored_data, outfile, indent=4)"""
-=======
-
-#survey_data = load_data("raw_data/QB13_11_full.json")
 survey_data = jsonConverter.excelToJson("raw_data/QB13_11_full.json")
 refactored_data = refactor_survey("QB13_11", survey_data)
 
 with open('data_clean/QB13_11.json', 'w', encoding='utf-8') as outfile: 
     json.dump(refactored_data, outfile, indent=4)
->>>>>>> ca6932178f5cf3d75381ad8249cf9308ed195011
 
