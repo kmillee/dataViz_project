@@ -1,0 +1,39 @@
+{ 
+    "ethnicity": 
+        {
+            "ordinal": 
+            [
+                "QB12R_2", "QB12R_3", "QB12R_4", "QB13R_2", 
+                "QB13R_3", "QB13R_4", 
+                "QB6R_3",
+                "QB17_6", "QB17_7"
+            ],
+            "binary": 
+            [
+                "QB18", "QB19"
+            ]
+        },
+    
+    "sexual orientation": 
+        {
+            "ordinal":
+            [
+                "QB12R_10", "QB12R_11", 
+                "QB13R_10", "QB13R_11", 
+                "QB15R_1", "QB15R_2", "QB15R_3", "QB15R_4",
+                "QB6R_2", "QB6R_10",
+                "QB17_1", "QB17_2", "QB17_3"
+            ]
+        },
+    
+        
+    "religion": 
+        {
+            "ordinal":
+            [
+                "QB12R_5", "QB12R_6", "QB12R_7", "QB12R_8", "QB12R_9",
+                "QB13R_5", "QB13R_6", "QB13R_7", "QB13R_8", "QB13R_9",
+                "QB6R_9"
+            ]
+        }
+}

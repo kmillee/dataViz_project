@@ -1,0 +1,585 @@
+{
+    "name": "QB6R_9",
+    "data": [
+        {
+            "id": "UE27\nEU27",
+            "number_of_respondents": 26399,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.12,
+                    "Total 'Moderately comfortable'": 0.15,
+                    "Total 'Comfortable'": 0.71,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 3061,
+                    "Total 'Moyennement a l'aise'": 3904,
+                    "Total 'A l'aise'": 18692,
+                    "Indifferent.e (SPONTANe)": 348,
+                    "Ne sait pas": 395
+                }
+            }
+        },
+        {
+            "id": "BE",
+            "number_of_respondents": 1011,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.15,
+                    "Total 'Moderately comfortable'": 0.16,
+                    "Total 'Comfortable'": 0.67,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "Don't know": 0.02
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 148,
+                    "Total 'Moyennement a l'aise'": 165,
+                    "Total 'A l'aise'": 673,
+                    "Indifferent.e (SPONTANe)": 5,
+                    "Ne sait pas": 20
+                }
+            }
+        },
+        {
+            "id": "BG",
+            "number_of_respondents": 1012,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.29,
+                    "Total 'Moderately comfortable'": 0.19,
+                    "Total 'Comfortable'": 0.47,
+                    "Indifferent (SPONTANEOUS)": 0.02,
+                    "Don't know": 0.03
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 291,
+                    "Total 'Moyennement a l'aise'": 198,
+                    "Total 'A l'aise'": 479,
+                    "Indifferent.e (SPONTANe)": 17,
+                    "Ne sait pas": 27
+                }
+            }
+        },
+        {
+            "id": "CZ",
+            "number_of_respondents": 1025,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.13,
+                    "Total 'Moderately comfortable'": 0.14,
+                    "Total 'Comfortable'": 0.69,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.03
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 131,
+                    "Total 'Moyennement a l'aise'": 146,
+                    "Total 'A l'aise'": 711,
+                    "Indifferent.e (SPONTANe)": 5,
+                    "Ne sait pas": 33
+                }
+            }
+        },
+        {
+            "id": "DK",
+            "number_of_respondents": 1019,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.17,
+                    "Total 'Moderately comfortable'": 0.12,
+                    "Total 'Comfortable'": 0.67,
+                    "Indifferent (SPONTANEOUS)": 0.03,
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 171,
+                    "Total 'Moyennement a l'aise'": 118,
+                    "Total 'A l'aise'": 687,
+                    "Indifferent.e (SPONTANe)": 30,
+                    "Ne sait pas": 14
+                }
+            }
+        },
+        {
+            "id": "D-W",
+            "number_of_respondents": 1227,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.11,
+                    "Total 'Moderately comfortable'": 0.19,
+                    "Total 'Comfortable'": 0.65,
+                    "Indifferent (SPONTANEOUS)": 0.04,
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 133,
+                    "Total 'Moyennement a l'aise'": 236,
+                    "Total 'A l'aise'": 797,
+                    "Indifferent.e (SPONTANe)": 45,
+                    "Ne sait pas": 16
+                }
+            }
+        },
+        {
+            "id": "DE",
+            "number_of_respondents": 1525,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.13,
+                    "Total 'Moderately comfortable'": 0.19,
+                    "Total 'Comfortable'": 0.63,
+                    "Indifferent (SPONTANEOUS)": 0.03,
+                    "Don't know": 0.02
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 196,
+                    "Total 'Moyennement a l'aise'": 290,
+                    "Total 'A l'aise'": 954,
+                    "Indifferent.e (SPONTANe)": 54,
+                    "Ne sait pas": 30
+                }
+            }
+        },
+        {
+            "id": "EE",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.23,
+                    "Total 'Moderately comfortable'": 0.19,
+                    "Total 'Comfortable'": 0.53,
+                    "Indifferent (SPONTANEOUS)": 0.03,
+                    "Don't know": 0.02
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 232,
+                    "Total 'Moyennement a l'aise'": 192,
+                    "Total 'A l'aise'": 533,
+                    "Indifferent.e (SPONTANe)": 28,
+                    "Ne sait pas": 23
+                }
+            }
+        },
+        {
+            "id": "IE",
+            "number_of_respondents": 1016,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.01,
+                    "Total 'Moderately comfortable'": 0.05,
+                    "Total 'Comfortable'": 0.92,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 13,
+                    "Total 'Moyennement a l'aise'": 50,
+                    "Total 'A l'aise'": 936,
+                    "Indifferent.e (SPONTANe)": 4,
+                    "Ne sait pas": 14
+                }
+            }
+        },
+        {
+            "id": "EL",
+            "number_of_respondents": 1014,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.24,
+                    "Total 'Moderately comfortable'": 0.15,
+                    "Total 'Comfortable'": 0.6,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "Don't know": "-"
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 245,
+                    "Total 'Moyennement a l'aise'": 148,
+                    "Total 'A l'aise'": 613,
+                    "Indifferent.e (SPONTANe)": 5,
+                    "Ne sait pas": 2
+                }
+            }
+        },
+        {
+            "id": "ES",
+            "number_of_respondents": 1004,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.05,
+                    "Total 'Moderately comfortable'": 0.1,
+                    "Total 'Comfortable'": 0.84,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 54,
+                    "Total 'Moyennement a l'aise'": 97,
+                    "Total 'A l'aise'": 842,
+                    "Indifferent.e (SPONTANe)": 4,
+                    "Ne sait pas": 7
+                }
+            }
+        },
+        {
+            "id": "FR",
+            "number_of_respondents": 1006,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.08,
+                    "Total 'Moderately comfortable'": 0.12,
+                    "Total 'Comfortable'": 0.75,
+                    "Indifferent (SPONTANEOUS)": 0.02,
+                    "Don't know": 0.03
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 86,
+                    "Total 'Moyennement a l'aise'": 126,
+                    "Total 'A l'aise'": 751,
+                    "Indifferent.e (SPONTANe)": 17,
+                    "Ne sait pas": 26
+                }
+            }
+        },
+        {
+            "id": "HR",
+            "number_of_respondents": 1012,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.14,
+                    "Total 'Moderately comfortable'": 0.17,
+                    "Total 'Comfortable'": 0.67,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 140,
+                    "Total 'Moyennement a l'aise'": 178,
+                    "Total 'A l'aise'": 680,
+                    "Indifferent.e (SPONTANe)": 6,
+                    "Ne sait pas": 9
+                }
+            }
+        },
+        {
+            "id": "IT",
+            "number_of_respondents": 1027,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.09,
+                    "Total 'Moderately comfortable'": 0.15,
+                    "Total 'Comfortable'": 0.75,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 90,
+                    "Total 'Moyennement a l'aise'": 151,
+                    "Total 'A l'aise'": 776,
+                    "Indifferent.e (SPONTANe)": 1,
+                    "Ne sait pas": 9
+                }
+            }
+        },
+        {
+            "id": "CY",
+            "number_of_respondents": 504,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.37,
+                    "Total 'Moderately comfortable'": 0.21,
+                    "Total 'Comfortable'": 0.41,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "Don't know": "-"
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 187,
+                    "Total 'Moyennement a l'aise'": 104,
+                    "Total 'A l'aise'": 209,
+                    "Indifferent.e (SPONTANe)": 2,
+                    "Ne sait pas": 1
+                }
+            }
+        },
+        {
+            "id": "LV",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.16,
+                    "Total 'Moderately comfortable'": 0.16,
+                    "Total 'Comfortable'": 0.64,
+                    "Indifferent (SPONTANEOUS)": 0.02,
+                    "Don't know": 0.02
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 157,
+                    "Total 'Moyennement a l'aise'": 163,
+                    "Total 'A l'aise'": 648,
+                    "Indifferent.e (SPONTANe)": 18,
+                    "Ne sait pas": 23
+                }
+            }
+        },
+        {
+            "id": "LT",
+            "number_of_respondents": 1005,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.23,
+                    "Total 'Moderately comfortable'": 0.17,
+                    "Total 'Comfortable'": 0.59,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 227,
+                    "Total 'Moyennement a l'aise'": 175,
+                    "Total 'A l'aise'": 588,
+                    "Indifferent.e (SPONTANe)": 5,
+                    "Ne sait pas": 9
+                }
+            }
+        },
+        {
+            "id": "LU",
+            "number_of_respondents": 508,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.05,
+                    "Total 'Moderately comfortable'": 0.08,
+                    "Total 'Comfortable'": 0.79,
+                    "Indifferent (SPONTANEOUS)": 0.07,
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 27,
+                    "Total 'Moyennement a l'aise'": 38,
+                    "Total 'A l'aise'": 401,
+                    "Indifferent.e (SPONTANe)": 35,
+                    "Ne sait pas": 8
+                }
+            }
+        },
+        {
+            "id": "HU",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.11,
+                    "Total 'Moderately comfortable'": 0.23,
+                    "Total 'Comfortable'": 0.65,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 111,
+                    "Total 'Moyennement a l'aise'": 231,
+                    "Total 'A l'aise'": 663,
+                    "Indifferent.e (SPONTANe)": 6,
+                    "Ne sait pas": 9
+                }
+            }
+        },
+        {
+            "id": "MT",
+            "number_of_respondents": 514,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.26,
+                    "Total 'Moderately comfortable'": 0.17,
+                    "Total 'Comfortable'": 0.56,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 136,
+                    "Total 'Moyennement a l'aise'": 86,
+                    "Total 'A l'aise'": 286,
+                    "Indifferent.e (SPONTANe)": 3,
+                    "Ne sait pas": 3
+                }
+            }
+        },
+        {
+            "id": "NL",
+            "number_of_respondents": 1004,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.06,
+                    "Total 'Moderately comfortable'": 0.08,
+                    "Total 'Comfortable'": 0.86,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "Don't know": "-"
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 57,
+                    "Total 'Moyennement a l'aise'": 76,
+                    "Total 'A l'aise'": 864,
+                    "Indifferent.e (SPONTANe)": 3,
+                    "Ne sait pas": 5
+                }
+            }
+        },
+        {
+            "id": "AT",
+            "number_of_respondents": 1012,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.22,
+                    "Total 'Moderately comfortable'": 0.19,
+                    "Total 'Comfortable'": 0.51,
+                    "Indifferent (SPONTANEOUS)": 0.06,
+                    "Don't know": 0.02
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 222,
+                    "Total 'Moyennement a l'aise'": 194,
+                    "Total 'A l'aise'": 520,
+                    "Indifferent.e (SPONTANe)": 55,
+                    "Ne sait pas": 21
+                }
+            }
+        },
+        {
+            "id": "PL",
+            "number_of_respondents": 1015,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.16,
+                    "Total 'Moderately comfortable'": 0.15,
+                    "Total 'Comfortable'": 0.69,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "Don't know": "-"
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 160,
+                    "Total 'Moyennement a l'aise'": 149,
+                    "Total 'A l'aise'": 699,
+                    "Indifferent.e (SPONTANe)": 2,
+                    "Ne sait pas": 5
+                }
+            }
+        },
+        {
+            "id": "PT",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.03,
+                    "Total 'Moderately comfortable'": 0.1,
+                    "Total 'Comfortable'": 0.85,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "Don't know": 0.02
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 27,
+                    "Total 'Moyennement a l'aise'": 102,
+                    "Total 'A l'aise'": 873,
+                    "Indifferent.e (SPONTANe)": 3,
+                    "Ne sait pas": 17
+                }
+            }
+        },
+        {
+            "id": "RO",
+            "number_of_respondents": 1053,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.2,
+                    "Total 'Moderately comfortable'": 0.22,
+                    "Total 'Comfortable'": 0.56,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "Don't know": 0.02
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 205,
+                    "Total 'Moyennement a l'aise'": 234,
+                    "Total 'A l'aise'": 591,
+                    "Indifferent.e (SPONTANe)": 2,
+                    "Ne sait pas": 20
+                }
+            }
+        },
+        {
+            "id": "SI",
+            "number_of_respondents": 1000,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.19,
+                    "Total 'Moderately comfortable'": 0.22,
+                    "Total 'Comfortable'": 0.56,
+                    "Indifferent (SPONTANEOUS)": 0.02,
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 189,
+                    "Total 'Moyennement a l'aise'": 224,
+                    "Total 'A l'aise'": 556,
+                    "Indifferent.e (SPONTANe)": 19,
+                    "Ne sait pas": 13
+                }
+            }
+        },
+        {
+            "id": "SK",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.11,
+                    "Total 'Moderately comfortable'": 0.13,
+                    "Total 'Comfortable'": 0.73,
+                    "Indifferent (SPONTANEOUS)": 0.02,
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 115,
+                    "Total 'Moyennement a l'aise'": 138,
+                    "Total 'A l'aise'": 741,
+                    "Indifferent.e (SPONTANe)": 18,
+                    "Ne sait pas": 9
+                }
+            }
+        },
+        {
+            "id": "FI",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.1,
+                    "Total 'Moderately comfortable'": 0.1,
+                    "Total 'Comfortable'": 0.77,
+                    "Indifferent (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.02
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 99,
+                    "Total 'Moyennement a l'aise'": 101,
+                    "Total 'A l'aise'": 781,
+                    "Indifferent.e (SPONTANe)": 10,
+                    "Ne sait pas": 18
+                }
+            }
+        },
+        {
+            "id": "SE",
+            "number_of_respondents": 1019,
+            "responses": {
+                "percentage": {
+                    "Total 'Uncomfortable'": 0.11,
+                    "Total 'Moderately comfortable'": 0.12,
+                    "Total 'Comfortable'": 0.76,
+                    "Indifferent (SPONTANEOUS)": "-",
+                    "Don't know": 0.01
+                },
+                "cardinal": {
+                    "Total 'Mal a l'aise'": 107,
+                    "Total 'Moyennement a l'aise'": 123,
+                    "Total 'A l'aise'": 775,
+                    "Indifferent.e (SPONTANe)": 1,
+                    "Ne sait pas": 13
+                }
+            }
+        }
+    ]
+}

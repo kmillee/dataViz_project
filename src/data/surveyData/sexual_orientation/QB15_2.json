@@ -1,0 +1,701 @@
+{
+    "name": "QB15_2",
+    "data": [
+        {
+            "id": "UE27\nEU27",
+            "number_of_respondents": 26399,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.46,
+                    "Tend to agree": 0.28,
+                    "Tend to disagree": 0.12,
+                    "Totally disagree": 0.11,
+                    "Don't know": 0.03,
+                    "Total 'Agree'": 0.74,
+                    "Total 'Disagree'": 0.23
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 12102,
+                    "Plut\u00f4t d'accord": 7352,
+                    "Plut\u00f4t pas d'accord": 3156,
+                    "Pas du tout d'accord": 2920,
+                    "Ne sait pas": 868,
+                    "Total 'D'accord'": 19454,
+                    "Total 'Pas d'accord'": 6076
+                }
+            }
+        },
+        {
+            "id": "BE",
+            "number_of_respondents": 1011,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.53,
+                    "Tend to agree": 0.27,
+                    "Tend to disagree": 0.1,
+                    "Totally disagree": 0.08,
+                    "Don't know": 0.02,
+                    "Total 'Agree'": 0.8,
+                    "Total 'Disagree'": 0.18
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 532,
+                    "Plut\u00f4t d'accord": 272,
+                    "Plut\u00f4t pas d'accord": 107,
+                    "Pas du tout d'accord": 77,
+                    "Ne sait pas": 22,
+                    "Total 'D'accord'": 805,
+                    "Total 'Pas d'accord'": 185
+                }
+            }
+        },
+        {
+            "id": "BG",
+            "number_of_respondents": 1012,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.08,
+                    "Tend to agree": 0.13,
+                    "Tend to disagree": 0.21,
+                    "Totally disagree": 0.51,
+                    "Don't know": 0.07,
+                    "Total 'Agree'": 0.21,
+                    "Total 'Disagree'": 0.72
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 77,
+                    "Plut\u00f4t d'accord": 128,
+                    "Plut\u00f4t pas d'accord": 212,
+                    "Pas du tout d'accord": 521,
+                    "Ne sait pas": 75,
+                    "Total 'D'accord'": 204,
+                    "Total 'Pas d'accord'": 733
+                }
+            }
+        },
+        {
+            "id": "CZ",
+            "number_of_respondents": 1025,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.29,
+                    "Tend to agree": 0.41,
+                    "Tend to disagree": 0.17,
+                    "Totally disagree": 0.09,
+                    "Don't know": 0.04,
+                    "Total 'Agree'": 0.7,
+                    "Total 'Disagree'": 0.26
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 295,
+                    "Plut\u00f4t d'accord": 426,
+                    "Plut\u00f4t pas d'accord": 173,
+                    "Pas du tout d'accord": 94,
+                    "Ne sait pas": 37,
+                    "Total 'D'accord'": 721,
+                    "Total 'Pas d'accord'": 267
+                }
+            }
+        },
+        {
+            "id": "DK",
+            "number_of_respondents": 1019,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.85,
+                    "Tend to agree": 0.08,
+                    "Tend to disagree": 0.03,
+                    "Totally disagree": 0.03,
+                    "Don't know": 0.01,
+                    "Total 'Agree'": 0.93,
+                    "Total 'Disagree'": 0.06
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 865,
+                    "Plut\u00f4t d'accord": 82,
+                    "Plut\u00f4t pas d'accord": 33,
+                    "Pas du tout d'accord": 28,
+                    "Ne sait pas": 10,
+                    "Total 'D'accord'": 948,
+                    "Total 'Pas d'accord'": 61
+                }
+            }
+        },
+        {
+            "id": "D-W",
+            "number_of_respondents": 1227,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.59,
+                    "Tend to agree": 0.27,
+                    "Tend to disagree": 0.07,
+                    "Totally disagree": 0.05,
+                    "Don't know": 0.02,
+                    "Total 'Agree'": 0.86,
+                    "Total 'Disagree'": 0.12
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 728,
+                    "Plut\u00f4t d'accord": 333,
+                    "Plut\u00f4t pas d'accord": 85,
+                    "Pas du tout d'accord": 58,
+                    "Ne sait pas": 23,
+                    "Total 'D'accord'": 1061,
+                    "Total 'Pas d'accord'": 143
+                }
+            }
+        },
+        {
+            "id": "DE",
+            "number_of_respondents": 1525,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.56,
+                    "Tend to agree": 0.28,
+                    "Tend to disagree": 0.08,
+                    "Totally disagree": 0.05,
+                    "Don't know": 0.03,
+                    "Total 'Agree'": 0.84,
+                    "Total 'Disagree'": 0.13
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 860,
+                    "Plut\u00f4t d'accord": 427,
+                    "Plut\u00f4t pas d'accord": 120,
+                    "Pas du tout d'accord": 78,
+                    "Ne sait pas": 40,
+                    "Total 'D'accord'": 1287,
+                    "Total 'Pas d'accord'": 199
+                }
+            }
+        },
+        {
+            "id": "EE",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.22,
+                    "Tend to agree": 0.29,
+                    "Tend to disagree": 0.16,
+                    "Totally disagree": 0.26,
+                    "Don't know": 0.07,
+                    "Total 'Agree'": 0.51,
+                    "Total 'Disagree'": 0.42
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 222,
+                    "Plut\u00f4t d'accord": 294,
+                    "Plut\u00f4t pas d'accord": 164,
+                    "Pas du tout d'accord": 263,
+                    "Ne sait pas": 65,
+                    "Total 'D'accord'": 516,
+                    "Total 'Pas d'accord'": 428
+                }
+            }
+        },
+        {
+            "id": "IE",
+            "number_of_respondents": 1016,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.51,
+                    "Tend to agree": 0.32,
+                    "Tend to disagree": 0.06,
+                    "Totally disagree": 0.06,
+                    "Don't know": 0.05,
+                    "Total 'Agree'": 0.83,
+                    "Total 'Disagree'": 0.12
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 523,
+                    "Plut\u00f4t d'accord": 326,
+                    "Plut\u00f4t pas d'accord": 56,
+                    "Pas du tout d'accord": 56,
+                    "Ne sait pas": 55,
+                    "Total 'D'accord'": 849,
+                    "Total 'Pas d'accord'": 112
+                }
+            }
+        },
+        {
+            "id": "EL",
+            "number_of_respondents": 1014,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.27,
+                    "Tend to agree": 0.3,
+                    "Tend to disagree": 0.21,
+                    "Totally disagree": 0.19,
+                    "Don't know": 0.03,
+                    "Total 'Agree'": 0.57,
+                    "Total 'Disagree'": 0.4
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 274,
+                    "Plut\u00f4t d'accord": 309,
+                    "Plut\u00f4t pas d'accord": 213,
+                    "Pas du tout d'accord": 191,
+                    "Ne sait pas": 27,
+                    "Total 'D'accord'": 582,
+                    "Total 'Pas d'accord'": 405
+                }
+            }
+        },
+        {
+            "id": "ES",
+            "number_of_respondents": 1004,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.69,
+                    "Tend to agree": 0.2,
+                    "Tend to disagree": 0.05,
+                    "Totally disagree": 0.04,
+                    "Don't know": 0.02,
+                    "Total 'Agree'": 0.89,
+                    "Total 'Disagree'": 0.09
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 698,
+                    "Plut\u00f4t d'accord": 196,
+                    "Plut\u00f4t pas d'accord": 47,
+                    "Pas du tout d'accord": 44,
+                    "Ne sait pas": 19,
+                    "Total 'D'accord'": 895,
+                    "Total 'Pas d'accord'": 91
+                }
+            }
+        },
+        {
+            "id": "FR",
+            "number_of_respondents": 1006,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.57,
+                    "Tend to agree": 0.27,
+                    "Tend to disagree": 0.06,
+                    "Totally disagree": 0.06,
+                    "Don't know": 0.04,
+                    "Total 'Agree'": 0.84,
+                    "Total 'Disagree'": 0.12
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 577,
+                    "Plut\u00f4t d'accord": 273,
+                    "Plut\u00f4t pas d'accord": 58,
+                    "Pas du tout d'accord": 55,
+                    "Ne sait pas": 43,
+                    "Total 'D'accord'": 850,
+                    "Total 'Pas d'accord'": 113
+                }
+            }
+        },
+        {
+            "id": "HR",
+            "number_of_respondents": 1012,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.1,
+                    "Tend to agree": 0.29,
+                    "Tend to disagree": 0.28,
+                    "Totally disagree": 0.28,
+                    "Don't know": 0.05,
+                    "Total 'Agree'": 0.39,
+                    "Total 'Disagree'": 0.56
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 105,
+                    "Plut\u00f4t d'accord": 297,
+                    "Plut\u00f4t pas d'accord": 280,
+                    "Pas du tout d'accord": 279,
+                    "Ne sait pas": 51,
+                    "Total 'D'accord'": 402,
+                    "Total 'Pas d'accord'": 559
+                }
+            }
+        },
+        {
+            "id": "IT",
+            "number_of_respondents": 1027,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.31,
+                    "Tend to agree": 0.4,
+                    "Tend to disagree": 0.17,
+                    "Totally disagree": 0.09,
+                    "Don't know": 0.03,
+                    "Total 'Agree'": 0.71,
+                    "Total 'Disagree'": 0.26
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 318,
+                    "Plut\u00f4t d'accord": 410,
+                    "Plut\u00f4t pas d'accord": 174,
+                    "Pas du tout d'accord": 91,
+                    "Ne sait pas": 33,
+                    "Total 'D'accord'": 729,
+                    "Total 'Pas d'accord'": 265
+                }
+            }
+        },
+        {
+            "id": "CY",
+            "number_of_respondents": 504,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.19,
+                    "Tend to agree": 0.27,
+                    "Tend to disagree": 0.21,
+                    "Totally disagree": 0.29,
+                    "Don't know": 0.04,
+                    "Total 'Agree'": 0.46,
+                    "Total 'Disagree'": 0.5
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 94,
+                    "Plut\u00f4t d'accord": 136,
+                    "Plut\u00f4t pas d'accord": 107,
+                    "Pas du tout d'accord": 144,
+                    "Ne sait pas": 23,
+                    "Total 'D'accord'": 230,
+                    "Total 'Pas d'accord'": 251
+                }
+            }
+        },
+        {
+            "id": "LV",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.16,
+                    "Tend to agree": 0.19,
+                    "Tend to disagree": 0.18,
+                    "Totally disagree": 0.41,
+                    "Don't know": 0.06,
+                    "Total 'Agree'": 0.35,
+                    "Total 'Disagree'": 0.59
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 165,
+                    "Plut\u00f4t d'accord": 190,
+                    "Plut\u00f4t pas d'accord": 184,
+                    "Pas du tout d'accord": 410,
+                    "Ne sait pas": 60,
+                    "Total 'D'accord'": 356,
+                    "Total 'Pas d'accord'": 593
+                }
+            }
+        },
+        {
+            "id": "LT",
+            "number_of_respondents": 1005,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.19,
+                    "Tend to agree": 0.23,
+                    "Tend to disagree": 0.19,
+                    "Totally disagree": 0.34,
+                    "Don't know": 0.05,
+                    "Total 'Agree'": 0.42,
+                    "Total 'Disagree'": 0.53
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 190,
+                    "Plut\u00f4t d'accord": 233,
+                    "Plut\u00f4t pas d'accord": 191,
+                    "Pas du tout d'accord": 339,
+                    "Ne sait pas": 53,
+                    "Total 'D'accord'": 423,
+                    "Total 'Pas d'accord'": 530
+                }
+            }
+        },
+        {
+            "id": "LU",
+            "number_of_respondents": 508,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.55,
+                    "Tend to agree": 0.31,
+                    "Tend to disagree": 0.09,
+                    "Totally disagree": 0.04,
+                    "Don't know": 0.01,
+                    "Total 'Agree'": 0.86,
+                    "Total 'Disagree'": 0.13
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 281,
+                    "Plut\u00f4t d'accord": 155,
+                    "Plut\u00f4t pas d'accord": 46,
+                    "Pas du tout d'accord": 18,
+                    "Ne sait pas": 7,
+                    "Total 'D'accord'": 437,
+                    "Total 'Pas d'accord'": 64
+                }
+            }
+        },
+        {
+            "id": "HU",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.17,
+                    "Tend to agree": 0.32,
+                    "Tend to disagree": 0.18,
+                    "Totally disagree": 0.28,
+                    "Don't know": 0.05,
+                    "Total 'Agree'": 0.49,
+                    "Total 'Disagree'": 0.46
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 178,
+                    "Plut\u00f4t d'accord": 324,
+                    "Plut\u00f4t pas d'accord": 186,
+                    "Pas du tout d'accord": 285,
+                    "Ne sait pas": 48,
+                    "Total 'D'accord'": 502,
+                    "Total 'Pas d'accord'": 470
+                }
+            }
+        },
+        {
+            "id": "MT",
+            "number_of_respondents": 514,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.49,
+                    "Tend to agree": 0.29,
+                    "Tend to disagree": 0.15,
+                    "Totally disagree": 0.06,
+                    "Don't know": 0.01,
+                    "Total 'Agree'": 0.78,
+                    "Total 'Disagree'": 0.21
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 252,
+                    "Plut\u00f4t d'accord": 148,
+                    "Plut\u00f4t pas d'accord": 79,
+                    "Pas du tout d'accord": 28,
+                    "Ne sait pas": 7,
+                    "Total 'D'accord'": 400,
+                    "Total 'Pas d'accord'": 107
+                }
+            }
+        },
+        {
+            "id": "NL",
+            "number_of_respondents": 1004,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.87,
+                    "Tend to agree": 0.07,
+                    "Tend to disagree": 0.03,
+                    "Totally disagree": 0.03,
+                    "Don't know": "-",
+                    "Total 'Agree'": 0.94,
+                    "Total 'Disagree'": 0.06
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 870,
+                    "Plut\u00f4t d'accord": 71,
+                    "Plut\u00f4t pas d'accord": 34,
+                    "Pas du tout d'accord": 27,
+                    "Ne sait pas": 1,
+                    "Total 'D'accord'": 942,
+                    "Total 'Pas d'accord'": 61
+                }
+            }
+        },
+        {
+            "id": "AT",
+            "number_of_respondents": 1012,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.36,
+                    "Tend to agree": 0.3,
+                    "Tend to disagree": 0.16,
+                    "Totally disagree": 0.12,
+                    "Don't know": 0.06,
+                    "Total 'Agree'": 0.66,
+                    "Total 'Disagree'": 0.28
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 359,
+                    "Plut\u00f4t d'accord": 305,
+                    "Plut\u00f4t pas d'accord": 166,
+                    "Pas du tout d'accord": 118,
+                    "Ne sait pas": 65,
+                    "Total 'D'accord'": 664,
+                    "Total 'Pas d'accord'": 284
+                }
+            }
+        },
+        {
+            "id": "PL",
+            "number_of_respondents": 1015,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.19,
+                    "Tend to agree": 0.36,
+                    "Tend to disagree": 0.21,
+                    "Totally disagree": 0.2,
+                    "Don't know": 0.04,
+                    "Total 'Agree'": 0.55,
+                    "Total 'Disagree'": 0.41
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 195,
+                    "Plut\u00f4t d'accord": 361,
+                    "Plut\u00f4t pas d'accord": 209,
+                    "Pas du tout d'accord": 208,
+                    "Ne sait pas": 42,
+                    "Total 'D'accord'": 556,
+                    "Total 'Pas d'accord'": 417
+                }
+            }
+        },
+        {
+            "id": "PT",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.24,
+                    "Tend to agree": 0.49,
+                    "Tend to disagree": 0.16,
+                    "Totally disagree": 0.07,
+                    "Don't know": 0.04,
+                    "Total 'Agree'": 0.73,
+                    "Total 'Disagree'": 0.23
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 243,
+                    "Plut\u00f4t d'accord": 502,
+                    "Plut\u00f4t pas d'accord": 165,
+                    "Pas du tout d'accord": 67,
+                    "Ne sait pas": 45,
+                    "Total 'D'accord'": 744,
+                    "Total 'Pas d'accord'": 232
+                }
+            }
+        },
+        {
+            "id": "RO",
+            "number_of_respondents": 1053,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.07,
+                    "Tend to agree": 0.2,
+                    "Tend to disagree": 0.29,
+                    "Totally disagree": 0.39,
+                    "Don't know": 0.05,
+                    "Total 'Agree'": 0.27,
+                    "Total 'Disagree'": 0.68
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 77,
+                    "Plut\u00f4t d'accord": 213,
+                    "Plut\u00f4t pas d'accord": 306,
+                    "Pas du tout d'accord": 410,
+                    "Ne sait pas": 47,
+                    "Total 'D'accord'": 290,
+                    "Total 'Pas d'accord'": 716
+                }
+            }
+        },
+        {
+            "id": "SI",
+            "number_of_respondents": 1000,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.34,
+                    "Tend to agree": 0.24,
+                    "Tend to disagree": 0.18,
+                    "Totally disagree": 0.22,
+                    "Don't know": 0.02,
+                    "Total 'Agree'": 0.58,
+                    "Total 'Disagree'": 0.4
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 338,
+                    "Plut\u00f4t d'accord": 238,
+                    "Plut\u00f4t pas d'accord": 176,
+                    "Pas du tout d'accord": 225,
+                    "Ne sait pas": 24,
+                    "Total 'D'accord'": 575,
+                    "Total 'Pas d'accord'": 401
+                }
+            }
+        },
+        {
+            "id": "SK",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.18,
+                    "Tend to agree": 0.29,
+                    "Tend to disagree": 0.2,
+                    "Totally disagree": 0.28,
+                    "Don't know": 0.05,
+                    "Total 'Agree'": 0.47,
+                    "Total 'Disagree'": 0.48
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 182,
+                    "Plut\u00f4t d'accord": 293,
+                    "Plut\u00f4t pas d'accord": 204,
+                    "Pas du tout d'accord": 287,
+                    "Ne sait pas": 55,
+                    "Total 'D'accord'": 475,
+                    "Total 'Pas d'accord'": 491
+                }
+            }
+        },
+        {
+            "id": "FI",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.7,
+                    "Tend to agree": 0.12,
+                    "Tend to disagree": 0.07,
+                    "Totally disagree": 0.07,
+                    "Don't know": 0.04,
+                    "Total 'Agree'": 0.82,
+                    "Total 'Disagree'": 0.14
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 702,
+                    "Plut\u00f4t d'accord": 125,
+                    "Plut\u00f4t pas d'accord": 74,
+                    "Pas du tout d'accord": 69,
+                    "Ne sait pas": 39,
+                    "Total 'D'accord'": 828,
+                    "Total 'Pas d'accord'": 143
+                }
+            }
+        },
+        {
+            "id": "SE",
+            "number_of_respondents": 1019,
+            "responses": {
+                "percentage": {
+                    "Totally agree": 0.9,
+                    "Tend to agree": 0.05,
+                    "Tend to disagree": 0.02,
+                    "Totally disagree": 0.02,
+                    "Don't know": 0.01,
+                    "Total 'Agree'": 0.95,
+                    "Total 'Disagree'": 0.04
+                },
+                "cardinal": {
+                    "Tout a fait d'accord": 917,
+                    "Plut\u00f4t d'accord": 55,
+                    "Plut\u00f4t pas d'accord": 18,
+                    "Pas du tout d'accord": 25,
+                    "Ne sait pas": 5,
+                    "Total 'D'accord'": 972,
+                    "Total 'Pas d'accord'": 43
+                }
+            }
+        }
+    ]
+}
