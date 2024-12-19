@@ -51,7 +51,6 @@ function addWindow(countryCode) {
                 }));
 
                 transformedData = transformedData.filter((d) => d.level < 11);
-                console.log(transformedData);
 
                 // add bar chart to modal
                 vlSpec = {
@@ -167,7 +166,7 @@ function loadData(){
         ctx.data = data;
         precomputeColorScale();
         makeMap();
-        createLegend();
+        //createLegend();
     }).catch(function(error){console.log(error)});
 };
 
@@ -227,15 +226,14 @@ function createLegend() {
         .attr("id", "legendGroup")
         .attr("transform", `translate(${ctx.legendMargin.left}, ${ctx.MAP_H - ctx.legendMargin.bottom - ctx.legendHeight})`);
 
+    //d3.scaleOrdinal([1, 2, 3, 4, 5, 6, 7, 8, 9], d3.schemePiYG[9])
     const legendSvg = Legend(ctx.color, {
-        title: "Niveau de confort",
-        tickSize: 6,
+        title: "Level of comfort",
         width: ctx.legendWidth,
         height: ctx.legendHeight, 
         marginTop: 18,
         marginBottom: 20,
-        ticks:6, 
-        tickFormat: d3.format(".1f") 
+        tickSize: 0
     });
 
     legendGroup.node().appendChild(legendSvg);
@@ -255,12 +253,12 @@ function updateMapData(dataKey) {
             const countryMedians = {};
             const countryAverages = {};
 
+            // itération sur chacun des pays
             data.data.forEach(d => {
                 countryMedians[d.id] = computeMedian(d);
             });
 
-            //console.log("Country averages:", countryMedians);
-
+            
         
             d3.selectAll(".countryArea")
                 .transition()
@@ -268,8 +266,12 @@ function updateMapData(dataKey) {
                 .style("fill", d => {
                     const countryId = d.properties.CNTR_ID;
                     const median = countryMedians[countryId];
-                    return median !== undefined ? ctx.color(ctx.rescale(median)) : "#ddd"; 
+                    
+                    return median !== undefined ? ctx.color(parseInt(median)) : "#ddd"; 
+
                 });
+
+                console.log("Country medians:", countryMedians);
         })
         .catch(function (error) {
             console.log("Error loading data:", error);
@@ -277,28 +279,21 @@ function updateMapData(dataKey) {
 }
 
 function computeMedian(d) {
-
-
-
     
     const responses = d.responses.cardinal;
 
     no_level = responses["Indifferent.e (SPONTANe)"] + responses["Cela depend (SPONTANe)"] + responses["Ne sait pas"];
     const half_number_of_respondents = (d.number_of_respondents - no_level) / 2;
-    console.log("half: ", half_number_of_respondents);
-
-
     let median;
 
     let count = 0;
-    for (let i = 1; i <= 13; i++) {
+    for (let i = 1; i <= 10; i++) {
         const key = `${i}`;
         if (responses[key] !== undefined && responses[key] !== "-") {
 
             count = count + responses[key];
-            console.log(count);
             if (count>half_number_of_respondents) {
-                return (key - 1)/10
+                return key
             }
         }
     }
@@ -321,24 +316,41 @@ function precomputeColorScale() {
             questionCountryMeasure[questionKey] = {};
 
             data.data.forEach(d => {
-                console.log(questionKey);
-
+;
                 if (ctx.current_measure == "median") {
                     measure = computeMedian(d);
                 } else if (ctx.current_measure == "average") {
                     measure = computeAverage(d);
                 }
                 questionCountryMeasure[questionKey][d.id] = measure;
-                allMeasures.push(measure); 
+                if (measure !== undefined) {
+                    allMeasures.push(measure);
+                }
+                
             });
         });
 
         const extent = d3.extent(allMeasures);
-        ctx.rescale = d3.scaleLinear(extent, [0,1]);
+        console.log(extent);
+        const start = parseInt(extent[0]);
+        const end = parseInt(extent[1]);
+
+        /*ctx.levels = [];
+        for (let i = start; i <= end; i++) {
+            ctx.levels.push(i);
+        }*/
+        //ctx.rescale = d3.scaleLinear(extent, [0,1]);
+        //ctx.color = d3.scaleOrdinal(ctx.levels, d3.schemePiYG[ctx.levels.length]);
+        ctx.color = d3.scaleOrdinal([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], d3.schemePiYG[10]);
+
+        createLegend();
+        console.log(ctx.color(10))
+        console.log(ctx.color(1))
 
         //ctx.questionCountryMeasure = questionCountryMeasure;
     });
-    ctx.color = d3.scaleSequential(d3.interpolatePiYG);
+    
+
 }
 
 
