@@ -3,7 +3,6 @@ import json
 import os
 
 
-
 def excelToJson(file_path,sheet_names,output_path):
     #load excel file
     excel_data = pd.ExcelFile(file_path)
@@ -14,7 +13,6 @@ def excelToJson(file_path,sheet_names,output_path):
     for sheet in sheet_names:
         #transform sheets into json format
         df = excel_data.parse(sheet)  #read each sheet into a data frame
-
 
         #Remove 6 first lines (useless)
         df = df.iloc[6:]
@@ -55,8 +53,9 @@ def excelToJson(file_path,sheet_names,output_path):
 
 
 
-print(os.getcwd())
-file_path = "../data excel/Discrimination in the EU_sp535_volumeAP.xlsx"
-sheet_names = ["QB12_7"]
-output_path = "src/data/tempJson"
-excelToJson(file_path, sheet_names, output_path)
+if __name__ == "main":
+    print(os.getcwd())
+    file_path = "../data excel/Discrimination in the EU_sp535_volumeAP.xlsx"
+    sheet_names = ["QB12_7"]
+    output_path = "src/data/tempJson"
+    excelToJson(file_path, sheet_names, output_path)
