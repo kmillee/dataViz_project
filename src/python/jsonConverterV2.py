@@ -7,42 +7,49 @@ def remove_accents(val):
         val = val.replace('é', 'e').replace('è', 'e').replace('à', 'a').replace('É', 'e')
     return val
 
-def excelToJson(file_path,sheet_names,output_path):
-    #load excel file
+def excelToJson(file_path, sheet_names, output_path):
+
+    # load excel file
     excel_data = pd.ExcelFile(file_path)
 
-    #choose the specific sheet
+    # choose the specific sheet
     for sheet in sheet_names:
-        #transform sheets into json format
+        # transform sheets into json format
         df = excel_data.parse(sheet)  #read each sheet into a data frame
-        
-        # Remove 6 first lines
-        df = df.iloc[7:]
-        df = df.drop(9)
 
-        #filter columns
-        df = df.drop(df.columns[9], axis=1)
-        df.columns = range(df.shape[1])
-        print(df)
-        df = df.iloc[:, 1:31]
-        
-        """#rename keys
-        df.columns = df.columns.str.replace("Unnamed: ", "")
-        df.columns = df.columns.str.replace("Eurobarometer - 99.2", "8")"""
+        processDataFrame(df)
            
-        #remove accents
+        # remove accents
         df = df.applymap(remove_accents)
 
-        #convert to a dictionary (json format)
+        # convert to a dictionary (json format)
         json_data = df.to_dict(orient='records')
 
-        #save file
+        # save file
         output_file = output_path+ "/" + sheet + ".json"
         with open(output_file, "w", encoding="utf-8") as f:
             json.dump(json_data, f, indent=2, ensure_ascii=False)
 
         print(f"Data exported as JSON in {output_file}")
 
+def processDataFrame(df, data_category):
+
+    if (data_category == "ordinal_survey"):
+
+        # filter lines
+        df = df.iloc[7:]
+        df = df.drop(9)
+
+        # filter columns
+        df = df.drop(df.columns[9], axis=1)
+        df.columns = range(df.shape[1])
+
+        df = df.iloc[:, 1:31]
+
+    elif (data_category == "question_index"):
+
+        # filter lines
+        df = df.iloc[6:]
 
 
 print(os.getcwd())
