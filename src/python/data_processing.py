@@ -1,5 +1,6 @@
 import json
 import os
+import jsonConverter
 
 clean_data = {
     "type": "FeatureCollection",
@@ -112,4 +113,9 @@ refactored_data = refactor_survey("QB13_11", survey_data)
 
 with open('data_clean/QB13_11.json', 'w', encoding='utf-8') as outfile: 
     json.dump(refactored_data, outfile, indent=4)"""
+survey_data = jsonConverter.excelToJson("raw_data/QB13_11_full.json")
+refactored_data = refactor_survey("QB13_11", survey_data)
+
+with open('data_clean/QB13_11.json', 'w', encoding='utf-8') as outfile: 
+    json.dump(refactored_data, outfile, indent=4)
 
