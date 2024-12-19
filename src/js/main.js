@@ -6,6 +6,7 @@ const ctx = {
     legendHeight: 60,
     legendMargin: { top: 10, right: 10, bottom: 20, left: 30 },
     current_key: "none",
+    current_measure: "median",
     defaultDescription: `
         <h2>Discriminations au sein de l'UE</h2>
         <p>La carte ci-contre montre l'indice global de discrimination dans les différents pays de l'union européenne.
@@ -252,10 +253,10 @@ function updateMapData(dataKey) {
 
             // Map to store calculated average percentage for each country
             const countryMedians = {};
+            const countryAverages = {};
 
             data.data.forEach(d => {
-                let median = computeMedian(d);
-                countryMedians[d.id] = median;
+                countryMedians[d.id] = computeMedian(d);
             });
 
             //console.log("Country averages:", countryMedians);
@@ -266,8 +267,8 @@ function updateMapData(dataKey) {
                 .duration(500)
                 .style("fill", d => {
                     const countryId = d.properties.CNTR_ID;
-                    const value = countryMedians[countryId];
-                    return value !== undefined ? ctx.color(ctx.rescale(value)) : "#ddd"; 
+                    const median = countryMedians[countryId];
+                    return median !== undefined ? ctx.color(ctx.rescale(median)) : "#ddd"; 
                 });
         })
         .catch(function (error) {
@@ -276,62 +277,66 @@ function updateMapData(dataKey) {
 }
 
 function computeMedian(d) {
-    const responses = d.responses.percentage;
-    let weightedResponses = [];
-    // Generate a weighted array of response levels
-    for (let i = 1; i <= 10; i++) {
-        const key = `${i}`; // Response level as string
+
+
+
+    
+    const responses = d.responses.cardinal;
+
+    no_level = responses["Indifferent.e (SPONTANe)"] + responses["Cela depend (SPONTANe)"] + responses["Ne sait pas"];
+    const half_number_of_respondents = (d.number_of_respondents - no_level) / 2;
+    console.log("half: ", half_number_of_respondents);
+
+
+    let median;
+
+    let count = 0;
+    for (let i = 1; i <= 13; i++) {
+        const key = `${i}`;
         if (responses[key] !== undefined && responses[key] !== "-") {
-            const percentage = parseFloat(responses[key]); // Percentage as a fraction
-            for (let j = 0; j < percentage * 1000; j++) {
-                weightedResponses.push(i);
+
+            count = count + responses[key];
+            console.log(count);
+            if (count>half_number_of_respondents) {
+                return (key - 1)/10
             }
         }
-
-        // Sort the array to calculate the median
-        weightedResponses.sort((a, b) => a - b);
     }
-
-    // Calculate the median for this country
-    let median;
-    const n = weightedResponses.length;
-    if (n % 2 === 0) {
-        median = (weightedResponses[n / 2 - 1] + weightedResponses[n / 2]) / 2;
-    } else {
-        median = weightedResponses[Math.floor(n / 2)];
-    }
-
-    return median;
 }  
 
 function precomputeColorScale() {
 
-    let surveyFiles = ["QB12_2", "QB12_3", "QB12_10", "QB12_11", "QB12_5", "QB12_6", "QB12_7", "QB12_8", "QB12_9", "QB12_10", "QB12_11", "QB13_2", "QB13_3", "QB13_10", "QB13_11", "QB13_5", "QB13_6", "QB13_7", "QB13_8", "QB13_9", "QB13_10", "QB13_11"];
+    let surveyFiles = ["QB12_2", "QB12_3", "QB12_4", "QB12_5", "QB12_5", "QB12_6", "QB12_7", "QB12_8", "QB12_9", "QB12_10", "QB12_11", "QB13_2", "QB13_3", "QB13_4", "QB13_5", "QB13_6", "QB13_7", "QB13_8", "QB13_9", "QB13_10", "QB13_11"];
     let promises = surveyFiles.map(key => d3.json(`data/${key}.json`));
 
+    // we want a color scale that does not change accross different survey questions for consistency and smoother transitions
+    // therefore the color scale is computed with answers to all the survey questions
     Promise.all(promises).then(function (datasets) {
-        let questionCountryMedians = {}; 
-        let allMedians = []; 
+        let measure; // median or average
+        let questionCountryMeasure = {};  // measures of answers per question and per country stored here
+        let allMeasures = []; // all measures without indicator of country or questions stored here
 
         datasets.forEach((data, index) => {
             let questionKey = surveyFiles[index];
-            questionCountryMedians[questionKey] = {};
+            questionCountryMeasure[questionKey] = {};
 
             data.data.forEach(d => {
-                
-                let median = computeMedian(d);
-                questionCountryMedians[questionKey][d.id] = median;
-                allMedians.push(median); 
+                console.log(questionKey);
+
+                if (ctx.current_measure == "median") {
+                    measure = computeMedian(d);
+                } else if (ctx.current_measure == "average") {
+                    measure = computeAverage(d);
+                }
+                questionCountryMeasure[questionKey][d.id] = measure;
+                allMeasures.push(measure); 
             });
         });
 
-        //console.log("Medians per question and country:", questionCountryMedians);
-
-        const extent = d3.extent(allMedians);
-        //console.log("Global extent of medians:", extent);
+        const extent = d3.extent(allMeasures);
         ctx.rescale = d3.scaleLinear(extent, [0,1]);
 
-        ctx.questionCountryMedians = questionCountryMedians;
+        //ctx.questionCountryMeasure = questionCountryMeasure;
     });
     ctx.color = d3.scaleSequential(d3.interpolatePiYG);
 }
