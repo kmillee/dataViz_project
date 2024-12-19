@@ -7,11 +7,8 @@ import os
 def excelToJson(file_path,sheet_names,output_path):
     #load excel file
     excel_data = pd.ExcelFile(file_path)
-
-    L = [-1,1,2, 4, 6, 8, 10, 12, 16, 18, 20, 22, 24, 26, 28, 30, 32,
-         34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60]
-    columns_to_keep = [str(i+2) for i in L]
-
+    L = [1,3]
+    L.extend([2*i+1 for i in range(2,32)])
 
     #choose the specific sheet
     for sheet in sheet_names:
@@ -19,12 +16,15 @@ def excelToJson(file_path,sheet_names,output_path):
         df = excel_data.parse(sheet)  #read each sheet into a data frame
 
 
-        # Remove 6 first lines (useless)
+        #Remove 6 first lines (useless)
         df = df.iloc[6:]
         df = df.drop([7,9]) 
 
-
+        #rename keys
         df.columns = [col.replace("Unnamed: ", "") if "Unnamed:" in col else col for col in df.columns]
+        df.columns = [col.replace("Eurobarometer - 99.2", "8") if "Eurobarometer - 99.2" in col else col for col in df.columns]
+
+        #filerr columns
         df = df[[col for col in df.columns if col in columns_to_keep]]
 
         #rename columns names correctly
@@ -39,7 +39,11 @@ def excelToJson(file_path,sheet_names,output_path):
         #convert to a dictionary (json format)
         json_data = df.to_dict(orient='records')
 
-        json_data[0]['1'] = None 
+        json_data[0] =   {"1": None, "2": "EU27","3": "BE","4": "BG","5": "CZ","6": "DK",
+                        "7": "D-W","8": "DE","9": "EE","10": "IE","11": "EL","12": "ES",
+                        "13": "FR","14": "HR","15": "IT","16": "CY","17": "LV","18": "LT",
+                        "19": "LU","20": "HU","21": "MT","22": "NL","23": "AT","24": "PL",
+                        "25": "PT", "26": "RO","27": "SI","28": "SK","29": "FI","30": "SE"  } 
 
 
         #save file
