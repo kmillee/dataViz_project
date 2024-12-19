@@ -353,6 +353,11 @@ function precomputeColorScale() {
 
 }
 
+function goChartPage(){
+    console.log("Going to chart page");
+    window.location.href = "second.html";
+}
+
 
     // TODO: créer un fichier séparé pour répertorier questions, options et dataKeys
     const dropdownData = {
@@ -414,6 +419,9 @@ function precomputeColorScale() {
             ],
         },
     };
+
+
+
 
 
 // NUTS data as JSON from https://github.com/eurostat/Nuts2json (translated from topojson to geojson)

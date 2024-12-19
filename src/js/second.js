@@ -1,7 +1,7 @@
 const ctx = {
     CHART_NB: 0,
-    SVG_W: 1500,
-    SVG_H: 900,
+    SVG_W: 1024,
+    SVG_H: 1024,
     YEAR: "2020",
     legendWidth: 300,
     legendHeight: 60,

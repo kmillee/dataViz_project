@@ -73,11 +73,26 @@ body {
     font-size: 14px;
 }
 
-.mapButton:hover, .homeButton:hover {
+.mapButton:hover, .resetButton:hover {
     background-color: #7e3e5a;
 }
 
-.homeButton {
+.nextButton {
+    background-color: #ffffff;
+    color: #b3577f;
+    border: 2px solid #b3577f;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.nextButton:hover{
+    background-color: rgb(204, 196, 196);
+}
+
+.resetButton {
     background-color: #b3577f;
     border: none;
     padding: 8px;
@@ -86,7 +101,7 @@ body {
     width: 40px;
 }
 
-.homeButton img {
+.resetButton img {
     width: 18px;
     height: 18px;
 }
