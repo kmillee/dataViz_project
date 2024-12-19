@@ -1,39 +1,46 @@
 { 
     "ethnicity": 
-        {
-            "ordinal": 
-            [
-                "QB12R_2", "QB12R_3", "QB12R_4", "QB13R_2", 
-                "QB13R_3", "QB13R_4", 
-                "QB6R_3",
-                "QB17_6", "QB17_7"
-            ],
-            "binary": 
-            [
-                "QB18", "QB19"
-            ]
-        },
-    
+        [
+            ["QB12R_2", "ordinal"],
+            ["QB12R_3", "ordinal"],
+            ["QB12R_4", "ordinal"],
+            ["QB13R_2", "ordinal"],
+            ["QB13R_3", "ordinal"],
+            ["QB13R_4", "ordinal"],
+            ["QB6R_3", "ordinal"],
+            ["QB17_6", "ordinal"],
+            ["QB17_7", "ordinal"],
+            ["QB18", "binary"],
+            ["QB19", "binary"]      
+        ],
     "sexual orientation": 
-        {
-            "ordinal":
-            [
-                "QB12R_10", "QB12R_11", 
-                "QB13R_10", "QB13R_11", 
-                "QB15R_1", "QB15R_2", "QB15R_3", "QB15R_4",
-                "QB6R_2", "QB6R_10",
-                "QB17_1", "QB17_2", "QB17_3"
-            ]
-        },
-    
-        
+        [
+            ["QB12R_10", "ordinal"],
+            ["QB12R_11", "ordinal"],
+            ["QB13R_10", "ordinal"],
+            ["QB13R_11", "ordinal"],
+            ["QB15R_1", "ordinal"],
+            ["QB15R_2", "ordinal"],
+            ["QB15R_3", "ordinal"],
+            ["QB15R_4", "ordinal"],
+            ["QB6R_2", "ordinal"],
+            ["QB6R_10", "ordinal"],
+            ["QB17_1", "ordinal"],
+            ["QB17_2", "ordinal"],
+            ["QB17_3", "ordinal"] 
+        ],
     "religion": 
-        {
-            "ordinal":
-            [
-                "QB12R_5", "QB12R_6", "QB12R_7", "QB12R_8", "QB12R_9",
-                "QB13R_5", "QB13R_6", "QB13R_7", "QB13R_8", "QB13R_9",
-                "QB6R_9"
-            ]
-        }
+        [
+            ["QB12R_5", "ordinal"],
+            ["QB12R_6", "ordinal"],
+            ["QB12R_7", "ordinal"],
+            ["QB12R_8", "ordinal"],
+            ["QB12R_9", "ordinal"],
+            ["QB13R_5", "ordinal"],
+            ["QB13R_6", "ordinal"],
+            ["QB13R_7", "ordinal"],
+            ["QB13R_8", "ordinal"],
+            ["QB13R_9", "ordinal"],
+            ["QB6R_9", "ordinal"]
+        ]
 }
