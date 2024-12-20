@@ -7,6 +7,7 @@ const ctx = {
     legendMargin: { top: 10, right: 10, bottom: 20, left: 30 },
     current_key: "none",
     current_measure: "median",
+    current_type: "global",
     defaultDescription: `
         <h2>Discriminations au sein de l'UE</h2>
         <p>La carte ci-contre montre l'indice global de discrimination dans les différents pays de l'union européenne.
@@ -164,7 +165,8 @@ function loadData(){
     Promise.all(promises).then(function(data){
         
         ctx.data = data;
-        precomputeColorScale();
+        createTextData();
+        //precomputeColorScale();
         makeMap();
         //createLegend();
     }).catch(function(error){console.log(error)});
@@ -188,20 +190,26 @@ function goHome() {
 }
 
 function changeText(type) {
+
+    ctx.current_type = type;
+    let data = ctx.textData[type];
+    console.log(data);
+    
     const descriptionContainer = document.getElementById("descriptionContainer");
     const dropdownContainer = document.getElementById("dropdownsContainer");
+    
 
     if (type == 'global') {
         console.log("ici");
         descriptionContainer.innerHTML = ctx.defaultDescription;
         dropdownContainer.innerHTML = '';
         return
-    }
-
-    descriptionContainer.innerHTML = `<h2>${dropdownData[type].title}</h2>`;
+    } else {
+        descriptionContainer.innerHTML = `<h2>${data.title}</h2>`
+    } 
 
     let dropdownHTML = '';
-    dropdownData[type].questions.forEach((q, i) => {
+    data.questions.forEach((q, i) => {
         dropdownHTML += `
             <p>${q["question"]}</p>
         `;
@@ -215,8 +223,11 @@ function changeText(type) {
         `;
         })
     });
+        
 
-    dropdownContainer.innerHTML = dropdownHTML;
+        dropdownContainer.innerHTML = dropdownHTML;
+
+    
 }
 
 function createLegend() {
@@ -241,57 +252,101 @@ function createLegend() {
 
 
 function updateMapData(dataKey) {
+
     ctx.current_key = dataKey;
+
+    // load the right file
     console.log(dataKey);
-    const data_filename = 'data/surveyData/' + dataKey + '.json';
+    const data_filename = 'data/surveyData/' + ctx.current_type + '/' + dataKey + '.json';
 
     d3.json(data_filename)
         .then(function (data) {
+
             console.log("Loaded data:", data);
-
-            // Map to store calculated average percentage for each country
-            const countryMedians = {};
-            const countryAverages = {};
-
-            // itération sur chacun des pays
-            data.data.forEach(d => {
-                countryMedians[d.id] = computeMedian(d);
-            });
-
-            
+            let malaises = computeIndiceMalaise(data);
         
             d3.selectAll(".countryArea")
                 .transition()
                 .duration(500)
                 .style("fill", d => {
                     const countryId = d.properties.CNTR_ID;
-                    const median = countryMedians[countryId];
-                    
-                    return median !== undefined ? ctx.color(parseInt(median)) : "#ddd"; 
+                    const val = parseFloat(malaises[countryId]);
+                    console.log(val);
+                    return val !== undefined ? ctx.color(val) : "#ddd"; 
 
                 });
 
-                console.log("Country medians:", countryMedians);
+                //console.log("Country medians:", countryMedians);
         })
         .catch(function (error) {
             console.log("Error loading data:", error);
         });
 }
 
+function computeIndiceMalaise(data) {
+
+    let pourcentagesMalaise = {};
+
+    data.data.forEach(d => {
+        pourcentagesMalaise[d.id] = parseFloat(d.responses.percentage["Total 'Uncomfortable'"]);
+    });
+    console.log(pourcentagesMalaise);
+
+    let extent = d3.extent(Object.values(pourcentagesMalaise));
+    let reference = parseFloat(pourcentagesMalaise["UE27\nEU27"]);
+ 
+
+    console.log("ref: ",reference);
+
+    ctx.color = d3.scaleDiverging()
+        .domain([parseFloat(extent[0]), reference, parseFloat(extent[1])])
+        .interpolator(t => d3.interpolatePiYG(1 - t))
+
+    console.log(ctx.color(reference));
+    console.log(pourcentagesMalaise);
+ 
+    return pourcentagesMalaise;
+
+}
+
 function computeMedian(d) {
     
     const responses = d.responses.cardinal;
 
+    // change ordinal keys into a number and keep categorical keys
+    categorical_keys = ["Indifferent.e (SPONTANe)", "Cela depend (SPONTANe)", "Ne sait pas"];
+    let refactored_responses = {};
+    let counter = 1;
+    let n_cat = 0;
+
+    for (let key in responses) {
+        if (categorical_keys.includes(key)) {
+            refactored_responses[key] = responses[key];
+            n_cat += 1;
+        } else {
+            refactored_responses[counter] = responses[key];
+            counter++;
+        }
+    }
+
+    // compute treshold for median : half number of respondents 
     no_level = responses["Indifferent.e (SPONTANe)"] + responses["Cela depend (SPONTANe)"] + responses["Ne sait pas"];
     const half_number_of_respondents = (d.number_of_respondents - no_level) / 2;
-    let median;
+
+    // compute median
+
+
+    let len = Object.keys(refactored_responses).length - n_cat;
+    console.log(len);
+
+
 
     let count = 0;
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= len; i++) {
         const key = `${i}`;
-        if (responses[key] !== undefined && responses[key] !== "-") {
+        if (refactored_responses[key] !== undefined && refactored_responses[key] !== "-") {
 
-            count = count + responses[key];
+            count = count + refactored_responses[key];
             if (count>half_number_of_respondents) {
                 return key
             }
@@ -301,10 +356,23 @@ function computeMedian(d) {
 
 function precomputeColorScale() {
 
-    let surveyFiles = ["QB12_2", "QB12_3", "QB12_4", "QB12_5", "QB12_5", "QB12_6", "QB12_7", "QB12_8", "QB12_9", "QB12_10", "QB12_11", "QB13_2", "QB13_3", "QB13_4", "QB13_5", "QB13_6", "QB13_7", "QB13_8", "QB13_9", "QB13_10", "QB13_11"];
-    let promises = surveyFiles.map(key => d3.json(`data/surveyData/${key}.json`));
+    /*let surveyFiles = ["QB12_2", "QB12_3", "QB12_4", "QB12_5", "QB12_5", "QB12_6", "QB12_7", "QB12_8", "QB12_9", "QB12_10", "QB12_11", "QB13_2", "QB13_3", "QB13_4", "QB13_5", "QB13_6", "QB13_7", "QB13_8", "QB13_9", "QB13_10", "QB13_11"];*/
+    
+    d3.csv("src/data/surveyData/index_light.csv").then(data => {
+        
+        const ordinalFiles = data
+            .filter(row => row.type === "ordinal") // Filter rows where type is "ordinal"
+            .map(row => row.file);                // Map to the `file` field
+    
+        console.log(ordinalFiles);
+    }).catch(error => {
+        console.error("Error loading CSV file:", error);
+    });
+    
+    
+    /*let promises = surveyFiles.map(key => d3.json(`data/surveyData/${key}.json`));
 
-    // we want a color scale that does not change accross different survey questions for consistency and smoother transitions
+    // we want a color scale that does not change accross different survey questions to compare levels of acceptation regarding different subjects
     // therefore the color scale is computed with answers to all the survey questions
     Promise.all(promises).then(function (datasets) {
         let measure; // median or average
@@ -341,14 +409,16 @@ function precomputeColorScale() {
         }*/
         //ctx.rescale = d3.scaleLinear(extent, [0,1]);
         //ctx.color = d3.scaleOrdinal(ctx.levels, d3.schemePiYG[ctx.levels.length]);
-        ctx.color = d3.scaleOrdinal([4, 5, 6, 7, 8, 9, 10], d3.schemePiYG[7]);
+        //ctx.color = d3.scaleOrdinal([4, 5, 6, 7, 8, 9, 10], d3.schemePiYG[7]);
 
-        createLegend();
+       
+
+        /*createLegend();
         console.log(ctx.color(10))
         console.log(ctx.color(1))
 
         //ctx.questionCountryMeasure = questionCountryMeasure;
-    });
+    });*/
     
 
 }
@@ -358,7 +428,73 @@ function goChartPage(){
     window.location.href = "second.html";
 }
 
+function createTextData() {
+    const csvDir = 'data/surveyData/index_light.csv';
 
+    d3.csv(csvDir).then(function(data) {
+
+        //let refactored_data = []
+        let refactored_data = {
+            'ethnicity': {
+                'title': "Ethnic discrimination",
+                'questions': []
+            },
+            'sexual_orientation': {
+                'title': "Discrimination based on sexual orientation or gender",
+                'questions': []
+            },
+            'religion': {
+                'title': "Religious discrimination",
+                'questions': []
+            }
+        }
+        let questions_encountered = []
+
+        // for now only ordinal data
+        data.forEach(function(d,i) {
+
+            if (d['type'] == 'ordinal') {
+
+                if (questions_encountered.includes(d['category']+d['question_eng'])) {
+                    console.log("trouvé");
+                    for (i in refactored_data[d['category']]['questions']) {
+
+                        if (refactored_data[d['category']]['questions'][i]['question'] == d['question_eng']) {
+                            
+                            refactored_data[d['category']]['questions'][i]['options'].push(
+                                {
+                                    "label": d['answer'],
+                                    "dataKey": d['file']
+                                }
+                                
+                            );
+                        }
+                    }
+                    
+                } else {
+                    questions_encountered.push(d['category']+d['question_eng']);
+                    refactored_data[d['category']]['questions'].push(
+                        {
+                            "question": d['question_eng'],
+                            "options": [
+                                {
+                                    "label": d['answer'],
+                                    "dataKey": d['file']
+                                }
+                            ]
+                        }
+                    )
+                }
+            }
+        })
+
+        ctx.textData = refactored_data
+        
+
+    }).catch(function(error) {
+        console.error(error);
+    });
+}
     // TODO: créer un fichier séparé pour répertorier questions, options et dataKeys
     const dropdownData = {
         ethnie: {
