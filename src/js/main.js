@@ -185,9 +185,6 @@ function createViz() {
     loadData();
 };
 
-function goHome() {
-    console.log("Home button clicked!");
-}
 
 function changeText(category) {
 
@@ -200,15 +197,9 @@ function changeText(category) {
     const descriptionContainer = document.getElementById("descriptionContainer");
     const dropdownContainer = document.getElementById("dropdownsContainer");
     
-
-    if (category == 'global') {
-        console.log("ici");
-        descriptionContainer.innerHTML = ctx.defaultDescription;
-        dropdownContainer.innerHTML = '';
-        return
-    } else {
-        descriptionContainer.innerHTML = `<h2>${data.title}</h2>`
-    } 
+   
+    descriptionContainer.innerHTML = `<h2>${data.title}</h2>`
+    
 
     let dropdownHTML = '';
     data.questions.forEach((q, i) => {
@@ -235,7 +226,6 @@ function changeText(category) {
 
     dropdownContainer.innerHTML = dropdownHTML;
 
-    
 }
 
 function createLegend(title) {
