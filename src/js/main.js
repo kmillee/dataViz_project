@@ -446,6 +446,10 @@ function createTextData() {
             'religion': {
                 'title': "Religious discrimination",
                 'questions': []
+            },
+            'socio': {
+                'title': "Sociological Data",
+                'questions': []
             }
         }
         let questions_encountered = []
