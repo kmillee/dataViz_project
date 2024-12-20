@@ -17,38 +17,49 @@
     <div class="container">
         <!-- Visualization zone -->
         <div class="visualization">
-            <div id = "header">
+            <div id="header">
                 <h2>Graphique</h2>
                 <button class="returnButton" onclick="goMap()">
                     <img src="icons/return.png" alt="return" />
                 </button>
             </div>
-        <div id="svgGrid" class="visualization">
-        </div>
+            <div id="svgGrid" class="visualization">
+                <!-- SVG Graphs will be rendered here -->
+            </div>
         </div>
 
         <!-- Option selection zone -->
         <div class="options">
             <h2>Options</h2>
-            <p>Please select the data you want to visualize:</p>
+            <p>Sélectionnez les données à visualiser :</p>
             <form id="optionsForm">
-                <br><br>
-                <label for="category">Category:</label>
-                <select id="category">
-                </select>
-                <br><br>
-                <label for="questionList">Question:</label>
-                <select id="questionList">
-                    <!-- Question fetched from JsonFile -->
-                </select>
-                <br><br>
-                <label for="chartType">Chart type:</label>
-                <select id="chartType">
-                    <option value="bar">Bar</option>
-                    <option value="line">Lines</option>
-                    <option value="scatter">Scatterplot</option>
-                </select>
-                <button type="button" onclick="addChart()">Add</button>
+                <!-- Data category buttons -->
+                <div id="buttonsContainer">
+                    <label>Catégories :</label>
+                    <div class="button-group">
+                        <button class="mapButton" type="button">Ethnicity</button>
+                        <button class="mapButton" type="button" >Sexual Orientation</button>
+                        <button class="mapButton" type="button">Religion</button>
+                    </div>
+                </div>
+                <!-- Chart type selection -->
+                <div class="form-group">
+                    <label for="socioData">Sociological data:</label>
+                    <select id="socioData">
+
+                    </select>
+                </div>
+                <!-- Question selection -->
+                <div class="form-group">
+                    <label for="questionList">Questions :</label>
+                    <select id="questionList">
+                        <!-- Questions fetched dynamically -->
+                    </select>
+                </div>
+                <!-- Add Chart button -->
+                <div class="form-group">
+                    <button type="button" class="addChartButton" onclick="addChart()">Add visualization</button>
+                </div>
             </form>
         </div>
     </div>

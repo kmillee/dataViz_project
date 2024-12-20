@@ -8,20 +8,21 @@ const ctx = {
     legendMargin: { top: 10, right: 10, bottom: 20, left: 30 },
     current_key: "none",
     defaultDescription: `Click on Add to create a new chart!`,
-    charts: []  // to stock created charts and move them dynamically
-
+    index: null, 
 };
 
 
 let selectedSVG = null; // track where to draw the chart
-
+let selectedCategory = null;
 
 //called onloading
 function createViz() {
     console.log("Using D3 v" + d3.version);
     createSVGGrid();
-    createCategoryMenu();
-};
+    setupCategoryListeners();
+    loadIndex().then(index => {
+        ctx.index = index;
+    });};
 
 //called onloading
 function createSVGGrid() {
@@ -41,7 +42,6 @@ function createSVGGrid() {
                 d3.selectAll(".chart-slot").classed("selected", false);
                 d3.select(this).classed("selected", true);
 
-                // Met à jour le SVG sélectionné
                 selectedSVG = d3.select(this);
                 console.log("Selected SVG:", selectedSVG);
             });
@@ -58,70 +58,92 @@ function createSVGGrid() {
 }
 
 
+// //dataset linking category with list of related questions
+// function loadIndex() {
+//     return fetch("data/surveyData/index.json")
+//         .then(response => response.json());
+// }
+async function loadIndex() {
+    try {
+        const response = await fetch("data/surveyData/index.json");
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const data = await response.json();
+        console.log("Index loaded:", data);
+        return data;
+    } catch (error) {
+        console.error("Failed to load index:", error);
+        return null; // Retourne null en cas d'erreur
+    }
+}
+
+
 
 function setupSVGListeners() {
     const svgElements = document.querySelectorAll(".chart-slot");
     svgElements.forEach(svg => {
         svg.addEventListener("click", () => {
-            selectedSVG = svg; // Met à jour le SVG sélectionné
-            svgElements.forEach(s => s.classList.remove("selected")); // Réinitialise les styles
-            svg.classList.add("selected"); // Ajoute un style pour indiquer la sélection
+            selectedSVG = svg;  //update selected SVG element
+            svgElements.forEach(s => s.classList.remove("selected")); // Reset style
+            svg.classList.add("selected"); // Add selected style
         });
     });
 }
 
-function loadIndex() {
-    return fetch("data/surveyData/index.json")
-        .then(response => response.json());
-}
 
-function createCategoryMenu() {
-    console.log("Loading category menu");
-    loadIndex()
-    .then(index => {
-        console.log("index:", index); // Vérifiez si l'index est bien chargé
-        
-        const menu = document.getElementById("category");
-         
-        // Remplir le menu
-        Object.keys(index).forEach(category => {
-            const option = document.createElement("option");
-            option.value = category;
-            option.textContent = category;
-            menu.appendChild(option);
-        });
 
-        menu.addEventListener("change", function() {
-            const selectedCategory = this.value;
-            populateQuestions(index[selectedCategory]);
-            console.log("Populate question called")
+// Called on loading
+// Configuration des écouteurs pour les boutons de catégories
+function setupCategoryListeners() {
+    const categoryButtons = document.querySelectorAll(".mapButton");
+
+    categoryButtons.forEach(button => {
+        button.addEventListener("click", (event) => {
+            selectedCategory = event.target.textContent.trim().toLowerCase();
+            console.log(`Category selected: ${selectedCategory}`);
+
+            if (ctx.index && selectedCategory in ctx.index) {
+                populateQuestions(ctx.index[selectedCategory]);
+            } else {
+                console.warn("No questions found for category:", selectedCategory);
+            }
         });
-    })
-    .catch(error => {
-        console.error("Failed to load index:", error);
     });
 }
 
-// //called onloading
+// Remplir les questions
 function populateQuestions(questions) {
-    console.log("Questions loaded")
-    const questionMenu = document.getElementById("questionList"); 
-    questionMenu.innerHTML = '';
+    const questionMenu = document.getElementById("questionList");
+    questionMenu.innerHTML = ''; // Remove precedent options
 
     const defaultOption = document.createElement("option");
     defaultOption.value = '';
     defaultOption.textContent = 'Please select a question';
     questionMenu.appendChild(defaultOption);
 
-    console.log("Questions:", questions); // Vérifiez si questions est défini
-    questions.forEach(([questionId, type]) => {
-        const option = document.createElement('option');
-        option.value = questionId;
-        // const jsonfile = loadDataJsonFile(questionId);
-        // option.textContent = jsonfile.title;
-        option.textContent =  questionId;        
-        questionMenu.appendChild(option);
-    });
+    if (!selectedCategory || selectedCategory === '') {
+        const allQuestions = Object.entries(ctx.index).flatMap(([category, questions]) => questions);
+
+        allQuestions.forEach(([questionId, type]) => {
+            const option = document.createElement('option');
+            option.value = questionId;
+            option.textContent = questionId; // Remplacez par le titre réel si disponible
+            questionMenu.appendChild(option);
+        });
+
+        console.log("All questions populated because no category was selected:", allQuestions);
+    } else {
+        // Sinon, afficher uniquement les questions de la catégorie sélectionnée
+        questions.forEach(([questionId, type]) => {
+            const option = document.createElement('option');
+            option.value = questionId;
+            option.textContent = questionId; // Remplacez par le titre réel si disponible
+            questionMenu.appendChild(option);
+        });
+    }
+
+    console.log("Questions populated for category:", questions);
 }
 
 async function loadDataJson(questID,category) {
@@ -192,85 +214,46 @@ async function addChart() {
     
 
 
-function addBarPlot(svg, x, y, width, height, data,chartId) {
-    const margin = { top: 10, right: 10, bottom: 30, left: 40 };
-    const plotWidth = width - margin.left - margin.right;
-    const plotHeight = height - margin.top - margin.bottom;
-
-    const g = svg.append("g")
-        .attr("transform", `translate(${x},${y})`)
-        .attr("class", `chart ${chartId}`)    //to move the container
-        .datum(data)
-
-    const chartArea = g.append("g")
-        .attr("transform", `translate(${margin.left},${margin.top})`);
-
-    // Scales
-    const xScale = d3.scaleBand()
-        .domain(data.map(d => (d.id).substring(0, 4)))
-        .range([0, plotWidth])
-        .padding(0.1);
-
-    const yScale = d3.scaleLinear()
-        .domain([0, d3.max(data, d => d3.max(Object.values(d.responses.percentage)))]) //take max value of percentage
-        .nice()
-        .range([plotHeight, 0]);
-    
-    // const barWidth = xScale.bandwidth() / Object.keys(data[0].responses.percentage).length;
-
-    // Axes
-    chartArea.append("g")
-        .attr("class", "axis x-axis")
-        .attr("transform", `translate(0,${plotHeight})`)
-        .call(d3.axisBottom(xScale).tickSizeOuter(0));
-
-    chartArea.append("g")
-        .attr("class", "axis y-axis") 
-        .call(d3.axisLeft(yScale).ticks(5));
-
-    const colorScale = d3.scaleSequential(d3.interpolateCool) 
-    .domain([0, 1]);  
-
-    const barWidth = (plotWidth) / data.length; 
-
-    // Bars
-    chartArea.selectAll(".bar")
-        .data(data)
-        .enter()
-        .append("g")  // grouped by country (id)
-        .attr("transform", (d, i) => `translate(${(i+1) * barWidth-15}, 0)`) 
-        .attr("class", d => `bar ${d.id}`)
-        .each(function(d) {
-            // Sort percentages to see every rectangles
-            const sortedEntries = Object.entries(d.responses.percentage)
-                .filter(entry => !isNaN(entry[1]) && entry[1] !== null && entry[1] !== "-") 
-                .sort((a, b) => b[1] - a[1]); 
-    
-            d3.select(this)
-                .selectAll("rect")
-                .data(sortedEntries)
-                .enter()
-                .append("rect")
-                .attr("class", "bar")
-                .attr("y", d => yScale(d[1]))
-                .attr("width", barWidth * 0.6) 
-                .attr("height", d => plotHeight - yScale(d[1]))
-                .attr("fill", d => colorScale(d[1]))
-                .style("opacity", 1); 
-        });
-    console.log("bar chart added")
-}
-
-function addLinePlot(data){}
-
-function addScatterPlot(data){}
-
 
 
 function goMap(){
     console.log("Going back to map");
     window.location.href = "main.html";
 }
+
+
+const socioData = [{"name": "Internet use per country",
+    data : {"1": 0.35,
+        "2": 0.67,
+        "3": 0.12,
+        "4": 0.89,
+        "5": 0.42,
+        "6": 0.58,
+        "7": 0.76,
+        "8": 0.11,
+        "9": 0.23,
+        "10": 0.99,
+        "11": 0.08,
+        "12": 0.64,
+        "13": 0.51,
+        "14": 0.73,
+        "15": 0.29,
+        "16": 0.44,
+        "17": 0.91,
+        "18": 0.05,
+        "19": 0.68,
+        "20": 0.87,
+        "21": 0.14,
+        "22": 0.39,
+        "23": 0.93,
+        "24": 0.26,
+        "25": 0.82,
+        "26": 0.49,
+        "27": 0.04
+    }
+}];
+
+
 
 
 
@@ -385,4 +368,89 @@ function goMap(){
 //         });
 // }
 
+
+// function addBarPlot(svg, x, y, width, height, data,chartId) {
+//     const margin = { top: 10, right: 10, bottom: 30, left: 40 };
+//     const plotWidth = width - margin.left - margin.right;
+//     const plotHeight = height - margin.top - margin.bottom;
+//     console.log(plotHeight);
+
+//     const g = svg.append("g")
+//         .attr("transform", `translate(${x},${y})`)
+//         .attr("class", `chart ${chartId}`)    //to move the container
+//         .datum(data)
+
+//     const chartArea = g.append("g")
+//         .attr("transform", `translate(${margin.left},${margin.top})`);
+
+//     // Scales
+//     const xScale = d3.scaleBand()
+//         .domain(data.map(d => (d.id).substring(0, 4)))
+//         .range([0, plotWidth])
+//         .padding(0.1);
+
+//     const yScale = d3.scaleLinear()
+//         .domain([0, d3.max(data, d => d3.max(Object.values(d.responses.percentage)))]) //take max value of percentage
+//         .nice()
+//         .range([plotHeight, 0]);
+    
+//     // const barWidth = xScale.bandwidth() / Object.keys(data[0].responses.percentage).length;
+
+//     // Axes
+//     chartArea.append("g")
+//         .attr("class", "axis x-axis")
+//         .attr("transform", `translate(0,${plotHeight})`)
+//         .call(d3.axisBottom(xScale).tickSizeOuter(0));
+
+//     chartArea.append("g")
+//         .attr("class", "axis y-axis") 
+//         .call(d3.axisLeft(yScale).ticks(5));
+
+//     const colorScale = d3.scaleSequential(d3.interpolateCool) 
+//     .domain([0, 1]);  
+
+//     const barWidth = (plotWidth) / data.length; 
+
+//     // Bars
+//     chartArea.selectAll(".bar")
+//     .data(data)
+//     .enter()
+//     .append("g")  // Grouped by country (id)
+//     .attr("transform", (d, i) => `translate(${(i+1) * barWidth - 25}, 0)`) 
+//     .attr("class", d => `bar ${d.id}`)
+//     .each(function(d) {
+//         // Sort percentages to see every rectangle
+//         const sortedEntries = Object.entries(d.responses.percentage)
+//             .filter(entry => !isNaN(entry[1]) && entry[1] !== null && entry[1] !== "-") 
+//             .sort((a, b) => b[1] - a[1]);  // Sort in descending order
+
+//         let cumulativeHeight = 0; // To accumulate the height of each rect
+
+//         d3.select(this)
+//             .selectAll("rect")
+//             .data(sortedEntries)
+//             .enter()
+//             .append("rect")
+//             .attr("class", "bar")
+//             // Position each rect based on the cumulative height
+//             .attr("y", function(d, i) {
+//                 console.log("rect "+i+":"+sortedEntries[i]+" ///// "+sortedEntries[i][1]);
+//                 const yPosition = i === 0 ? yScale(d[1]) : yScale(sortedEntries[i - 1][1]) - plotHeight+ yScale(d[1]);
+//                 return yPosition;
+//             })
+//             .attr("width", barWidth * 0.6)  // Set the width of the bars
+//             .attr("height", d => plotHeight - yScale(d[1]))  // Height of each rect based on the scale
+//             .attr("fill", d => colorScale(d[1]))  // Color of the bar based on the value
+//             .style("opacity", 1);
+//     });
+
+// console.log("Bar chart added");
+// //pb : yScale(sortedEntries[i - 1][1]), au lieu de prendre yScale(sortedEntries[i - 1][1]), on devrait prendre la somme pour tous les i précédents
+
+
+// }
+
+// function addLinePlot(data){}
+
+// function addScatterPlot(data){}
 

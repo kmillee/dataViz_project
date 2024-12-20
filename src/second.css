@@ -1,46 +1,31 @@
+/* Global Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     display: flex;
-    flex-direction: row; 
-    height: 100vh; 
-}
-
-#header {
-    display: flex;
-    align-items: center; 
-    gap: 10px; 
+    flex-direction: row;
+    height: 100vh;
 }
 
 .container {
     display: flex;
     height: 100%;
-    width: 100%; 
+    width: 100%;
 }
 
+/* Visualization Section */
 .visualization {
-    flex: 3; 
+    flex: 3;
     padding: 20px;
     background-color: #f9f9f9;
     border-right: 1px solid #ddd;
 }
 
-
-.options {
-    flex: 1;
-    padding: 20px;
-    background-color: #ffffff;
+#header {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-
-#buttonsContainer {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 10;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .returnButton {
@@ -56,7 +41,78 @@ body {
     width: 18px;
     height: 18px;
 }
- 
+
+/* Options Section */
+.options {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#buttonsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.mapButton {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.mapButton:hover {
+    background-color: #0056b3;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+select {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.addChartButton {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.addChartButton:hover {
+    background-color: #218838;
+}
 
 #chart {
     border: 1px solid #ccc;
@@ -68,12 +124,12 @@ body {
 }
 
  
+
 .chart-slot {
     cursor: pointer;
     transition: background-color 0.2s, border 0.2s; /* Transition douce */
     border: 1px solid #ccc; /* Bordure initiale */
     background-color: #f9f9f9; /* Couleur de fond initiale */
-
 }
 
 .chart-slot:hover {
