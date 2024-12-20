@@ -18,15 +18,38 @@ const ctx = {
 
 function addWindow(countryCode) {
 
+    let yLegend = "";
+    let introText = "";
+    let len = 4;
+    if (ctx.mode == "1") {
+        yLegend = "Level of comfort"
+        introText = "The colors on the map show the percentage of people totally uncomfortable. Here you can have the distribution for all levels, with (1) Totally comfortable, (2) Moderately (3) Not at all.";
+        len = 3;
+    }
+        
+    else if (ctx.mode == "2") {
+        yLegend = "Do people agree?";
+        introText = "The colors on the map show the percentage of people totally uncomfortable. Here you can have the distribution for all levels, with (1) Totally agree, (2) Tend to agree (3) Tend to disagree (4) Totally disagree.";
+        len = 4;
+    }
+       
+
+
     let country = document.querySelector(`#${countryCode}`);
     let countryName = country ? country.querySelector("title").textContent : "Unknown Country";
     const modalTitle = document.getElementById("modalTitle");
     const modalText = document.getElementById("modalText");
+    const modalIntro = document.getElementById("modalIntro");
 
     if (ctx.current_key == "none") {
         modalTitle.innerHTML = `<p>Select a question</p>`;
     } else {
         modalTitle.innerHTML = `<h2>${countryName}</h2>`;
+        modalIntro.innerHTML = `<p>${introText}</p>`;
+
+
+
+
         let dataFile = 'data/surveyData/' + ctx.current_category + '/' + ctx.current_key + '.json';
 
         let number_of_respondents;
@@ -44,6 +67,7 @@ function addWindow(countryCode) {
             const countryData = data.data.find(item => item.id === countryCode);
             if (countryData) {
 
+                console.log(countryData);
                 number_of_respondents = countryData["number_of_respondents"];
                 modalText.innerHTML = `<p>Number of respondents: ${number_of_respondents}</p>`;
 
@@ -53,7 +77,7 @@ function addWindow(countryCode) {
                     cardinal: d[1]  
                 }));
 
-                transformedData = transformedData.filter((d) => d.level < 11);
+                transformedData = transformedData.filter((d) => d.level <= len);
 
                 // add bar chart to modal
                 vlSpec = {
@@ -67,7 +91,7 @@ function addWindow(countryCode) {
                         "y": {
                             "field": "level",
                             "type": "ordinal",  
-                            "axis": {"title": "Level of comfort"} 
+                            "axis": {"title": yLegend} 
                         },
                         "x": {
                             "field": "cardinal",

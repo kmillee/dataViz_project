@@ -125,6 +125,7 @@ select {
     z-index: 999;
 }
 
+
 #modal {
     position: fixed;
     top: 50%;
@@ -135,11 +136,13 @@ select {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     display: none;
     z-index: 1000;
-    width: 40%;
+    width: 30%;
+    
 }
 
 #modalContent {
     padding: 20px;
+    font-size: 0.9rem; 
 }
 
 #closeModal {
