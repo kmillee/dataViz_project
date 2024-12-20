@@ -149,3 +149,7 @@ select {
     font-size: 20px;
     cursor: pointer;
 }
+
+input[type="radio"] + label {
+    font-size: 14px; 
+}

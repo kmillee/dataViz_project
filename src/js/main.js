@@ -17,6 +17,7 @@ const ctx = {
 };
 
 function addWindow(countryCode) {
+
     let country = document.querySelector(`#${countryCode}`);
     let countryName = country ? country.querySelector("title").textContent : "Unknown Country";
     const modalTitle = document.getElementById("modalTitle");
@@ -26,7 +27,7 @@ function addWindow(countryCode) {
         modalTitle.innerHTML = `<p>Select a question</p>`;
     } else {
         modalTitle.innerHTML = `<h2>${countryName}</h2>`;
-        let dataFile = 'data/surveyData/' + ctx.current_key + '.json';
+        let dataFile = 'data/surveyData/' + ctx.current_category + '/' + ctx.current_key + '.json';
 
         let number_of_respondents;
         let transformedData;
