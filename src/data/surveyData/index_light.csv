@@ -5,7 +5,7 @@ QB12R_4,ordinal,ethnicity,"How comfortable would you feel, if a colleague at wor
 QB13R_2,ordinal,ethnicity,"How comfortable you would feel if one of your children was in a love relationship with a person from one of the following groups?",A black person
 QB13R_3,ordinal,ethnicity,"How comfortable you would feel if one of your children was in a love relationship with a person from one of the following groups?",An Asian person
 QB13R_4,ordinal,ethnicity,"How comfortable you would feel if one of your children was in a love relationship with a person from one of the following groups?",A white person
-QB6R_3,ordinal,ethnicity,"Please tell me how you would feel about having a person from each of the following groups in the highest elected political position.",A person from a different ethnic origin than the majority of the population
+QB6R_3,ordinal,ethnicity,"How you would feel about having a person from each of the following groups in the highest elected political position.",A person from a different ethnic origin than the majority of the population
 QB17_6,ordinal,ethnicity,To what extent do you agree or disagree with the following statements? School lessons and material should include information about …?,Racism
 QB17_7,ordinal,ethnicity,To what extent do you agree or disagree with the following statements? School lessons and material should include information about …?,The history of antisemitism in European countries and the Holocaust
 QB18,binary,ethnicity,"Do you think that transgender persons should be able to change their civil documents to match their gender identity?",None
@@ -18,8 +18,8 @@ QB15_1,ordinal,sexual_orientation,To what extent do you agree or disagree with e
 QB15_2,ordinal,sexual_orientation,To what extent do you agree or disagree with each of the following statements?,There is nothing wrong in a sexual relationship between two persons of the same sex
 QB15_3,ordinal,sexual_orientation,To what extent do you agree or disagree with each of the following statements?,Same sex marriages should be allowed throughout Europe
 QB15_4,ordinal,sexual_orientation,To what extent do you agree or disagree with each of the following statements?,"Transgender people should have the same rights as anyone else (marriage, adoption, parental rights)"
-QB6R_2,ordinal,sexual_orientation,"Please tell me how you would feel about having a person from each of the following groups in the highest elected political position.","A lesbian, gay or bisexual person"
-QB6R_10,ordinal,sexual_orientation,"Please tell me how you would feel about having a person from each of the following groups in the highest elected political position.",A trasgender person or an intersex person
+QB6R_2,ordinal,sexual_orientation,"How you would feel about having a person from each of the following groups in the highest elected political position.","A lesbian, gay or bisexual person"
+QB6R_10,ordinal,sexual_orientation,"How you would feel about having a person from each of the following groups in the highest elected political position.",A trasgender person or an intersex person
 QB17_1,ordinal,sexual_orientation,To what extent do you agree or disagree with the following statements? School lessons and material should include information about …?,Religions and beliefs
 QB17_2,ordinal,sexual_orientation,To what extent do you agree or disagree with the following statements? School lessons and material should include information about …?,"Sexual orientations (for example being lesbian, gay, or bisexual)"
 QB17_3,ordinal,sexual_orientation,To what extent do you agree or disagree with the following statements? School lessons and material should include information about …?,The existence of multiple gender identities (for example being transgender)
@@ -33,7 +33,7 @@ QB13R_6,ordinal,religion,"How comfortable you would feel if one of your children
 QB13R_7,ordinal,religion,"How comfortable you would feel if one of your children was in a love relationship with a person from one of the following groups?",A Buddhist person
 QB13R_8,ordinal,religion,"How comfortable you would feel if one of your children was in a love relationship with a person from one of the following groups?",A Christian person
 QB13R_9,ordinal,religion,"How comfortable you would feel if one of your children was in a love relationship with a person from one of the following groups?",An atheist person
-QB6R_9,ordinal,religion,"Please tell me how you would feel about having a person from each of the following groups in the highest elected political position.",A person with a different religion than the majority
+QB6R_9,ordinal,religion,"How you would feel about having a person from each of the following groups in the highest elected political position.",A person with a different religion than the majority
 Content,textual,index,None, None
 D62_1,ordinal,socio,"Could you tell if you use the Internet at home in your home",None
 D62_2,ordinal,socio,"Could you tell if you use the Internet on your place of work",None
