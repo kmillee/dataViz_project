@@ -8,6 +8,7 @@ const ctx = {
     current_key: "none",
     current_measure: "median",
     current_category: "global",
+    mode: "1",
     defaultDescription: `
         <h2>Discriminations au sein de l'UE</h2>
         <p>La carte ci-contre montre l'indice global de discrimination dans les différents pays de l'union européenne.
@@ -166,9 +167,7 @@ function loadData(){
         
         ctx.data = data;
         createTextData();
-        //precomputeColorScale();
         makeMap();
-        //createLegend();
     }).catch(function(error){console.log(error)});
 };
 
@@ -192,7 +191,7 @@ function goHome() {
 function changeText(category) {
 
     ctx.current_category = category;
-    precomputeColorScale();
+    precomputeColorScale("1");
 
     let data = ctx.textData[category];
     console.log(data);
@@ -215,24 +214,30 @@ function changeText(category) {
         dropdownHTML += `
             <p>${q["question"]}</p>
         `;
+        let mode;
+        if (q["question"].startsWith("To what extent")) {
+            mode = "2";
+        } else {
+            mode = "1";
+        }
+
         q["options"].forEach((option, j) => {
             dropdownHTML += `
             <div>
-                <input type="radio" id="radio_${j}" name="question" value='${option.label}' onclick="updateMapData('${option.dataKey}')">
+                <input type="radio" id="radio_${j}" name="question" value='${option.label}' onclick="updateMapData('${option.dataKey}', ${mode})">
                 <label for="radio_${j}">${option.label}</label>
                 <br>
             </div>
         `;
         })
     });
-        
 
-        dropdownContainer.innerHTML = dropdownHTML;
+    dropdownContainer.innerHTML = dropdownHTML;
 
     
 }
 
-function createLegend() {
+function createLegend(title) {
 
     const svg = d3.select("svg");
     svg.select("#legendGroup").remove();
@@ -243,7 +248,7 @@ function createLegend() {
 
     //d3.scaleOrdinal([1, 2, 3, 4, 5, 6, 7, 8, 9], d3.schemePiYG[9])
     const legendSvg = Legend(ctx.color, {
-        title: "Percentage of people who answered 'Really uncomfortable'",
+        title: title,
         width: ctx.legendWidth,
         height: ctx.legendHeight, 
         marginTop: 18,
@@ -255,19 +260,26 @@ function createLegend() {
 }
 
 
-function updateMapData(dataKey) {
+function updateMapData(dataKey, mode) {
 
     ctx.current_key = dataKey;
+    if (mode != ctx.mode) {
+        precomputeColorScale(mode);
+        ctx.mode = mode;
+    }
 
     // load the right file
     console.log(dataKey);
+    console.log(mode);
     const data_filename = 'data/surveyData/' + ctx.current_category + '/' + dataKey + '.json';
 
     d3.json(data_filename)
         .then(function (data) {
 
             console.log("Loaded data:", data);
-            let malaises = computeIndiceMalaise(data);
+            let malaises = computeIndiceMalaise(data, mode);
+
+            console.log("malaises: ", malaises);
         
             d3.selectAll(".countryArea")
                 .transition()
@@ -285,12 +297,17 @@ function updateMapData(dataKey) {
         });
 }
 
-function computeIndiceMalaise(data) {
+function computeIndiceMalaise(data, mode) {
 
     let pourcentagesMalaise = {};
 
     data.data.forEach(d => {
-        pourcentagesMalaise[d.id] = parseFloat(d.responses.percentage["Total 'Uncomfortable'"]);
+        if (mode == "1") {
+            pourcentagesMalaise[d.id] = parseFloat(d.responses.percentage["Total 'Uncomfortable'"]);
+        } else if (mode == "2") {
+            pourcentagesMalaise[d.id] = parseFloat(d.responses.percentage["Total 'Disagree'"]);
+        }
+        
     });
 
     let extent = d3.extent(Object.values(pourcentagesMalaise));
@@ -346,18 +363,32 @@ function computeMedian(d) {
     }
 }  
 
-function precomputeColorScale() {
+
+function precomputeColorScale(mode) {
     
     d3.csv("data/surveyData/index_light.csv").then(data => {
 
         console.log(ctx.current_category);
+        let ordinalFiles;
+        let title = "";
         
-        let ordinalFiles = data
+        if (mode == "1") {
+            title = "Percentage of people who answered 'Really uncomfortable'";
+            ordinalFiles = data
             .filter(row => row.type === "ordinal") 
             .filter(row => row.category === ctx.current_category)
-            .map(row => row.file); 
-
-        console.log(ordinalFiles);
+            .map(row => row.file);
+        } else if (mode == "2") {
+            title = "Percentage of people who 'Totally disagree'",
+            console.log(mode);
+            ordinalFiles = data
+            .filter(row => row.type === "ordinal") 
+            .filter(row => row.category === ctx.current_category)
+            .filter(row => row.question_eng.startsWith("To what extent"))
+            .map(row => row.file);
+            console.log(ordinalFiles);
+        }
+       
         let allMeasures = [];
 
         let promises = ordinalFiles.map(key => d3.json(`data/surveyData/${ctx.current_category}/${key}.json`));
@@ -367,7 +398,7 @@ function precomputeColorScale() {
         Promise.all(promises).then(function (datum) {
     
             datum.forEach((data, index) => {
-                let measures = Object.values(computeIndiceMalaise(data));
+                let measures = Object.values(computeIndiceMalaise(data, mode));
                 measures.forEach((m,i) => {
                     if (!isNaN(m) && m !== undefined) {
                         allMeasures.push(parseFloat(m));
@@ -382,7 +413,7 @@ function precomputeColorScale() {
                 .domain([parseFloat(extent[0]), reference, parseFloat(extent[1])])
                 .interpolator(t => d3.interpolatePiYG(1 - t))
 
-            createLegend();
+            createLegend(title);
             
         }).catch(error => {
             console.error(error);
@@ -462,7 +493,6 @@ function createTextData() {
         })
 
         ctx.textData = refactored_data
-        
 
     }).catch(function(error) {
         console.error(error);
