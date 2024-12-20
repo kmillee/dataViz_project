@@ -1,0 +1,701 @@
+{
+    "name": "D70",
+    "data": [
+        {
+            "id": "UE27\nEU27",
+            "number_of_respondents": 26404,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.22,
+                    "Fairly satisfied": 0.62,
+                    "Not very satisfied": 0.14,
+                    "Not at all satisfied": 0.02,
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.84,
+                    "Total 'Not satisfied'": 0.16
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 5740,
+                    "Plut\u00f4t satisfait(e)": 16467,
+                    "Plut\u00f4t pas satisfait(e)": 3576,
+                    "Pas du tout satisfait(e)": 558,
+                    "Ne sait pas": 63,
+                    "Total 'Satisfait(e)'": 22208,
+                    "Total 'Pas satisfait(e)'": 4134
+                }
+            }
+        },
+        {
+            "id": "BE",
+            "number_of_respondents": 1018,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.23,
+                    "Fairly satisfied": 0.63,
+                    "Not very satisfied": 0.12,
+                    "Not at all satisfied": 0.02,
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.86,
+                    "Total 'Not satisfied'": 0.14
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 233,
+                    "Plut\u00f4t satisfait(e)": 638,
+                    "Plut\u00f4t pas satisfait(e)": 122,
+                    "Pas du tout satisfait(e)": 21,
+                    "Ne sait pas": 4,
+                    "Total 'Satisfait(e)'": 871,
+                    "Total 'Pas satisfait(e)'": 143
+                }
+            }
+        },
+        {
+            "id": "BG",
+            "number_of_respondents": 1014,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.09,
+                    "Fairly satisfied": 0.55,
+                    "Not very satisfied": 0.29,
+                    "Not at all satisfied": 0.06,
+                    "Don't know": 0.01,
+                    "Total 'Satisfied'": 0.64,
+                    "Total 'Not satisfied'": 0.35
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 87,
+                    "Plut\u00f4t satisfait(e)": 559,
+                    "Plut\u00f4t pas satisfait(e)": 298,
+                    "Pas du tout satisfait(e)": 63,
+                    "Ne sait pas": 6,
+                    "Total 'Satisfait(e)'": 646,
+                    "Total 'Pas satisfait(e)'": 361
+                }
+            }
+        },
+        {
+            "id": "CZ",
+            "number_of_respondents": 1025,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.2,
+                    "Fairly satisfied": 0.67,
+                    "Not very satisfied": 0.12,
+                    "Not at all satisfied": 0.01,
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.87,
+                    "Total 'Not satisfied'": 0.13
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 208,
+                    "Plut\u00f4t satisfait(e)": 688,
+                    "Plut\u00f4t pas satisfait(e)": 119,
+                    "Pas du tout satisfait(e)": 8,
+                    "Ne sait pas": 2,
+                    "Total 'Satisfait(e)'": 896,
+                    "Total 'Pas satisfait(e)'": 127
+                }
+            }
+        },
+        {
+            "id": "DK",
+            "number_of_respondents": 1019,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.72,
+                    "Fairly satisfied": 0.25,
+                    "Not very satisfied": 0.03,
+                    "Not at all satisfied": "-",
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.97,
+                    "Total 'Not satisfied'": 0.03
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 737,
+                    "Plut\u00f4t satisfait(e)": 250,
+                    "Plut\u00f4t pas satisfait(e)": 27,
+                    "Pas du tout satisfait(e)": 3,
+                    "Ne sait pas": 3,
+                    "Total 'Satisfait(e)'": 987,
+                    "Total 'Pas satisfait(e)'": 29
+                }
+            }
+        },
+        {
+            "id": "D-W",
+            "number_of_respondents": 1227,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.25,
+                    "Fairly satisfied": 0.64,
+                    "Not very satisfied": 0.1,
+                    "Not at all satisfied": 0.01,
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.89,
+                    "Total 'Not satisfied'": 0.11
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 303,
+                    "Plut\u00f4t satisfait(e)": 785,
+                    "Plut\u00f4t pas satisfait(e)": 125,
+                    "Pas du tout satisfait(e)": 12,
+                    "Ne sait pas": 1,
+                    "Total 'Satisfait(e)'": 1088,
+                    "Total 'Pas satisfait(e)'": 137
+                }
+            }
+        },
+        {
+            "id": "DE",
+            "number_of_respondents": 1525,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.23,
+                    "Fairly satisfied": 0.64,
+                    "Not very satisfied": 0.11,
+                    "Not at all satisfied": 0.02,
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.87,
+                    "Total 'Not satisfied'": 0.13
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 357,
+                    "Plut\u00f4t satisfait(e)": 978,
+                    "Plut\u00f4t pas satisfait(e)": 165,
+                    "Pas du tout satisfait(e)": 22,
+                    "Ne sait pas": 4,
+                    "Total 'Satisfait(e)'": 1334,
+                    "Total 'Pas satisfait(e)'": 186
+                }
+            }
+        },
+        {
+            "id": "EE",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.17,
+                    "Fairly satisfied": 0.67,
+                    "Not very satisfied": 0.13,
+                    "Not at all satisfied": 0.02,
+                    "Don't know": 0.01,
+                    "Total 'Satisfied'": 0.84,
+                    "Total 'Not satisfied'": 0.15
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 172,
+                    "Plut\u00f4t satisfait(e)": 671,
+                    "Plut\u00f4t pas satisfait(e)": 133,
+                    "Pas du tout satisfait(e)": 22,
+                    "Ne sait pas": 11,
+                    "Total 'Satisfait(e)'": 844,
+                    "Total 'Pas satisfait(e)'": 154
+                }
+            }
+        },
+        {
+            "id": "IE",
+            "number_of_respondents": 1016,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.43,
+                    "Fairly satisfied": 0.54,
+                    "Not very satisfied": 0.03,
+                    "Not at all satisfied": "-",
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.97,
+                    "Total 'Not satisfied'": 0.03
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 433,
+                    "Plut\u00f4t satisfait(e)": 551,
+                    "Plut\u00f4t pas satisfait(e)": 25,
+                    "Pas du tout satisfait(e)": 4,
+                    "Ne sait pas": 2,
+                    "Total 'Satisfait(e)'": 985,
+                    "Total 'Pas satisfait(e)'": 29
+                }
+            }
+        },
+        {
+            "id": "EL",
+            "number_of_respondents": 1014,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.12,
+                    "Fairly satisfied": 0.56,
+                    "Not very satisfied": 0.25,
+                    "Not at all satisfied": 0.07,
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.68,
+                    "Total 'Not satisfied'": 0.32
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 127,
+                    "Plut\u00f4t satisfait(e)": 570,
+                    "Plut\u00f4t pas satisfait(e)": 250,
+                    "Pas du tout satisfait(e)": 67,
+                    "Ne sait pas": 0,
+                    "Total 'Satisfait(e)'": 697,
+                    "Total 'Pas satisfait(e)'": 317
+                }
+            }
+        },
+        {
+            "id": "ES",
+            "number_of_respondents": 1004,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.27,
+                    "Fairly satisfied": 0.6,
+                    "Not very satisfied": 0.11,
+                    "Not at all satisfied": 0.02,
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.87,
+                    "Total 'Not satisfied'": 0.13
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 272,
+                    "Plut\u00f4t satisfait(e)": 600,
+                    "Plut\u00f4t pas satisfait(e)": 115,
+                    "Pas du tout satisfait(e)": 16,
+                    "Ne sait pas": 1,
+                    "Total 'Satisfait(e)'": 872,
+                    "Total 'Pas satisfait(e)'": 131
+                }
+            }
+        },
+        {
+            "id": "FR",
+            "number_of_respondents": 1006,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.2,
+                    "Fairly satisfied": 0.64,
+                    "Not very satisfied": 0.13,
+                    "Not at all satisfied": 0.03,
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.84,
+                    "Total 'Not satisfied'": 0.16
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 202,
+                    "Plut\u00f4t satisfait(e)": 639,
+                    "Plut\u00f4t pas satisfait(e)": 130,
+                    "Pas du tout satisfait(e)": 34,
+                    "Ne sait pas": 1,
+                    "Total 'Satisfait(e)'": 841,
+                    "Total 'Pas satisfait(e)'": 164
+                }
+            }
+        },
+        {
+            "id": "HR",
+            "number_of_respondents": 1012,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.17,
+                    "Fairly satisfied": 0.64,
+                    "Not very satisfied": 0.17,
+                    "Not at all satisfied": 0.02,
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.81,
+                    "Total 'Not satisfied'": 0.19
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 167,
+                    "Plut\u00f4t satisfait(e)": 649,
+                    "Plut\u00f4t pas satisfait(e)": 169,
+                    "Pas du tout satisfait(e)": 25,
+                    "Ne sait pas": 2,
+                    "Total 'Satisfait(e)'": 816,
+                    "Total 'Pas satisfait(e)'": 194
+                }
+            }
+        },
+        {
+            "id": "IT",
+            "number_of_respondents": 1027,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.09,
+                    "Fairly satisfied": 0.68,
+                    "Not very satisfied": 0.21,
+                    "Not at all satisfied": 0.02,
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.77,
+                    "Total 'Not satisfied'": 0.23
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 90,
+                    "Plut\u00f4t satisfait(e)": 697,
+                    "Plut\u00f4t pas satisfait(e)": 219,
+                    "Pas du tout satisfait(e)": 22,
+                    "Ne sait pas": 0,
+                    "Total 'Satisfait(e)'": 787,
+                    "Total 'Pas satisfait(e)'": 240
+                }
+            }
+        },
+        {
+            "id": "CY",
+            "number_of_respondents": 504,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.33,
+                    "Fairly satisfied": 0.48,
+                    "Not very satisfied": 0.16,
+                    "Not at all satisfied": 0.03,
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.81,
+                    "Total 'Not satisfied'": 0.19
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 166,
+                    "Plut\u00f4t satisfait(e)": 243,
+                    "Plut\u00f4t pas satisfait(e)": 81,
+                    "Pas du tout satisfait(e)": 14,
+                    "Ne sait pas": 0,
+                    "Total 'Satisfait(e)'": 409,
+                    "Total 'Pas satisfait(e)'": 95
+                }
+            }
+        },
+        {
+            "id": "LV",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.14,
+                    "Fairly satisfied": 0.69,
+                    "Not very satisfied": 0.15,
+                    "Not at all satisfied": 0.02,
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.83,
+                    "Total 'Not satisfied'": 0.17
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 138,
+                    "Plut\u00f4t satisfait(e)": 701,
+                    "Plut\u00f4t pas satisfait(e)": 148,
+                    "Pas du tout satisfait(e)": 20,
+                    "Ne sait pas": 2,
+                    "Total 'Satisfait(e)'": 839,
+                    "Total 'Pas satisfait(e)'": 168
+                }
+            }
+        },
+        {
+            "id": "LT",
+            "number_of_respondents": 1005,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.2,
+                    "Fairly satisfied": 0.64,
+                    "Not very satisfied": 0.15,
+                    "Not at all satisfied": 0.01,
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.84,
+                    "Total 'Not satisfied'": 0.16
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 197,
+                    "Plut\u00f4t satisfait(e)": 639,
+                    "Plut\u00f4t pas satisfait(e)": 149,
+                    "Pas du tout satisfait(e)": 14,
+                    "Ne sait pas": 5,
+                    "Total 'Satisfait(e)'": 836,
+                    "Total 'Pas satisfait(e)'": 163
+                }
+            }
+        },
+        {
+            "id": "LU",
+            "number_of_respondents": 508,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.33,
+                    "Fairly satisfied": 0.61,
+                    "Not very satisfied": 0.05,
+                    "Not at all satisfied": 0.01,
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.94,
+                    "Total 'Not satisfied'": 0.06
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 166,
+                    "Plut\u00f4t satisfait(e)": 309,
+                    "Plut\u00f4t pas satisfait(e)": 28,
+                    "Pas du tout satisfait(e)": 5,
+                    "Ne sait pas": 0,
+                    "Total 'Satisfait(e)'": 475,
+                    "Total 'Pas satisfait(e)'": 33
+                }
+            }
+        },
+        {
+            "id": "HU",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.08,
+                    "Fairly satisfied": 0.72,
+                    "Not very satisfied": 0.18,
+                    "Not at all satisfied": 0.02,
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.8,
+                    "Total 'Not satisfied'": 0.2
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 87,
+                    "Plut\u00f4t satisfait(e)": 732,
+                    "Plut\u00f4t pas satisfait(e)": 182,
+                    "Pas du tout satisfait(e)": 21,
+                    "Ne sait pas": 0,
+                    "Total 'Satisfait(e)'": 819,
+                    "Total 'Pas satisfait(e)'": 202
+                }
+            }
+        },
+        {
+            "id": "MT",
+            "number_of_respondents": 514,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.28,
+                    "Fairly satisfied": 0.64,
+                    "Not very satisfied": 0.07,
+                    "Not at all satisfied": 0.01,
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.92,
+                    "Total 'Not satisfied'": 0.08
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 146,
+                    "Plut\u00f4t satisfait(e)": 331,
+                    "Plut\u00f4t pas satisfait(e)": 35,
+                    "Pas du tout satisfait(e)": 3,
+                    "Ne sait pas": 0,
+                    "Total 'Satisfait(e)'": 476,
+                    "Total 'Pas satisfait(e)'": 38
+                }
+            }
+        },
+        {
+            "id": "NL",
+            "number_of_respondents": 1004,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.63,
+                    "Fairly satisfied": 0.34,
+                    "Not very satisfied": 0.03,
+                    "Not at all satisfied": "-",
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.97,
+                    "Total 'Not satisfied'": 0.03
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 627,
+                    "Plut\u00f4t satisfait(e)": 345,
+                    "Plut\u00f4t pas satisfait(e)": 27,
+                    "Pas du tout satisfait(e)": 4,
+                    "Ne sait pas": 2,
+                    "Total 'Satisfait(e)'": 972,
+                    "Total 'Pas satisfait(e)'": 30
+                }
+            }
+        },
+        {
+            "id": "AT",
+            "number_of_respondents": 1012,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.31,
+                    "Fairly satisfied": 0.54,
+                    "Not very satisfied": 0.11,
+                    "Not at all satisfied": 0.03,
+                    "Don't know": 0.01,
+                    "Total 'Satisfied'": 0.85,
+                    "Total 'Not satisfied'": 0.14
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 315,
+                    "Plut\u00f4t satisfait(e)": 548,
+                    "Plut\u00f4t pas satisfait(e)": 112,
+                    "Pas du tout satisfait(e)": 31,
+                    "Ne sait pas": 7,
+                    "Total 'Satisfait(e)'": 862,
+                    "Total 'Pas satisfait(e)'": 143
+                }
+            }
+        },
+        {
+            "id": "PL",
+            "number_of_respondents": 1015,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.16,
+                    "Fairly satisfied": 0.77,
+                    "Not very satisfied": 0.05,
+                    "Not at all satisfied": 0.01,
+                    "Don't know": 0.01,
+                    "Total 'Satisfied'": 0.93,
+                    "Total 'Not satisfied'": 0.06
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 165,
+                    "Plut\u00f4t satisfait(e)": 782,
+                    "Plut\u00f4t pas satisfait(e)": 48,
+                    "Pas du tout satisfait(e)": 11,
+                    "Ne sait pas": 9,
+                    "Total 'Satisfait(e)'": 946,
+                    "Total 'Pas satisfait(e)'": 59
+                }
+            }
+        },
+        {
+            "id": "PT",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.03,
+                    "Fairly satisfied": 0.77,
+                    "Not very satisfied": 0.17,
+                    "Not at all satisfied": 0.03,
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.8,
+                    "Total 'Not satisfied'": 0.2
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 31,
+                    "Plut\u00f4t satisfait(e)": 789,
+                    "Plut\u00f4t pas satisfait(e)": 176,
+                    "Pas du tout satisfait(e)": 24,
+                    "Ne sait pas": 1,
+                    "Total 'Satisfait(e)'": 820,
+                    "Total 'Pas satisfait(e)'": 200
+                }
+            }
+        },
+        {
+            "id": "RO",
+            "number_of_respondents": 1053,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.08,
+                    "Fairly satisfied": 0.55,
+                    "Not very satisfied": 0.33,
+                    "Not at all satisfied": 0.04,
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.63,
+                    "Total 'Not satisfied'": 0.37
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 82,
+                    "Plut\u00f4t satisfait(e)": 583,
+                    "Plut\u00f4t pas satisfait(e)": 348,
+                    "Pas du tout satisfait(e)": 39,
+                    "Ne sait pas": 2,
+                    "Total 'Satisfait(e)'": 665,
+                    "Total 'Pas satisfait(e)'": 386
+                }
+            }
+        },
+        {
+            "id": "SI",
+            "number_of_respondents": 1000,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.33,
+                    "Fairly satisfied": 0.6,
+                    "Not very satisfied": 0.06,
+                    "Not at all satisfied": 0.01,
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.93,
+                    "Total 'Not satisfied'": 0.07
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 326,
+                    "Plut\u00f4t satisfait(e)": 597,
+                    "Plut\u00f4t pas satisfait(e)": 65,
+                    "Pas du tout satisfait(e)": 10,
+                    "Ne sait pas": 2,
+                    "Total 'Satisfait(e)'": 923,
+                    "Total 'Pas satisfait(e)'": 74
+                }
+            }
+        },
+        {
+            "id": "SK",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.17,
+                    "Fairly satisfied": 0.57,
+                    "Not very satisfied": 0.22,
+                    "Not at all satisfied": 0.04,
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.74,
+                    "Total 'Not satisfied'": 0.26
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 179,
+                    "Plut\u00f4t satisfait(e)": 581,
+                    "Plut\u00f4t pas satisfait(e)": 221,
+                    "Pas du tout satisfait(e)": 37,
+                    "Ne sait pas": 2,
+                    "Total 'Satisfait(e)'": 760,
+                    "Total 'Pas satisfait(e)'": 259
+                }
+            }
+        },
+        {
+            "id": "FI",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.39,
+                    "Fairly satisfied": 0.57,
+                    "Not very satisfied": 0.04,
+                    "Not at all satisfied": "-",
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.96,
+                    "Total 'Not satisfied'": 0.04
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 393,
+                    "Plut\u00f4t satisfait(e)": 571,
+                    "Plut\u00f4t pas satisfait(e)": 40,
+                    "Pas du tout satisfait(e)": 5,
+                    "Ne sait pas": "-",
+                    "Total 'Satisfait(e)'": 964,
+                    "Total 'Pas satisfait(e)'": 45
+                }
+            }
+        },
+        {
+            "id": "SE",
+            "number_of_respondents": 1019,
+            "responses": {
+                "percentage": {
+                    "Very satisfied": 0.46,
+                    "Fairly satisfied": 0.46,
+                    "Not very satisfied": 0.07,
+                    "Not at all satisfied": 0.01,
+                    "Don't know": "-",
+                    "Total 'Satisfied'": 0.92,
+                    "Total 'Not satisfied'": 0.08
+                },
+                "cardinal": {
+                    "Tres satisfait(e)": 470,
+                    "Plut\u00f4t satisfait(e)": 471,
+                    "Plut\u00f4t pas satisfait(e)": 65,
+                    "Pas du tout satisfait(e)": 11,
+                    "Ne sait pas": 2,
+                    "Total 'Satisfait(e)'": 941,
+                    "Total 'Pas satisfait(e)'": 77
+                }
+            }
+        }
+    ]
+}

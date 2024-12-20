@@ -1,0 +1,585 @@
+{
+    "name": "D62R",
+    "data": [
+        {
+            "id": "UE27\nEU27",
+            "number_of_respondents": 26404,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.83,
+                    "Often/ Sometimes": 0.07,
+                    "Never": 0.09,
+                    "No Internet access (SPONTANEOUS)": 0.01,
+                    "Total 'Yes'": 0.9
+                },
+                "cardinal": {
+                    "Tous les jours": 21849,
+                    "Souvent/ Parfois": 1834,
+                    "Jamais": 2528,
+                    "Pas d'acces a Internet (SPONTANE)": 193,
+                    "Total 'Oui'": 23682
+                }
+            }
+        },
+        {
+            "id": "BE",
+            "number_of_respondents": 1018,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.86,
+                    "Often/ Sometimes": 0.08,
+                    "Never": 0.04,
+                    "No Internet access (SPONTANEOUS)": 0.02,
+                    "Total 'Yes'": 0.94
+                },
+                "cardinal": {
+                    "Tous les jours": 878,
+                    "Souvent/ Parfois": 77,
+                    "Jamais": 45,
+                    "Pas d'acces a Internet (SPONTANE)": 17,
+                    "Total 'Oui'": 955
+                }
+            }
+        },
+        {
+            "id": "BG",
+            "number_of_respondents": 1014,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.77,
+                    "Often/ Sometimes": 0.06,
+                    "Never": 0.13,
+                    "No Internet access (SPONTANEOUS)": 0.04,
+                    "Total 'Yes'": 0.83
+                },
+                "cardinal": {
+                    "Tous les jours": 782,
+                    "Souvent/ Parfois": 64,
+                    "Jamais": 131,
+                    "Pas d'acces a Internet (SPONTANE)": 38,
+                    "Total 'Oui'": 846
+                }
+            }
+        },
+        {
+            "id": "CZ",
+            "number_of_respondents": 1025,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.82,
+                    "Often/ Sometimes": 0.1,
+                    "Never": 0.08,
+                    "No Internet access (SPONTANEOUS)": "-",
+                    "Total 'Yes'": 0.92
+                },
+                "cardinal": {
+                    "Tous les jours": 845,
+                    "Souvent/ Parfois": 99,
+                    "Jamais": 81,
+                    "Pas d'acces a Internet (SPONTANE)": 1,
+                    "Total 'Oui'": 944
+                }
+            }
+        },
+        {
+            "id": "DK",
+            "number_of_respondents": 1019,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.95,
+                    "Often/ Sometimes": 0.02,
+                    "Never": 0.03,
+                    "No Internet access (SPONTANEOUS)": "-",
+                    "Total 'Yes'": 0.97
+                },
+                "cardinal": {
+                    "Tous les jours": 966,
+                    "Souvent/ Parfois": 25,
+                    "Jamais": 26,
+                    "Pas d'acces a Internet (SPONTANE)": 1,
+                    "Total 'Oui'": 991
+                }
+            }
+        },
+        {
+            "id": "D-W",
+            "number_of_respondents": 1227,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.82,
+                    "Often/ Sometimes": 0.08,
+                    "Never": 0.09,
+                    "No Internet access (SPONTANEOUS)": 0.01,
+                    "Total 'Yes'": 0.9
+                },
+                "cardinal": {
+                    "Tous les jours": 1009,
+                    "Souvent/ Parfois": 101,
+                    "Jamais": 113,
+                    "Pas d'acces a Internet (SPONTANE)": 4,
+                    "Total 'Oui'": 1111
+                }
+            }
+        },
+        {
+            "id": "DE",
+            "number_of_respondents": 1525,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.81,
+                    "Often/ Sometimes": 0.09,
+                    "Never": 0.1,
+                    "No Internet access (SPONTANEOUS)": "-",
+                    "Total 'Yes'": 0.9
+                },
+                "cardinal": {
+                    "Tous les jours": 1240,
+                    "Souvent/ Parfois": 136,
+                    "Jamais": 144,
+                    "Pas d'acces a Internet (SPONTANE)": 5,
+                    "Total 'Oui'": 1376
+                }
+            }
+        },
+        {
+            "id": "EE",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.86,
+                    "Often/ Sometimes": 0.06,
+                    "Never": 0.08,
+                    "No Internet access (SPONTANEOUS)": "-",
+                    "Total 'Yes'": 0.92
+                },
+                "cardinal": {
+                    "Tous les jours": 865,
+                    "Souvent/ Parfois": 63,
+                    "Jamais": 77,
+                    "Pas d'acces a Internet (SPONTANE)": 4,
+                    "Total 'Oui'": 928
+                }
+            }
+        },
+        {
+            "id": "IE",
+            "number_of_respondents": 1016,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.86,
+                    "Often/ Sometimes": 0.08,
+                    "Never": 0.05,
+                    "No Internet access (SPONTANEOUS)": 0.01,
+                    "Total 'Yes'": 0.94
+                },
+                "cardinal": {
+                    "Tous les jours": 877,
+                    "Souvent/ Parfois": 85,
+                    "Jamais": 48,
+                    "Pas d'acces a Internet (SPONTANE)": 6,
+                    "Total 'Oui'": 962
+                }
+            }
+        },
+        {
+            "id": "EL",
+            "number_of_respondents": 1014,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.79,
+                    "Often/ Sometimes": 0.06,
+                    "Never": 0.12,
+                    "No Internet access (SPONTANEOUS)": 0.03,
+                    "Total 'Yes'": 0.85
+                },
+                "cardinal": {
+                    "Tous les jours": 801,
+                    "Souvent/ Parfois": 59,
+                    "Jamais": 126,
+                    "Pas d'acces a Internet (SPONTANE)": 28,
+                    "Total 'Oui'": 860
+                }
+            }
+        },
+        {
+            "id": "ES",
+            "number_of_respondents": 1004,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.86,
+                    "Often/ Sometimes": 0.04,
+                    "Never": 0.1,
+                    "No Internet access (SPONTANEOUS)": "-",
+                    "Total 'Yes'": 0.9
+                },
+                "cardinal": {
+                    "Tous les jours": 863,
+                    "Souvent/ Parfois": 37,
+                    "Jamais": 98,
+                    "Pas d'acces a Internet (SPONTANE)": 6,
+                    "Total 'Oui'": 900
+                }
+            }
+        },
+        {
+            "id": "FR",
+            "number_of_respondents": 1006,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.84,
+                    "Often/ Sometimes": 0.07,
+                    "Never": 0.08,
+                    "No Internet access (SPONTANEOUS)": 0.01,
+                    "Total 'Yes'": 0.91
+                },
+                "cardinal": {
+                    "Tous les jours": 846,
+                    "Souvent/ Parfois": 67,
+                    "Jamais": 85,
+                    "Pas d'acces a Internet (SPONTANE)": 8,
+                    "Total 'Oui'": 913
+                }
+            }
+        },
+        {
+            "id": "HR",
+            "number_of_respondents": 1012,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.85,
+                    "Often/ Sometimes": 0.07,
+                    "Never": 0.08,
+                    "No Internet access (SPONTANEOUS)": "-",
+                    "Total 'Yes'": 0.92
+                },
+                "cardinal": {
+                    "Tous les jours": 860,
+                    "Souvent/ Parfois": 69,
+                    "Jamais": 78,
+                    "Pas d'acces a Internet (SPONTANE)": 5,
+                    "Total 'Oui'": 929
+                }
+            }
+        },
+        {
+            "id": "IT",
+            "number_of_respondents": 1027,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.81,
+                    "Often/ Sometimes": 0.09,
+                    "Never": 0.09,
+                    "No Internet access (SPONTANEOUS)": 0.01,
+                    "Total 'Yes'": 0.9
+                },
+                "cardinal": {
+                    "Tous les jours": 837,
+                    "Souvent/ Parfois": 89,
+                    "Jamais": 93,
+                    "Pas d'acces a Internet (SPONTANE)": 9,
+                    "Total 'Oui'": 926
+                }
+            }
+        },
+        {
+            "id": "CY",
+            "number_of_respondents": 504,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.83,
+                    "Often/ Sometimes": 0.05,
+                    "Never": 0.1,
+                    "No Internet access (SPONTANEOUS)": 0.02,
+                    "Total 'Yes'": 0.88
+                },
+                "cardinal": {
+                    "Tous les jours": 421,
+                    "Souvent/ Parfois": 26,
+                    "Jamais": 49,
+                    "Pas d'acces a Internet (SPONTANE)": 8,
+                    "Total 'Oui'": 447
+                }
+            }
+        },
+        {
+            "id": "LV",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.83,
+                    "Often/ Sometimes": 0.05,
+                    "Never": 0.11,
+                    "No Internet access (SPONTANEOUS)": 0.01,
+                    "Total 'Yes'": 0.88
+                },
+                "cardinal": {
+                    "Tous les jours": 834,
+                    "Souvent/ Parfois": 52,
+                    "Jamais": 113,
+                    "Pas d'acces a Internet (SPONTANE)": 10,
+                    "Total 'Oui'": 886
+                }
+            }
+        },
+        {
+            "id": "LT",
+            "number_of_respondents": 1005,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.83,
+                    "Often/ Sometimes": 0.04,
+                    "Never": 0.12,
+                    "No Internet access (SPONTANEOUS)": 0.01,
+                    "Total 'Yes'": 0.87
+                },
+                "cardinal": {
+                    "Tous les jours": 830,
+                    "Souvent/ Parfois": 46,
+                    "Jamais": 120,
+                    "Pas d'acces a Internet (SPONTANE)": 9,
+                    "Total 'Oui'": 876
+                }
+            }
+        },
+        {
+            "id": "LU",
+            "number_of_respondents": 508,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.91,
+                    "Often/ Sometimes": 0.05,
+                    "Never": 0.03,
+                    "No Internet access (SPONTANEOUS)": 0.01,
+                    "Total 'Yes'": 0.96
+                },
+                "cardinal": {
+                    "Tous les jours": 462,
+                    "Souvent/ Parfois": 26,
+                    "Jamais": 17,
+                    "Pas d'acces a Internet (SPONTANE)": 3,
+                    "Total 'Oui'": 488
+                }
+            }
+        },
+        {
+            "id": "HU",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.77,
+                    "Often/ Sometimes": 0.09,
+                    "Never": 0.14,
+                    "No Internet access (SPONTANEOUS)": "-",
+                    "Total 'Yes'": 0.86
+                },
+                "cardinal": {
+                    "Tous les jours": 792,
+                    "Souvent/ Parfois": 89,
+                    "Jamais": 140,
+                    "Pas d'acces a Internet (SPONTANE)": 0,
+                    "Total 'Oui'": 881
+                }
+            }
+        },
+        {
+            "id": "MT",
+            "number_of_respondents": 514,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.79,
+                    "Often/ Sometimes": 0.03,
+                    "Never": 0.08,
+                    "No Internet access (SPONTANEOUS)": 0.1,
+                    "Total 'Yes'": 0.82
+                },
+                "cardinal": {
+                    "Tous les jours": 408,
+                    "Souvent/ Parfois": 13,
+                    "Jamais": 41,
+                    "Pas d'acces a Internet (SPONTANE)": 52,
+                    "Total 'Oui'": 421
+                }
+            }
+        },
+        {
+            "id": "NL",
+            "number_of_respondents": 1004,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.98,
+                    "Often/ Sometimes": 0.01,
+                    "Never": 0.01,
+                    "No Internet access (SPONTANEOUS)": "-",
+                    "Total 'Yes'": 0.99
+                },
+                "cardinal": {
+                    "Tous les jours": 987,
+                    "Souvent/ Parfois": 13,
+                    "Jamais": 4,
+                    "Pas d'acces a Internet (SPONTANE)": 0,
+                    "Total 'Oui'": 1000
+                }
+            }
+        },
+        {
+            "id": "AT",
+            "number_of_respondents": 1012,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.81,
+                    "Often/ Sometimes": 0.1,
+                    "Never": 0.06,
+                    "No Internet access (SPONTANEOUS)": 0.03,
+                    "Total 'Yes'": 0.91
+                },
+                "cardinal": {
+                    "Tous les jours": 819,
+                    "Souvent/ Parfois": 98,
+                    "Jamais": 63,
+                    "Pas d'acces a Internet (SPONTANE)": 32,
+                    "Total 'Oui'": 917
+                }
+            }
+        },
+        {
+            "id": "PL",
+            "number_of_respondents": 1015,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.78,
+                    "Often/ Sometimes": 0.06,
+                    "Never": 0.16,
+                    "No Internet access (SPONTANEOUS)": "-",
+                    "Total 'Yes'": 0.84
+                },
+                "cardinal": {
+                    "Tous les jours": 791,
+                    "Souvent/ Parfois": 64,
+                    "Jamais": 160,
+                    "Pas d'acces a Internet (SPONTANE)": 1,
+                    "Total 'Oui'": 855
+                }
+            }
+        },
+        {
+            "id": "PT",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.78,
+                    "Often/ Sometimes": 0.04,
+                    "Never": 0.16,
+                    "No Internet access (SPONTANEOUS)": 0.02,
+                    "Total 'Yes'": 0.82
+                },
+                "cardinal": {
+                    "Tous les jours": 792,
+                    "Souvent/ Parfois": 37,
+                    "Jamais": 167,
+                    "Pas d'acces a Internet (SPONTANE)": 25,
+                    "Total 'Oui'": 829
+                }
+            }
+        },
+        {
+            "id": "RO",
+            "number_of_respondents": 1053,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.7,
+                    "Often/ Sometimes": 0.12,
+                    "Never": 0.17,
+                    "No Internet access (SPONTANEOUS)": 0.01,
+                    "Total 'Yes'": 0.82
+                },
+                "cardinal": {
+                    "Tous les jours": 735,
+                    "Souvent/ Parfois": 125,
+                    "Jamais": 186,
+                    "Pas d'acces a Internet (SPONTANE)": 7,
+                    "Total 'Oui'": 860
+                }
+            }
+        },
+        {
+            "id": "SI",
+            "number_of_respondents": 1000,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.81,
+                    "Often/ Sometimes": 0.08,
+                    "Never": 0.1,
+                    "No Internet access (SPONTANEOUS)": 0.01,
+                    "Total 'Yes'": 0.89
+                },
+                "cardinal": {
+                    "Tous les jours": 806,
+                    "Souvent/ Parfois": 78,
+                    "Jamais": 106,
+                    "Pas d'acces a Internet (SPONTANE)": 10,
+                    "Total 'Oui'": 884
+                }
+            }
+        },
+        {
+            "id": "SK",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.82,
+                    "Often/ Sometimes": 0.07,
+                    "Never": 0.11,
+                    "No Internet access (SPONTANEOUS)": "-",
+                    "Total 'Yes'": 0.89
+                },
+                "cardinal": {
+                    "Tous les jours": 839,
+                    "Souvent/ Parfois": 65,
+                    "Jamais": 116,
+                    "Pas d'acces a Internet (SPONTANE)": 1,
+                    "Total 'Oui'": 904
+                }
+            }
+        },
+        {
+            "id": "FI",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.91,
+                    "Often/ Sometimes": 0.05,
+                    "Never": 0.04,
+                    "No Internet access (SPONTANEOUS)": "-",
+                    "Total 'Yes'": 0.96
+                },
+                "cardinal": {
+                    "Tous les jours": 922,
+                    "Souvent/ Parfois": 48,
+                    "Jamais": 39,
+                    "Pas d'acces a Internet (SPONTANE)": 0,
+                    "Total 'Oui'": 970
+                }
+            }
+        },
+        {
+            "id": "SE",
+            "number_of_respondents": 1019,
+            "responses": {
+                "percentage": {
+                    "Everyday": 0.96,
+                    "Often/ Sometimes": 0.02,
+                    "Never": 0.02,
+                    "No Internet access (SPONTANEOUS)": "-",
+                    "Total 'Yes'": 0.98
+                },
+                "cardinal": {
+                    "Tous les jours": 980,
+                    "Souvent/ Parfois": 22,
+                    "Jamais": 16,
+                    "Pas d'acces a Internet (SPONTANE)": 1,
+                    "Total 'Oui'": 1002
+                }
+            }
+        }
+    ]
+}

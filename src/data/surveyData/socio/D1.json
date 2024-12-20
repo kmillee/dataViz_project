@@ -1,0 +1,1049 @@
+{
+    "name": "D1",
+    "data": [
+        {
+            "id": "UE27\nEU27",
+            "number_of_respondents": 26404,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.04,
+                    "2": 0.04,
+                    "3": 0.09,
+                    "4": 0.11,
+                    "5": 0.27,
+                    "6": 0.11,
+                    "7": 0.1,
+                    "8": 0.07,
+                    "9": 0.02,
+                    "10 Right": 0.03,
+                    "Refusal (SPONTANEOUS)": 0.05,
+                    "Don't know": 0.07,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 963,
+                    "2": 1057,
+                    "3": 2475,
+                    "4": 2848,
+                    "5": 7110,
+                    "6": 2870,
+                    "7": 2592,
+                    "8": 1882,
+                    "9": 578,
+                    "10 Droite": 902,
+                    "Refus (SPONTANe)": 1181,
+                    "Ne sait pas": 1944,
+                    "Moyenne": 5.24
+                }
+            }
+        },
+        {
+            "id": "BE",
+            "number_of_respondents": 1018,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.04,
+                    "2": 0.03,
+                    "3": 0.09,
+                    "4": 0.11,
+                    "5": 0.27,
+                    "6": 0.13,
+                    "7": 0.13,
+                    "8": 0.09,
+                    "9": 0.02,
+                    "10 Right": 0.01,
+                    "Refusal (SPONTANEOUS)": 0.04,
+                    "Don't know": 0.04,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 37,
+                    "2": 34,
+                    "3": 96,
+                    "4": 112,
+                    "5": 275,
+                    "6": 132,
+                    "7": 128,
+                    "8": 94,
+                    "9": 17,
+                    "10 Droite": 16,
+                    "Refus (SPONTANe)": 39,
+                    "Ne sait pas": 38,
+                    "Moyenne": 5.28
+                }
+            }
+        },
+        {
+            "id": "BG",
+            "number_of_respondents": 1014,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.04,
+                    "2": 0.03,
+                    "3": 0.08,
+                    "4": 0.07,
+                    "5": 0.21,
+                    "6": 0.11,
+                    "7": 0.1,
+                    "8": 0.11,
+                    "9": 0.02,
+                    "10 Right": 0.09,
+                    "Refusal (SPONTANEOUS)": 0.04,
+                    "Don't know": 0.1,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 42,
+                    "2": 33,
+                    "3": 76,
+                    "4": 70,
+                    "5": 216,
+                    "6": 115,
+                    "7": 104,
+                    "8": 109,
+                    "9": 24,
+                    "10 Droite": 86,
+                    "Refus (SPONTANe)": 34,
+                    "Ne sait pas": 105,
+                    "Moyenne": 5.79
+                }
+            }
+        },
+        {
+            "id": "CZ",
+            "number_of_respondents": 1025,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.04,
+                    "2": 0.02,
+                    "3": 0.06,
+                    "4": 0.1,
+                    "5": 0.31,
+                    "6": 0.14,
+                    "7": 0.15,
+                    "8": 0.09,
+                    "9": 0.02,
+                    "10 Right": 0.05,
+                    "Refusal (SPONTANEOUS)": "-",
+                    "Don't know": 0.02,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 39,
+                    "2": 21,
+                    "3": 58,
+                    "4": 107,
+                    "5": 322,
+                    "6": 140,
+                    "7": 154,
+                    "8": 90,
+                    "9": 24,
+                    "10 Droite": 50,
+                    "Refus (SPONTANe)": 4,
+                    "Ne sait pas": 16,
+                    "Moyenne": 5.62
+                }
+            }
+        },
+        {
+            "id": "DK",
+            "number_of_respondents": 1019,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.05,
+                    "2": 0.05,
+                    "3": 0.12,
+                    "4": 0.13,
+                    "5": 0.23,
+                    "6": 0.12,
+                    "7": 0.12,
+                    "8": 0.08,
+                    "9": 0.02,
+                    "10 Right": 0.03,
+                    "Refusal (SPONTANEOUS)": 0.02,
+                    "Don't know": 0.03,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 54,
+                    "2": 53,
+                    "3": 120,
+                    "4": 130,
+                    "5": 235,
+                    "6": 126,
+                    "7": 119,
+                    "8": 83,
+                    "9": 24,
+                    "10 Droite": 26,
+                    "Refus (SPONTANe)": 20,
+                    "Ne sait pas": 29,
+                    "Moyenne": 5.1
+                }
+            }
+        },
+        {
+            "id": "D-W",
+            "number_of_respondents": 1227,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.03,
+                    "2": 0.04,
+                    "3": 0.09,
+                    "4": 0.14,
+                    "5": 0.39,
+                    "6": 0.13,
+                    "7": 0.08,
+                    "8": 0.02,
+                    "9": 0.01,
+                    "10 Right": 0.01,
+                    "Refusal (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.05,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 31,
+                    "2": 45,
+                    "3": 117,
+                    "4": 172,
+                    "5": 485,
+                    "6": 157,
+                    "7": 104,
+                    "8": 22,
+                    "9": 11,
+                    "10 Droite": 8,
+                    "Refus (SPONTANe)": 18,
+                    "Ne sait pas": 56,
+                    "Moyenne": 4.87
+                }
+            }
+        },
+        {
+            "id": "DE",
+            "number_of_respondents": 1525,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.03,
+                    "2": 0.04,
+                    "3": 0.1,
+                    "4": 0.13,
+                    "5": 0.4,
+                    "6": 0.13,
+                    "7": 0.08,
+                    "8": 0.02,
+                    "9": 0.01,
+                    "10 Right": 0.01,
+                    "Refusal (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.04,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 45,
+                    "2": 60,
+                    "3": 147,
+                    "4": 196,
+                    "5": 605,
+                    "6": 194,
+                    "7": 129,
+                    "8": 34,
+                    "9": 16,
+                    "10 Droite": 10,
+                    "Refus (SPONTANe)": 25,
+                    "Ne sait pas": 66,
+                    "Moyenne": 4.87
+                }
+            }
+        },
+        {
+            "id": "EE",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.06,
+                    "2": 0.03,
+                    "3": 0.05,
+                    "4": 0.06,
+                    "5": 0.23,
+                    "6": 0.11,
+                    "7": 0.11,
+                    "8": 0.09,
+                    "9": 0.03,
+                    "10 Right": 0.03,
+                    "Refusal (SPONTANEOUS)": 0.04,
+                    "Don't know": 0.16,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 59,
+                    "2": 30,
+                    "3": 51,
+                    "4": 62,
+                    "5": 235,
+                    "6": 107,
+                    "7": 112,
+                    "8": 89,
+                    "9": 30,
+                    "10 Droite": 36,
+                    "Refus (SPONTANe)": 38,
+                    "Ne sait pas": 159,
+                    "Moyenne": 5.51
+                }
+            }
+        },
+        {
+            "id": "IE",
+            "number_of_respondents": 1016,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.02,
+                    "2": 0.02,
+                    "3": 0.05,
+                    "4": 0.09,
+                    "5": 0.5,
+                    "6": 0.12,
+                    "7": 0.07,
+                    "8": 0.03,
+                    "9": 0.01,
+                    "10 Right": 0.01,
+                    "Refusal (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.07,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 23,
+                    "2": 25,
+                    "3": 46,
+                    "4": 95,
+                    "5": 506,
+                    "6": 123,
+                    "7": 74,
+                    "8": 28,
+                    "9": 8,
+                    "10 Droite": 14,
+                    "Refus (SPONTANe)": 6,
+                    "Ne sait pas": 67,
+                    "Moyenne": 5.11
+                }
+            }
+        },
+        {
+            "id": "EL",
+            "number_of_respondents": 1014,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.01,
+                    "2": 0.02,
+                    "3": 0.08,
+                    "4": 0.1,
+                    "5": 0.28,
+                    "6": 0.06,
+                    "7": 0.12,
+                    "8": 0.08,
+                    "9": 0.03,
+                    "10 Right": 0.02,
+                    "Refusal (SPONTANEOUS)": 0.1,
+                    "Don't know": 0.1,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 14,
+                    "2": 18,
+                    "3": 79,
+                    "4": 100,
+                    "5": 281,
+                    "6": 66,
+                    "7": 118,
+                    "8": 84,
+                    "9": 33,
+                    "10 Droite": 16,
+                    "Refus (SPONTANe)": 100,
+                    "Ne sait pas": 104,
+                    "Moyenne": 5.49
+                }
+            }
+        },
+        {
+            "id": "ES",
+            "number_of_respondents": 1004,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.05,
+                    "2": 0.06,
+                    "3": 0.12,
+                    "4": 0.13,
+                    "5": 0.26,
+                    "6": 0.07,
+                    "7": 0.07,
+                    "8": 0.04,
+                    "9": 0.01,
+                    "10 Right": 0.03,
+                    "Refusal (SPONTANEOUS)": 0.09,
+                    "Don't know": 0.07,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 50,
+                    "2": 57,
+                    "3": 118,
+                    "4": 128,
+                    "5": 258,
+                    "6": 67,
+                    "7": 73,
+                    "8": 41,
+                    "9": 15,
+                    "10 Droite": 27,
+                    "Refus (SPONTANe)": 95,
+                    "Ne sait pas": 76,
+                    "Moyenne": 4.76
+                }
+            }
+        },
+        {
+            "id": "FR",
+            "number_of_respondents": 1006,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.04,
+                    "2": 0.04,
+                    "3": 0.1,
+                    "4": 0.08,
+                    "5": 0.29,
+                    "6": 0.06,
+                    "7": 0.06,
+                    "8": 0.07,
+                    "9": 0.02,
+                    "10 Right": 0.03,
+                    "Refusal (SPONTANEOUS)": 0.04,
+                    "Don't know": 0.17,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 38,
+                    "2": 36,
+                    "3": 105,
+                    "4": 85,
+                    "5": 288,
+                    "6": 55,
+                    "7": 65,
+                    "8": 74,
+                    "9": 21,
+                    "10 Droite": 33,
+                    "Refus (SPONTANe)": 38,
+                    "Ne sait pas": 168,
+                    "Moyenne": 5.13
+                }
+            }
+        },
+        {
+            "id": "HR",
+            "number_of_respondents": 1012,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.03,
+                    "2": 0.03,
+                    "3": 0.06,
+                    "4": 0.09,
+                    "5": 0.3,
+                    "6": 0.13,
+                    "7": 0.11,
+                    "8": 0.06,
+                    "9": 0.03,
+                    "10 Right": 0.07,
+                    "Refusal (SPONTANEOUS)": 0.05,
+                    "Don't know": 0.04,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 36,
+                    "2": 27,
+                    "3": 62,
+                    "4": 89,
+                    "5": 302,
+                    "6": 128,
+                    "7": 108,
+                    "8": 60,
+                    "9": 35,
+                    "10 Droite": 76,
+                    "Refus (SPONTANe)": 48,
+                    "Ne sait pas": 41,
+                    "Moyenne": 5.65
+                }
+            }
+        },
+        {
+            "id": "IT",
+            "number_of_respondents": 1027,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.02,
+                    "2": 0.03,
+                    "3": 0.07,
+                    "4": 0.11,
+                    "5": 0.18,
+                    "6": 0.15,
+                    "7": 0.13,
+                    "8": 0.1,
+                    "9": 0.02,
+                    "10 Right": 0.05,
+                    "Refusal (SPONTANEOUS)": 0.09,
+                    "Don't know": 0.05,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 24,
+                    "2": 28,
+                    "3": 70,
+                    "4": 112,
+                    "5": 190,
+                    "6": 157,
+                    "7": 131,
+                    "8": 103,
+                    "9": 17,
+                    "10 Droite": 50,
+                    "Refus (SPONTANe)": 95,
+                    "Ne sait pas": 50,
+                    "Moyenne": 5.7
+                }
+            }
+        },
+        {
+            "id": "CY",
+            "number_of_respondents": 504,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.04,
+                    "2": 0.02,
+                    "3": 0.03,
+                    "4": 0.02,
+                    "5": 0.23,
+                    "6": 0.04,
+                    "7": 0.06,
+                    "8": 0.05,
+                    "9": 0.02,
+                    "10 Right": 0.08,
+                    "Refusal (SPONTANEOUS)": 0.26,
+                    "Don't know": 0.15,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 21,
+                    "2": 10,
+                    "3": 15,
+                    "4": 12,
+                    "5": 115,
+                    "6": 22,
+                    "7": 31,
+                    "8": 28,
+                    "9": 8,
+                    "10 Droite": 38,
+                    "Refus (SPONTANe)": 131,
+                    "Ne sait pas": 73,
+                    "Moyenne": 5.8
+                }
+            }
+        },
+        {
+            "id": "LV",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.02,
+                    "2": 0.01,
+                    "3": 0.02,
+                    "4": 0.03,
+                    "5": 0.31,
+                    "6": 0.1,
+                    "7": 0.09,
+                    "8": 0.09,
+                    "9": 0.03,
+                    "10 Right": 0.04,
+                    "Refusal (SPONTANEOUS)": 0.02,
+                    "Don't know": 0.24,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 17,
+                    "2": 11,
+                    "3": 21,
+                    "4": 27,
+                    "5": 314,
+                    "6": 100,
+                    "7": 88,
+                    "8": 87,
+                    "9": 29,
+                    "10 Droite": 45,
+                    "Refus (SPONTANe)": 23,
+                    "Ne sait pas": 248,
+                    "Moyenne": 5.95
+                }
+            }
+        },
+        {
+            "id": "LT",
+            "number_of_respondents": 1005,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.03,
+                    "2": 0.04,
+                    "3": 0.06,
+                    "4": 0.06,
+                    "5": 0.2,
+                    "6": 0.06,
+                    "7": 0.05,
+                    "8": 0.05,
+                    "9": 0.02,
+                    "10 Right": 0.04,
+                    "Refusal (SPONTANEOUS)": 0.09,
+                    "Don't know": 0.3,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 30,
+                    "2": 40,
+                    "3": 58,
+                    "4": 64,
+                    "5": 206,
+                    "6": 56,
+                    "7": 49,
+                    "8": 46,
+                    "9": 19,
+                    "10 Droite": 44,
+                    "Refus (SPONTANe)": 87,
+                    "Ne sait pas": 305,
+                    "Moyenne": 5.27
+                }
+            }
+        },
+        {
+            "id": "LU",
+            "number_of_respondents": 508,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.03,
+                    "2": 0.02,
+                    "3": 0.06,
+                    "4": 0.11,
+                    "5": 0.39,
+                    "6": 0.12,
+                    "7": 0.07,
+                    "8": 0.03,
+                    "9": "-",
+                    "10 Right": 0.01,
+                    "Refusal (SPONTANEOUS)": 0.06,
+                    "Don't know": 0.1,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 14,
+                    "2": 8,
+                    "3": 31,
+                    "4": 56,
+                    "5": 201,
+                    "6": 63,
+                    "7": 34,
+                    "8": 15,
+                    "9": 1,
+                    "10 Droite": 5,
+                    "Refus (SPONTANe)": 29,
+                    "Ne sait pas": 50,
+                    "Moyenne": 5
+                }
+            }
+        },
+        {
+            "id": "HU",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.03,
+                    "2": 0.03,
+                    "3": 0.08,
+                    "4": 0.09,
+                    "5": 0.23,
+                    "6": 0.14,
+                    "7": 0.11,
+                    "8": 0.1,
+                    "9": 0.03,
+                    "10 Right": 0.05,
+                    "Refusal (SPONTANEOUS)": 0.08,
+                    "Don't know": 0.03,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 35,
+                    "2": 33,
+                    "3": 76,
+                    "4": 88,
+                    "5": 237,
+                    "6": 146,
+                    "7": 110,
+                    "8": 101,
+                    "9": 34,
+                    "10 Droite": 52,
+                    "Refus (SPONTANe)": 79,
+                    "Ne sait pas": 29,
+                    "Moyenne": 5.65
+                }
+            }
+        },
+        {
+            "id": "MT",
+            "number_of_respondents": 514,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.03,
+                    "2": 0.02,
+                    "3": 0.08,
+                    "4": 0.13,
+                    "5": 0.31,
+                    "6": 0.08,
+                    "7": 0.07,
+                    "8": 0.05,
+                    "9": 0.01,
+                    "10 Right": 0.01,
+                    "Refusal (SPONTANEOUS)": 0.06,
+                    "Don't know": 0.15,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 16,
+                    "2": 8,
+                    "3": 42,
+                    "4": 68,
+                    "5": 161,
+                    "6": 40,
+                    "7": 34,
+                    "8": 28,
+                    "9": 5,
+                    "10 Droite": 6,
+                    "Refus (SPONTANe)": 33,
+                    "Ne sait pas": 74,
+                    "Moyenne": 5.01
+                }
+            }
+        },
+        {
+            "id": "NL",
+            "number_of_respondents": 1004,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.05,
+                    "2": 0.09,
+                    "3": 0.16,
+                    "4": 0.15,
+                    "5": 0.16,
+                    "6": 0.12,
+                    "7": 0.13,
+                    "8": 0.08,
+                    "9": 0.02,
+                    "10 Right": 0.02,
+                    "Refusal (SPONTANEOUS)": "-",
+                    "Don't know": 0.02,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 48,
+                    "2": 89,
+                    "3": 164,
+                    "4": 148,
+                    "5": 163,
+                    "6": 122,
+                    "7": 135,
+                    "8": 78,
+                    "9": 20,
+                    "10 Droite": 15,
+                    "Refus (SPONTANe)": 4,
+                    "Ne sait pas": 20,
+                    "Moyenne": 4.84
+                }
+            }
+        },
+        {
+            "id": "AT",
+            "number_of_respondents": 1012,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.03,
+                    "2": 0.05,
+                    "3": 0.09,
+                    "4": 0.09,
+                    "5": 0.2,
+                    "6": 0.14,
+                    "7": 0.12,
+                    "8": 0.09,
+                    "9": 0.02,
+                    "10 Right": 0.04,
+                    "Refusal (SPONTANEOUS)": 0.07,
+                    "Don't know": 0.06,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 32,
+                    "2": 48,
+                    "3": 90,
+                    "4": 97,
+                    "5": 200,
+                    "6": 142,
+                    "7": 117,
+                    "8": 92,
+                    "9": 17,
+                    "10 Droite": 38,
+                    "Refus (SPONTANe)": 75,
+                    "Ne sait pas": 63,
+                    "Moyenne": 5.41
+                }
+            }
+        },
+        {
+            "id": "PL",
+            "number_of_respondents": 1015,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.03,
+                    "2": 0.04,
+                    "3": 0.09,
+                    "4": 0.12,
+                    "5": 0.2,
+                    "6": 0.13,
+                    "7": 0.11,
+                    "8": 0.11,
+                    "9": 0.05,
+                    "10 Right": 0.08,
+                    "Refusal (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.03,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 26,
+                    "2": 45,
+                    "3": 90,
+                    "4": 120,
+                    "5": 204,
+                    "6": 135,
+                    "7": 116,
+                    "8": 108,
+                    "9": 54,
+                    "10 Droite": 78,
+                    "Refus (SPONTANe)": 5,
+                    "Ne sait pas": 34,
+                    "Moyenne": 5.78
+                }
+            }
+        },
+        {
+            "id": "PT",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.05,
+                    "2": 0.03,
+                    "3": 0.11,
+                    "4": 0.08,
+                    "5": 0.29,
+                    "6": 0.06,
+                    "7": 0.07,
+                    "8": 0.04,
+                    "9": 0.01,
+                    "10 Right": 0.03,
+                    "Refusal (SPONTANEOUS)": 0.07,
+                    "Don't know": 0.16,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 56,
+                    "2": 31,
+                    "3": 117,
+                    "4": 84,
+                    "5": 293,
+                    "6": 59,
+                    "7": 71,
+                    "8": 45,
+                    "9": 6,
+                    "10 Droite": 32,
+                    "Refus (SPONTANe)": 68,
+                    "Ne sait pas": 160,
+                    "Moyenne": 4.86
+                }
+            }
+        },
+        {
+            "id": "RO",
+            "number_of_respondents": 1053,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.07,
+                    "2": 0.03,
+                    "3": 0.05,
+                    "4": 0.07,
+                    "5": 0.23,
+                    "6": 0.12,
+                    "7": 0.12,
+                    "8": 0.13,
+                    "9": 0.04,
+                    "10 Right": 0.04,
+                    "Refusal (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.09,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 71,
+                    "2": 34,
+                    "3": 49,
+                    "4": 79,
+                    "5": 246,
+                    "6": 121,
+                    "7": 125,
+                    "8": 136,
+                    "9": 46,
+                    "10 Droite": 43,
+                    "Refus (SPONTANe)": 9,
+                    "Ne sait pas": 93,
+                    "Moyenne": 5.64
+                }
+            }
+        },
+        {
+            "id": "SI",
+            "number_of_respondents": 1000,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.05,
+                    "2": 0.04,
+                    "3": 0.07,
+                    "4": 0.05,
+                    "5": 0.26,
+                    "6": 0.04,
+                    "7": 0.05,
+                    "8": 0.05,
+                    "9": 0.04,
+                    "10 Right": 0.08,
+                    "Refusal (SPONTANEOUS)": 0.12,
+                    "Don't know": 0.15,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 48,
+                    "2": 36,
+                    "3": 71,
+                    "4": 53,
+                    "5": 263,
+                    "6": 44,
+                    "7": 52,
+                    "8": 49,
+                    "9": 35,
+                    "10 Droite": 76,
+                    "Refus (SPONTANe)": 119,
+                    "Ne sait pas": 154,
+                    "Moyenne": 5.44
+                }
+            }
+        },
+        {
+            "id": "SK",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.05,
+                    "2": 0.03,
+                    "3": 0.08,
+                    "4": 0.06,
+                    "5": 0.31,
+                    "6": 0.11,
+                    "7": 0.09,
+                    "8": 0.08,
+                    "9": 0.02,
+                    "10 Right": 0.03,
+                    "Refusal (SPONTANEOUS)": 0.07,
+                    "Don't know": 0.07,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 48,
+                    "2": 33,
+                    "3": 85,
+                    "4": 59,
+                    "5": 320,
+                    "6": 113,
+                    "7": 88,
+                    "8": 80,
+                    "9": 21,
+                    "10 Droite": 33,
+                    "Refus (SPONTANe)": 74,
+                    "Ne sait pas": 67,
+                    "Moyenne": 5.29
+                }
+            }
+        },
+        {
+            "id": "FI",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.02,
+                    "2": 0.03,
+                    "3": 0.1,
+                    "4": 0.1,
+                    "5": 0.2,
+                    "6": 0.11,
+                    "7": 0.13,
+                    "8": 0.14,
+                    "9": 0.06,
+                    "10 Right": 0.04,
+                    "Refusal (SPONTANEOUS)": 0.01,
+                    "Don't know": 0.06,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 22,
+                    "2": 32,
+                    "3": 97,
+                    "4": 98,
+                    "5": 203,
+                    "6": 110,
+                    "7": 135,
+                    "8": 146,
+                    "9": 56,
+                    "10 Droite": 39,
+                    "Refus (SPONTANe)": 10,
+                    "Ne sait pas": 60,
+                    "Moyenne": 5.81
+                }
+            }
+        },
+        {
+            "id": "SE",
+            "number_of_respondents": 1019,
+            "responses": {
+                "percentage": {
+                    "1 Left": 0.08,
+                    "2": 0.08,
+                    "3": 0.17,
+                    "4": 0.13,
+                    "5": 0.16,
+                    "6": 0.1,
+                    "7": 0.13,
+                    "8": 0.08,
+                    "9": 0.02,
+                    "10 Right": 0.04,
+                    "Refusal (SPONTANEOUS)": "-",
+                    "Don't know": 0.01,
+                    "Average": NaN
+                },
+                "cardinal": {
+                    "1 Gauche": 78,
+                    "2": 81,
+                    "3": 177,
+                    "4": 132,
+                    "5": 160,
+                    "6": 103,
+                    "7": 128,
+                    "8": 78,
+                    "9": 23,
+                    "10 Droite": 37,
+                    "Refus (SPONTANe)": 6,
+                    "Ne sait pas": 15,
+                    "Moyenne": 4.83
+                }
+            }
+        }
+    ]
+}

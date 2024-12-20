@@ -1,0 +1,759 @@
+{
+    "name": "D62_1",
+    "data": [
+        {
+            "id": "UE27\nEU27",
+            "number_of_respondents": 26404,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.78,
+                    "Two or three times a week": 0.06,
+                    "About once a week": 0.02,
+                    "Two or three times a month": "-",
+                    "Less often": 0.01,
+                    "Never": 0.12,
+                    "No internet access (SPONTANEOUS)": 0.01,
+                    "Total 'Uses internet'": 0.87
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 20487,
+                    "Deux ou trois fois par semaine": 1542,
+                    "Environ une fois par semaine": 531,
+                    "Deux ou trois fois par mois": 138,
+                    "Moins souvent": 267,
+                    "Jamais": 3106,
+                    "Pas d'acces a Internet (SPONTANe)": 334,
+                    "Total 'Utilise internet'": 22964
+                }
+            }
+        },
+        {
+            "id": "BE",
+            "number_of_respondents": 1018,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.83,
+                    "Two or three times a week": 0.08,
+                    "About once a week": 0.01,
+                    "Two or three times a month": "-",
+                    "Less often": 0.01,
+                    "Never": 0.05,
+                    "No internet access (SPONTANEOUS)": 0.02,
+                    "Total 'Uses internet'": 0.93
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 845,
+                    "Deux ou trois fois par semaine": 84,
+                    "Environ une fois par semaine": 9,
+                    "Deux ou trois fois par mois": 2,
+                    "Moins souvent": 9,
+                    "Jamais": 49,
+                    "Pas d'acces a Internet (SPONTANe)": 19,
+                    "Total 'Utilise internet'": 950
+                }
+            }
+        },
+        {
+            "id": "BG",
+            "number_of_respondents": 1014,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.65,
+                    "Two or three times a week": 0.06,
+                    "About once a week": 0.03,
+                    "Two or three times a month": 0.01,
+                    "Less often": 0.02,
+                    "Never": 0.17,
+                    "No internet access (SPONTANEOUS)": 0.06,
+                    "Total 'Uses internet'": 0.77
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 661,
+                    "Deux ou trois fois par semaine": 62,
+                    "Environ une fois par semaine": 33,
+                    "Deux ou trois fois par mois": 4,
+                    "Moins souvent": 21,
+                    "Jamais": 172,
+                    "Pas d'acces a Internet (SPONTANe)": 63,
+                    "Total 'Utilise internet'": 780
+                }
+            }
+        },
+        {
+            "id": "CZ",
+            "number_of_respondents": 1025,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.77,
+                    "Two or three times a week": 0.09,
+                    "About once a week": 0.02,
+                    "Two or three times a month": 0.01,
+                    "Less often": 0.02,
+                    "Never": 0.09,
+                    "No internet access (SPONTANEOUS)": "-",
+                    "Total 'Uses internet'": 0.91
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 793,
+                    "Deux ou trois fois par semaine": 94,
+                    "Environ une fois par semaine": 16,
+                    "Deux ou trois fois par mois": 8,
+                    "Moins souvent": 22,
+                    "Jamais": 89,
+                    "Pas d'acces a Internet (SPONTANe)": 3,
+                    "Total 'Utilise internet'": 932
+                }
+            }
+        },
+        {
+            "id": "DK",
+            "number_of_respondents": 1019,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.94,
+                    "Two or three times a week": 0.02,
+                    "About once a week": 0.01,
+                    "Two or three times a month": "-",
+                    "Less often": "-",
+                    "Never": 0.03,
+                    "No internet access (SPONTANEOUS)": "-",
+                    "Total 'Uses internet'": 0.97
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 961,
+                    "Deux ou trois fois par semaine": 18,
+                    "Environ une fois par semaine": 7,
+                    "Deux ou trois fois par mois": 3,
+                    "Moins souvent": 2,
+                    "Jamais": 27,
+                    "Pas d'acces a Internet (SPONTANe)": 2,
+                    "Total 'Utilise internet'": 991
+                }
+            }
+        },
+        {
+            "id": "D-W",
+            "number_of_respondents": 1227,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.79,
+                    "Two or three times a week": 0.06,
+                    "About once a week": 0.03,
+                    "Two or three times a month": "-",
+                    "Less often": 0.01,
+                    "Never": 0.1,
+                    "No internet access (SPONTANEOUS)": 0.01,
+                    "Total 'Uses internet'": 0.89
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 973,
+                    "Deux ou trois fois par semaine": 79,
+                    "Environ une fois par semaine": 37,
+                    "Deux ou trois fois par mois": 0,
+                    "Moins souvent": 9,
+                    "Jamais": 123,
+                    "Pas d'acces a Internet (SPONTANe)": 6,
+                    "Total 'Utilise internet'": 1098
+                }
+            }
+        },
+        {
+            "id": "DE",
+            "number_of_respondents": 1525,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.77,
+                    "Two or three times a week": 0.07,
+                    "About once a week": 0.03,
+                    "Two or three times a month": "-",
+                    "Less often": 0.01,
+                    "Never": 0.11,
+                    "No internet access (SPONTANEOUS)": 0.01,
+                    "Total 'Uses internet'": 0.88
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 1173,
+                    "Deux ou trois fois par semaine": 108,
+                    "Environ une fois par semaine": 50,
+                    "Deux ou trois fois par mois": 2,
+                    "Moins souvent": 17,
+                    "Jamais": 168,
+                    "Pas d'acces a Internet (SPONTANe)": 8,
+                    "Total 'Utilise internet'": 1350
+                }
+            }
+        },
+        {
+            "id": "EE",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.82,
+                    "Two or three times a week": 0.05,
+                    "About once a week": 0.03,
+                    "Two or three times a month": 0.01,
+                    "Less often": "-",
+                    "Never": 0.08,
+                    "No internet access (SPONTANEOUS)": 0.01,
+                    "Total 'Uses internet'": 0.91
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 823,
+                    "Deux ou trois fois par semaine": 54,
+                    "Environ une fois par semaine": 26,
+                    "Deux ou trois fois par mois": 7,
+                    "Moins souvent": 5,
+                    "Jamais": 83,
+                    "Pas d'acces a Internet (SPONTANe)": 10,
+                    "Total 'Utilise internet'": 915
+                }
+            }
+        },
+        {
+            "id": "IE",
+            "number_of_respondents": 1016,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.85,
+                    "Two or three times a week": 0.06,
+                    "About once a week": 0.02,
+                    "Two or three times a month": "-",
+                    "Less often": 0.01,
+                    "Never": 0.05,
+                    "No internet access (SPONTANEOUS)": 0.01,
+                    "Total 'Uses internet'": 0.94
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 865,
+                    "Deux ou trois fois par semaine": 62,
+                    "Environ une fois par semaine": 16,
+                    "Deux ou trois fois par mois": 4,
+                    "Moins souvent": 7,
+                    "Jamais": 55,
+                    "Pas d'acces a Internet (SPONTANe)": 7,
+                    "Total 'Utilise internet'": 954
+                }
+            }
+        },
+        {
+            "id": "EL",
+            "number_of_respondents": 1014,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.77,
+                    "Two or three times a week": 0.05,
+                    "About once a week": 0.01,
+                    "Two or three times a month": "-",
+                    "Less often": 0.01,
+                    "Never": 0.13,
+                    "No internet access (SPONTANEOUS)": 0.03,
+                    "Total 'Uses internet'": 0.84
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 782,
+                    "Deux ou trois fois par semaine": 49,
+                    "Environ une fois par semaine": 10,
+                    "Deux ou trois fois par mois": 2,
+                    "Moins souvent": 8,
+                    "Jamais": 135,
+                    "Pas d'acces a Internet (SPONTANe)": 28,
+                    "Total 'Utilise internet'": 851
+                }
+            }
+        },
+        {
+            "id": "ES",
+            "number_of_respondents": 1004,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.8,
+                    "Two or three times a week": 0.02,
+                    "About once a week": 0.01,
+                    "Two or three times a month": 0.01,
+                    "Less often": 0.01,
+                    "Never": 0.14,
+                    "No internet access (SPONTANEOUS)": 0.01,
+                    "Total 'Uses internet'": 0.85
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 805,
+                    "Deux ou trois fois par semaine": 22,
+                    "Environ une fois par semaine": 4,
+                    "Deux ou trois fois par mois": 5,
+                    "Moins souvent": 13,
+                    "Jamais": 144,
+                    "Pas d'acces a Internet (SPONTANe)": 10,
+                    "Total 'Utilise internet'": 849
+                }
+            }
+        },
+        {
+            "id": "FR",
+            "number_of_respondents": 1006,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.82,
+                    "Two or three times a week": 0.05,
+                    "About once a week": 0.02,
+                    "Two or three times a month": 0.01,
+                    "Less often": 0.01,
+                    "Never": 0.08,
+                    "No internet access (SPONTANEOUS)": 0.01,
+                    "Total 'Uses internet'": 0.91
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 822,
+                    "Deux ou trois fois par semaine": 52,
+                    "Environ une fois par semaine": 17,
+                    "Deux ou trois fois par mois": 7,
+                    "Moins souvent": 7,
+                    "Jamais": 86,
+                    "Pas d'acces a Internet (SPONTANe)": 14,
+                    "Total 'Utilise internet'": 905
+                }
+            }
+        },
+        {
+            "id": "HR",
+            "number_of_respondents": 1012,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.75,
+                    "Two or three times a week": 0.06,
+                    "About once a week": 0.02,
+                    "Two or three times a month": 0.01,
+                    "Less often": 0.02,
+                    "Never": 0.11,
+                    "No internet access (SPONTANEOUS)": 0.03,
+                    "Total 'Uses internet'": 0.86
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 758,
+                    "Deux ou trois fois par semaine": 64,
+                    "Environ une fois par semaine": 22,
+                    "Deux ou trois fois par mois": 6,
+                    "Moins souvent": 26,
+                    "Jamais": 110,
+                    "Pas d'acces a Internet (SPONTANe)": 26,
+                    "Total 'Utilise internet'": 875
+                }
+            }
+        },
+        {
+            "id": "IT",
+            "number_of_respondents": 1027,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.68,
+                    "Two or three times a week": 0.08,
+                    "About once a week": 0.03,
+                    "Two or three times a month": 0.01,
+                    "Less often": 0.02,
+                    "Never": 0.16,
+                    "No internet access (SPONTANEOUS)": 0.02,
+                    "Total 'Uses internet'": 0.82
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 697,
+                    "Deux ou trois fois par semaine": 84,
+                    "Environ une fois par semaine": 31,
+                    "Deux ou trois fois par mois": 9,
+                    "Moins souvent": 17,
+                    "Jamais": 167,
+                    "Pas d'acces a Internet (SPONTANe)": 22,
+                    "Total 'Utilise internet'": 838
+                }
+            }
+        },
+        {
+            "id": "CY",
+            "number_of_respondents": 504,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.82,
+                    "Two or three times a week": 0.04,
+                    "About once a week": 0.01,
+                    "Two or three times a month": "-",
+                    "Less often": 0.01,
+                    "Never": 0.09,
+                    "No internet access (SPONTANEOUS)": 0.03,
+                    "Total 'Uses internet'": 0.88
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 415,
+                    "Deux ou trois fois par semaine": 18,
+                    "Environ une fois par semaine": 6,
+                    "Deux ou trois fois par mois": 1,
+                    "Moins souvent": 5,
+                    "Jamais": 46,
+                    "Pas d'acces a Internet (SPONTANe)": 13,
+                    "Total 'Utilise internet'": 445
+                }
+            }
+        },
+        {
+            "id": "LV",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.8,
+                    "Two or three times a week": 0.02,
+                    "About once a week": 0.01,
+                    "Two or three times a month": 0.01,
+                    "Less often": 0.01,
+                    "Never": 0.12,
+                    "No internet access (SPONTANEOUS)": 0.03,
+                    "Total 'Uses internet'": 0.85
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 805,
+                    "Deux ou trois fois par semaine": 23,
+                    "Environ une fois par semaine": 8,
+                    "Deux ou trois fois par mois": 13,
+                    "Moins souvent": 9,
+                    "Jamais": 125,
+                    "Pas d'acces a Internet (SPONTANe)": 25,
+                    "Total 'Utilise internet'": 859
+                }
+            }
+        },
+        {
+            "id": "LT",
+            "number_of_respondents": 1005,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.78,
+                    "Two or three times a week": 0.04,
+                    "About once a week": 0.01,
+                    "Two or three times a month": "-",
+                    "Less often": "-",
+                    "Never": 0.14,
+                    "No internet access (SPONTANEOUS)": 0.03,
+                    "Total 'Uses internet'": 0.83
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 785,
+                    "Deux ou trois fois par semaine": 39,
+                    "Environ une fois par semaine": 9,
+                    "Deux ou trois fois par mois": 3,
+                    "Moins souvent": 4,
+                    "Jamais": 136,
+                    "Pas d'acces a Internet (SPONTANe)": 28,
+                    "Total 'Utilise internet'": 841
+                }
+            }
+        },
+        {
+            "id": "LU",
+            "number_of_respondents": 508,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.9,
+                    "Two or three times a week": 0.03,
+                    "About once a week": 0.01,
+                    "Two or three times a month": 0.01,
+                    "Less often": "-",
+                    "Never": 0.04,
+                    "No internet access (SPONTANEOUS)": 0.01,
+                    "Total 'Uses internet'": 0.95
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 457,
+                    "Deux ou trois fois par semaine": 16,
+                    "Environ une fois par semaine": 7,
+                    "Deux ou trois fois par mois": 4,
+                    "Moins souvent": 2,
+                    "Jamais": 18,
+                    "Pas d'acces a Internet (SPONTANe)": 4,
+                    "Total 'Utilise internet'": 486
+                }
+            }
+        },
+        {
+            "id": "HU",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.74,
+                    "Two or three times a week": 0.08,
+                    "About once a week": 0.02,
+                    "Two or three times a month": "-",
+                    "Less often": 0.01,
+                    "Never": 0.15,
+                    "No internet access (SPONTANEOUS)": "-",
+                    "Total 'Uses internet'": 0.85
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 755,
+                    "Deux ou trois fois par semaine": 75,
+                    "Environ une fois par semaine": 22,
+                    "Deux ou trois fois par mois": 3,
+                    "Moins souvent": 9,
+                    "Jamais": 154,
+                    "Pas d'acces a Internet (SPONTANe)": 3,
+                    "Total 'Utilise internet'": 864
+                }
+            }
+        },
+        {
+            "id": "MT",
+            "number_of_respondents": 514,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.78,
+                    "Two or three times a week": 0.04,
+                    "About once a week": "-",
+                    "Two or three times a month": "-",
+                    "Less often": "-",
+                    "Never": 0.08,
+                    "No internet access (SPONTANEOUS)": 0.1,
+                    "Total 'Uses internet'": 0.82
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 400,
+                    "Deux ou trois fois par semaine": 18,
+                    "Environ une fois par semaine": 1,
+                    "Deux ou trois fois par mois": 1,
+                    "Moins souvent": 0,
+                    "Jamais": 42,
+                    "Pas d'acces a Internet (SPONTANe)": 53,
+                    "Total 'Utilise internet'": 419
+                }
+            }
+        },
+        {
+            "id": "NL",
+            "number_of_respondents": 1004,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.97,
+                    "Two or three times a week": 0.02,
+                    "About once a week": "-",
+                    "Two or three times a month": "-",
+                    "Less often": 0.01,
+                    "Never": "-",
+                    "No internet access (SPONTANEOUS)": "-",
+                    "Total 'Uses internet'": 1
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 972,
+                    "Deux ou trois fois par semaine": 21,
+                    "Environ une fois par semaine": 2,
+                    "Deux ou trois fois par mois": 1,
+                    "Moins souvent": 5,
+                    "Jamais": 4,
+                    "Pas d'acces a Internet (SPONTANe)": 0,
+                    "Total 'Utilise internet'": 1000
+                }
+            }
+        },
+        {
+            "id": "AT",
+            "number_of_respondents": 1012,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.69,
+                    "Two or three times a week": 0.1,
+                    "About once a week": 0.05,
+                    "Two or three times a month": 0.02,
+                    "Less often": 0.01,
+                    "Never": 0.06,
+                    "No internet access (SPONTANEOUS)": 0.07,
+                    "Total 'Uses internet'": 0.87
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 701,
+                    "Deux ou trois fois par semaine": 99,
+                    "Environ une fois par semaine": 47,
+                    "Deux ou trois fois par mois": 19,
+                    "Moins souvent": 14,
+                    "Jamais": 64,
+                    "Pas d'acces a Internet (SPONTANe)": 67,
+                    "Total 'Utilise internet'": 880
+                }
+            }
+        },
+        {
+            "id": "PL",
+            "number_of_respondents": 1015,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.76,
+                    "Two or three times a week": 0.06,
+                    "About once a week": 0.01,
+                    "Two or three times a month": "-",
+                    "Less often": 0.01,
+                    "Never": 0.16,
+                    "No internet access (SPONTANEOUS)": "-",
+                    "Total 'Uses internet'": 0.84
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 775,
+                    "Deux ou trois fois par semaine": 62,
+                    "Environ une fois par semaine": 9,
+                    "Deux ou trois fois par mois": 3,
+                    "Moins souvent": 5,
+                    "Jamais": 160,
+                    "Pas d'acces a Internet (SPONTANe)": 1,
+                    "Total 'Utilise internet'": 854
+                }
+            }
+        },
+        {
+            "id": "PT",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.77,
+                    "Two or three times a week": 0.03,
+                    "About once a week": 0.01,
+                    "Two or three times a month": "-",
+                    "Less often": "-",
+                    "Never": 0.16,
+                    "No internet access (SPONTANEOUS)": 0.03,
+                    "Total 'Uses internet'": 0.81
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 786,
+                    "Deux ou trois fois par semaine": 27,
+                    "Environ une fois par semaine": 7,
+                    "Deux ou trois fois par mois": 1,
+                    "Moins souvent": 4,
+                    "Jamais": 165,
+                    "Pas d'acces a Internet (SPONTANe)": 32,
+                    "Total 'Utilise internet'": 824
+                }
+            }
+        },
+        {
+            "id": "RO",
+            "number_of_respondents": 1053,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.65,
+                    "Two or three times a week": 0.08,
+                    "About once a week": 0.04,
+                    "Two or three times a month": 0.01,
+                    "Less often": 0.01,
+                    "Never": 0.2,
+                    "No internet access (SPONTANEOUS)": 0.01,
+                    "Total 'Uses internet'": 0.79
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 689,
+                    "Deux ou trois fois par semaine": 84,
+                    "Environ une fois par semaine": 42,
+                    "Deux ou trois fois par mois": 8,
+                    "Moins souvent": 8,
+                    "Jamais": 215,
+                    "Pas d'acces a Internet (SPONTANe)": 7,
+                    "Total 'Utilise internet'": 831
+                }
+            }
+        },
+        {
+            "id": "SI",
+            "number_of_respondents": 1000,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.72,
+                    "Two or three times a week": 0.07,
+                    "About once a week": 0.02,
+                    "Two or three times a month": 0.01,
+                    "Less often": 0.03,
+                    "Never": 0.14,
+                    "No internet access (SPONTANEOUS)": 0.01,
+                    "Total 'Uses internet'": 0.85
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 721,
+                    "Deux ou trois fois par semaine": 66,
+                    "Environ une fois par semaine": 23,
+                    "Deux ou trois fois par mois": 14,
+                    "Moins souvent": 28,
+                    "Jamais": 137,
+                    "Pas d'acces a Internet (SPONTANe)": 10,
+                    "Total 'Utilise internet'": 853
+                }
+            }
+        },
+        {
+            "id": "SK",
+            "number_of_respondents": 1021,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.8,
+                    "Two or three times a week": 0.05,
+                    "About once a week": 0.02,
+                    "Two or three times a month": 0.01,
+                    "Less often": "-",
+                    "Never": 0.12,
+                    "No internet access (SPONTANEOUS)": "-",
+                    "Total 'Uses internet'": 0.88
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 813,
+                    "Deux ou trois fois par semaine": 53,
+                    "Environ une fois par semaine": 21,
+                    "Deux ou trois fois par mois": 5,
+                    "Moins souvent": 2,
+                    "Jamais": 124,
+                    "Pas d'acces a Internet (SPONTANe)": 4,
+                    "Total 'Utilise internet'": 894
+                }
+            }
+        },
+        {
+            "id": "FI",
+            "number_of_respondents": 1009,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.87,
+                    "Two or three times a week": 0.04,
+                    "About once a week": 0.02,
+                    "Two or three times a month": 0.01,
+                    "Less often": 0.01,
+                    "Never": 0.05,
+                    "No internet access (SPONTANEOUS)": "-",
+                    "Total 'Uses internet'": 0.95
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 879,
+                    "Deux ou trois fois par semaine": 40,
+                    "Environ une fois par semaine": 18,
+                    "Deux ou trois fois par mois": 14,
+                    "Moins souvent": 6,
+                    "Jamais": 48,
+                    "Pas d'acces a Internet (SPONTANe)": 6,
+                    "Total 'Utilise internet'": 956
+                }
+            }
+        },
+        {
+            "id": "SE",
+            "number_of_respondents": 1019,
+            "responses": {
+                "percentage": {
+                    "Every day or almost every day": 0.93,
+                    "Two or three times a week": 0.02,
+                    "About once a week": 0.01,
+                    "Two or three times a month": 0.01,
+                    "Less often": "-",
+                    "Never": 0.03,
+                    "No internet access (SPONTANEOUS)": "-",
+                    "Total 'Uses internet'": 0.97
+                },
+                "cardinal": {
+                    "Tous les jours ou presque": 950,
+                    "Deux ou trois fois par semaine": 26,
+                    "Environ une fois par semaine": 6,
+                    "Deux ou trois fois par mois": 5,
+                    "Moins souvent": 3,
+                    "Jamais": 28,
+                    "Pas d'acces a Internet (SPONTANe)": 1,
+                    "Total 'Utilise internet'": 990
+                }
+            }
+        }
+    ]
+}

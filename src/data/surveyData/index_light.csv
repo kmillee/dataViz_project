@@ -35,3 +35,10 @@ QB13R_8,ordinal,religion,"How comfortable you would feel if one of your children
 QB13R_9,ordinal,religion,"How comfortable you would feel if one of your children was in a love relationship with a person from one of the following groups?",An atheist person
 QB6R_9,ordinal,religion,"Please tell me how you would feel about having a person from each of the following groups in the highest elected political position.",A person with a different religion than the majority
 Content,textual,index,None, None
+D62_1,ordinal,socio,"Could you tell if you use the Internet at home in your home",None
+D62_2,ordinal,socio,"Could you tell if you use the Internet on your place of work",None
+D62_3,ordinal,socio,"Could you tell if you use the Internet on your mobile device (laptop smartphone tablet etc.)",None
+D62_4,ordinal,socio,"Could you tell if you use the Internet somewhere else (school university cyber-cafe etc.)",None
+D62R,ordinal,socio,"How often do you use the Internet?",None
+D70,ordinal,socio,"On the whole how satisfied are you with the life you lead?",None
+D1,ordinal,socio, "In political matters people talk of "the left" and "the right". How would you place your views on this scale?", None
