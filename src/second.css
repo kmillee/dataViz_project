@@ -13,12 +13,13 @@ body {
     width: 100%;
 }
 
-/* Visualization Section */
+
 .visualization {
-    flex: 3;
+    flex: 2; 
     padding: 20px;
     background-color: #f9f9f9;
     border-right: 1px solid #ddd;
+    overflow: auto; 
 }
 
 #header {
@@ -37,19 +38,34 @@ body {
     width: 40px;
 }
 
+#buttonsContainer {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+}
+
 .returnButton img {
     width: 18px;
     height: 18px;
 }
 
-/* Options Section */
+
 .options {
-    flex: 1;
+    flex: 1; 
     padding: 20px;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+}
+
+p {
+    margin: 5px 0; 
+    font-size: 0.9rem; 
 }
 
 h2 {
@@ -65,8 +81,10 @@ form {
 
 #buttonsContainer {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    height: 100%;
+    width: 100%; 
+    overflow: hidden; 
+    box-sizing: border-box; 
 }
 
 .button-group {
@@ -76,16 +94,16 @@ form {
 
 .categoryButton {
     padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
-    border: none;
+    background-color: #ffffff;
+    color: #b3577f;
+    border: 2px solid #b3577f;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.2s;
 }
 
 .categoryButton:hover {
-    background-color: #0056b3;
+    background-color: rgb(204, 196, 196);
 }
 
 .categoryButton.selected {
@@ -108,7 +126,7 @@ select {
 
 .addChartButton {
     padding: 10px 15px;
-    background-color: #28a745;
+    background-color: #b3577f;
     color: white;
     border: none;
     border-radius: 5px;
@@ -117,7 +135,7 @@ select {
 }
 
 .addChartButton:hover {
-    background-color: #218838;
+    background-color: #7e3e5a;
 }
 
 #chart {

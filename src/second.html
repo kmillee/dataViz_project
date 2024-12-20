@@ -18,10 +18,11 @@
         <!-- Visualization zone -->
         <div class="visualization">
             <div id="header">
-                <h2>Graphique</h2>
                 <button class="returnButton" onclick="goMap()">
                     <img src="icons/return.png" alt="return" />
                 </button>
+                <h2>Personalized charts</h2>
+                
             </div>
             <div id="svgGrid" class="visualization">
                 <!-- SVG Graphs will be rendered here -->
@@ -30,29 +31,34 @@
 
         <!-- Option selection zone -->
         <div class="options">
-            <h2>Options</h2>
+            <h2>Make your own scatterplot!</h2>
             <p>Here, you can compare previous data with other sociological datasets which may help
-                understand the broader context of the data. </p>
+                understand the broader context of the data. For example, you can explore the correlation between racism and Internet use.</p>
+            <p>(1) Select your display area</p>
+
             <form id="optionsForm">
-                <!-- Data category buttons -->
-                <div id="buttonsContainer">
-                    <label>Categories:</label>
-                    <div class="button-group">
-                        <button class="categoryButton" type="button">Ethnicity</button>
-                        <button class="categoryButton" type="button" >Sexual Orientation</button>
-                        <button class="categoryButton" type="button">Religion</button>
-                    </div>
-                </div>
+                
                 <!-- Chart type selection -->
                 <div class="form-group">
-                    <label for="socio">Sociological data:</label>
+                    <label for="socio">(2) Choose a sociological survey question for the x-axis</label>
                     <select id="socio">
 
                     </select>
                 </div>
+
+                <!-- Data category buttons -->
+                <div id="buttonsContainer" class="form-group">
+                    <label>(3) Choose a category of questions:</label>
+                    <div class="button-group">
+                        <button class="categoryButton" type="button">Ethnicity</button>
+                        <button class="categoryButton" type="button">Sexual Orientation</button>
+                        <button class="categoryButton" type="button">Religion</button>
+                    </div>
+                </div>
+
                 <!-- Question selection -->
                 <div class="form-group">
-                    <label for="questionList">Questions :</label>
+                    <label for="questionList">(4) Choose a discrimination survey question for the y-axis</label>
                     <select id="questionList">
                         <!-- Questions fetched dynamically -->
                     </select>
@@ -60,15 +66,6 @@
                 <!-- Add Chart button -->
                 <div class="form-group">
                     <button type="button" class="addChartButton" onclick="addChart()">Add visualization</button>
-                </div>
-
-                <div id="recommandation">
-                    <label>Some interesting comparisons we can recommand you:</label>
-                    <div class="reco-button-group">
-                        <button class="recoButton" type="button">LGBTQ+ data & of legalization of marriage date</button>
-                        <button class="recoButton" type="button" >Racism & Internet use</button>
-                        <button class="recoButton" type="button">Religion & Religion proportion</button>
-                    </div>
                 </div>
             </form>
         </div>
