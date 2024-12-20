@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualisation de données UE</title>
+    <title>EU Personalized Charts</title>
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
@@ -23,7 +23,8 @@
                     <img src="icons/return.png" alt="return" />
                 </button>
             </div>
-            <div id="chartContainer"></div>
+        <div id="svgGrid" class="visualization">
+        </div>
         </div>
 
         <!-- Option selection zone -->
@@ -31,18 +32,9 @@
             <h2>Options</h2>
             <p>Please select the data you want to visualize:</p>
             <form id="optionsForm">
-                <label for="chartType">Chart type:</label>
-                <select id="chartType">
-                    <option value="bar">Bar</option>
-                    <option value="line">Lines</option>
-                    <option value="scatter">Scatterplot</option>
-                </select>
                 <br><br>
                 <label for="category">Category:</label>
                 <select id="category">
-                    <option value="ethnie">Discrimination ethnique</option>
-                    <option value="orientation">Orientation sexuelle</option>
-                    <option value="religion">Discrimination religieuse</option>
                 </select>
                 <br><br>
                 <label for="questionList">Question:</label>
@@ -50,6 +42,12 @@
                     <!-- Question fetched from JsonFile -->
                 </select>
                 <br><br>
+                <label for="chartType">Chart type:</label>
+                <select id="chartType">
+                    <option value="bar">Bar</option>
+                    <option value="line">Lines</option>
+                    <option value="scatter">Scatterplot</option>
+                </select>
                 <button type="button" onclick="addChart()">Add</button>
             </form>
         </div>

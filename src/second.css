@@ -8,7 +8,7 @@ body {
 
 #header {
     display: flex;
-    align-items: center; /* Aligne le bouton et le titre */
+    align-items: center; 
     gap: 10px; 
 }
 
@@ -68,3 +68,20 @@ body {
 }
 
  
+.chart-slot {
+    cursor: pointer;
+    transition: background-color 0.2s, border 0.2s; /* Transition douce */
+    border: 1px solid #ccc; /* Bordure initiale */
+    background-color: #f9f9f9; /* Couleur de fond initiale */
+
+}
+
+.chart-slot:hover {
+    background-color: #e6e6e6; /* Couleur de fond au survol */
+}
+
+.chart-slot.selected {
+    border: 2px solid #007bff; /* Bordure bleue pour la sélection */
+    background-color: #dbeaff; /* Couleur de fond bleue pour la sélection */
+}
+
