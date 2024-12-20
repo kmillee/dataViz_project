@@ -31,7 +31,8 @@
         <!-- Option selection zone -->
         <div class="options">
             <h2>Options</h2>
-            <p>Sélectionnez les données à visualiser :</p>
+            <p>Here, you can compare previous data with other sociological datasets which may help
+                understand the broader context of the data. (e.g. </p>
             <form id="optionsForm">
                 <!-- Data category buttons -->
                 <div id="buttonsContainer">
@@ -59,6 +60,15 @@
                 <!-- Add Chart button -->
                 <div class="form-group">
                     <button type="button" class="addChartButton" onclick="addChart()">Add visualization</button>
+                </div>
+
+                <div id="recommandation">
+                    <label>Some interesting comparisons we can recommand you:</label>
+                    <div class="reco-button-group">
+                        <button class="recoButton" type="button">LGBTQ+ data & of legalization of marriage date</button>
+                        <button class="recoButton" type="button" >Racism & Internet use</button>
+                        <button class="recoButton" type="button">Religion & Religion proportion</button>
+                    </div>
                 </div>
             </form>
         </div>

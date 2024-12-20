@@ -20,6 +20,7 @@ function createViz() {
     console.log("Using D3 v" + d3.version);
     createSVGGrid();
     setupCategoryListeners();
+    loadSocioData();
     loadIndex().then(index => {
         ctx.index = index;
     });};
@@ -74,7 +75,7 @@ async function loadIndex() {
         return data;
     } catch (error) {
         console.error("Failed to load index:", error);
-        return null; // Retourne null en cas d'erreur
+        return null; 
     }
 }
 
@@ -94,7 +95,6 @@ function setupSVGListeners() {
 
 
 // Called on loading
-// Configuration des écouteurs pour les boutons de catégories
 function setupCategoryListeners() {
     const categoryButtons = document.querySelectorAll(".mapButton");
 
@@ -112,7 +112,6 @@ function setupCategoryListeners() {
     });
 }
 
-// Remplir les questions
 function populateQuestions(questions) {
     const questionMenu = document.getElementById("questionList");
     questionMenu.innerHTML = ''; // Remove precedent options
@@ -122,23 +121,23 @@ function populateQuestions(questions) {
     defaultOption.textContent = 'Please select a question';
     questionMenu.appendChild(defaultOption);
 
+    // by default, display everything (doesn't work yet)
     if (!selectedCategory || selectedCategory === '') {
         const allQuestions = Object.entries(ctx.index).flatMap(([category, questions]) => questions);
 
         allQuestions.forEach(([questionId, type]) => {
             const option = document.createElement('option');
             option.value = questionId;
-            option.textContent = questionId; // Remplacez par le titre réel si disponible
+            option.textContent = questionId;
             questionMenu.appendChild(option);
         });
 
         console.log("All questions populated because no category was selected:", allQuestions);
     } else {
-        // Sinon, afficher uniquement les questions de la catégorie sélectionnée
         questions.forEach(([questionId, type]) => {
             const option = document.createElement('option');
             option.value = questionId;
-            option.textContent = questionId; // Remplacez par le titre réel si disponible
+            option.textContent = questionId;
             questionMenu.appendChild(option);
         });
     }
@@ -170,7 +169,7 @@ async function addChart() {
     }
     
 
-    const chartType = document.getElementById("chartType").value; 
+    const socio = document.getElementById("socio").value; 
     const category = document.getElementById("category").value;
     const question = document.getElementById("questionList").value;
 
@@ -179,34 +178,17 @@ async function addChart() {
         return;
     }
 
-    // Charger les données pour le graphique
     loadDataJson(question, category).then((data) => {
         if (!data) {
             alert("Failed to load data for the selected question!");
             return;
         }
 
-        // Dimensions pour le graphique
-        const width = selectedSVG.attr("width");
-        const height = selectedSVG.attr("height");
-
-        // Supprime le contenu précédent du SVG
+        // Remove previous SVG content
         selectedSVG.selectAll("*").remove();
 
-        // Appelle la fonction correspondante pour générer le graphique
-        if (chartType === "bar") {
-            addBarPlot(
-                selectedSVG,
-                0, // Position x
-                0, // Position y
-                width,
-                height,
-                data.data, // Données extraites
-                question // ID unique pour le graphique
-            );
-        } else {
-            console.log("Other chart types not implemented yet.");
-        }
+        createChart(selectedSVG,questionData,socioData)
+
     });
     ctx.CHART_NB++;
 

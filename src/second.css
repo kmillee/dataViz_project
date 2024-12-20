@@ -141,3 +141,23 @@ select {
     background-color: #dbeaff; /* Couleur de fond bleue pour la sélection */
 }
 
+.reco-button-group {
+    display: flex;
+    flex-direction: column;  /* Aligner les boutons verticalement */
+    gap: 10px;               /* Espacement entre les boutons */
+}
+
+.recoButton {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #feb638;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.recoButton:hover {
+    background-color: #ffa202;
+}
