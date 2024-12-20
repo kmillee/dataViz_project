@@ -7,7 +7,7 @@ const ctx = {
     legendMargin: { top: 10, right: 10, bottom: 20, left: 30 },
     current_key: "none",
     current_measure: "median",
-    current_type: "global",
+    current_category: "global",
     defaultDescription: `
         <h2>Discriminations au sein de l'UE</h2>
         <p>La carte ci-contre montre l'indice global de discrimination dans les différents pays de l'union européenne.
@@ -189,17 +189,19 @@ function goHome() {
     console.log("Home button clicked!");
 }
 
-function changeText(type) {
+function changeText(category) {
 
-    ctx.current_type = type;
-    let data = ctx.textData[type];
+    ctx.current_category = category;
+    precomputeColorScale();
+
+    let data = ctx.textData[category];
     console.log(data);
     
     const descriptionContainer = document.getElementById("descriptionContainer");
     const dropdownContainer = document.getElementById("dropdownsContainer");
     
 
-    if (type == 'global') {
+    if (category == 'global') {
         console.log("ici");
         descriptionContainer.innerHTML = ctx.defaultDescription;
         dropdownContainer.innerHTML = '';
@@ -233,13 +235,15 @@ function changeText(type) {
 function createLegend() {
 
     const svg = d3.select("svg");
+    svg.select("#legendGroup").remove();
+
     const legendGroup = svg.append("g")
         .attr("id", "legendGroup")
         .attr("transform", `translate(${ctx.legendMargin.left}, ${ctx.MAP_H - ctx.legendMargin.bottom - ctx.legendHeight})`);
 
     //d3.scaleOrdinal([1, 2, 3, 4, 5, 6, 7, 8, 9], d3.schemePiYG[9])
     const legendSvg = Legend(ctx.color, {
-        title: "Level of comfort",
+        title: "Percentage of people who answered 'Really uncomfortable'",
         width: ctx.legendWidth,
         height: ctx.legendHeight, 
         marginTop: 18,
@@ -257,7 +261,7 @@ function updateMapData(dataKey) {
 
     // load the right file
     console.log(dataKey);
-    const data_filename = 'data/surveyData/' + ctx.current_type + '/' + dataKey + '.json';
+    const data_filename = 'data/surveyData/' + ctx.current_category + '/' + dataKey + '.json';
 
     d3.json(data_filename)
         .then(function (data) {
@@ -271,9 +275,7 @@ function updateMapData(dataKey) {
                 .style("fill", d => {
                     const countryId = d.properties.CNTR_ID;
                     const val = parseFloat(malaises[countryId]);
-                    console.log(val);
                     return val !== undefined ? ctx.color(val) : "#ddd"; 
-
                 });
 
                 //console.log("Country medians:", countryMedians);
@@ -290,20 +292,11 @@ function computeIndiceMalaise(data) {
     data.data.forEach(d => {
         pourcentagesMalaise[d.id] = parseFloat(d.responses.percentage["Total 'Uncomfortable'"]);
     });
-    console.log(pourcentagesMalaise);
 
     let extent = d3.extent(Object.values(pourcentagesMalaise));
+    console.log("individual extent: ", extent);
     let reference = parseFloat(pourcentagesMalaise["UE27\nEU27"]);
  
-
-    console.log("ref: ",reference);
-
-    ctx.color = d3.scaleDiverging()
-        .domain([parseFloat(extent[0]), reference, parseFloat(extent[1])])
-        .interpolator(t => d3.interpolatePiYG(1 - t))
-
-    console.log(ctx.color(reference));
-    console.log(pourcentagesMalaise);
  
     return pourcentagesMalaise;
 
@@ -337,8 +330,7 @@ function computeMedian(d) {
 
 
     let len = Object.keys(refactored_responses).length - n_cat;
-    console.log(len);
-
+    //console.log(len);
 
 
     let count = 0;
@@ -355,70 +347,48 @@ function computeMedian(d) {
 }  
 
 function precomputeColorScale() {
-
-    /*let surveyFiles = ["QB12_2", "QB12_3", "QB12_4", "QB12_5", "QB12_5", "QB12_6", "QB12_7", "QB12_8", "QB12_9", "QB12_10", "QB12_11", "QB13_2", "QB13_3", "QB13_4", "QB13_5", "QB13_6", "QB13_7", "QB13_8", "QB13_9", "QB13_10", "QB13_11"];*/
     
-    d3.csv("src/data/surveyData/index_light.csv").then(data => {
+    d3.csv("data/surveyData/index_light.csv").then(data => {
+
+        console.log(ctx.current_category);
         
-        const ordinalFiles = data
-            .filter(row => row.type === "ordinal") // Filter rows where type is "ordinal"
-            .map(row => row.file);                // Map to the `file` field
-    
+        let ordinalFiles = data
+            .filter(row => row.type === "ordinal") 
+            .filter(row => row.category === ctx.current_category)
+            .map(row => row.file); 
+
         console.log(ordinalFiles);
-    }).catch(error => {
-        console.error("Error loading CSV file:", error);
-    });
+        let allMeasures = [];
+
+        let promises = ordinalFiles.map(key => d3.json(`data/surveyData/${ctx.current_category}/${key}.json`));
+        
+        // we want a color scale that does not change accross different survey questions to compare levels of acceptation regarding different subjects
+        // therefore the color scale is computed with answers to all the survey questions in this category
+        Promise.all(promises).then(function (datum) {
     
-    
-    /*let promises = surveyFiles.map(key => d3.json(`data/surveyData/${key}.json`));
+            datum.forEach((data, index) => {
+                let measures = Object.values(computeIndiceMalaise(data));
+                measures.forEach((m,i) => {
+                    if (!isNaN(m) && m !== undefined) {
+                        allMeasures.push(parseFloat(m));
+                    }
+                });
+            })
+            const extent = d3.extent(allMeasures);
+            const reference = d3.mean(allMeasures);
+            console.log(extent);
+ 
+            ctx.color = d3.scaleDiverging()
+                .domain([parseFloat(extent[0]), reference, parseFloat(extent[1])])
+                .interpolator(t => d3.interpolatePiYG(1 - t))
 
-    // we want a color scale that does not change accross different survey questions to compare levels of acceptation regarding different subjects
-    // therefore the color scale is computed with answers to all the survey questions
-    Promise.all(promises).then(function (datasets) {
-        let measure; // median or average
-        let questionCountryMeasure = {};  // measures of answers per question and per country stored here
-        let allMeasures = []; // all measures without indicator of country or questions stored here
-
-        datasets.forEach((data, index) => {
-            let questionKey = surveyFiles[index];
-            questionCountryMeasure[questionKey] = {};
-
-            data.data.forEach(d => {
-;
-                if (ctx.current_measure == "median") {
-                    measure = computeMedian(d);
-                } else if (ctx.current_measure == "average") {
-                    measure = computeAverage(d);
-                }
-                questionCountryMeasure[questionKey][d.id] = measure;
-                if (measure !== undefined) {
-                    allMeasures.push(measure);
-                }
-                
-            });
+            createLegend();
+            
+        }).catch(error => {
+            console.error(error);
         });
-
-        const extent = d3.extent(allMeasures);
-        console.log(extent);
-        const start = parseInt(extent[0]);
-        const end = parseInt(extent[1]);
-
-        /*ctx.levels = [];
-        for (let i = start; i <= end; i++) {
-            ctx.levels.push(i);
-        }*/
-        //ctx.rescale = d3.scaleLinear(extent, [0,1]);
-        //ctx.color = d3.scaleOrdinal(ctx.levels, d3.schemePiYG[ctx.levels.length]);
-        //ctx.color = d3.scaleOrdinal([4, 5, 6, 7, 8, 9, 10], d3.schemePiYG[7]);
-
-       
-
-        /*createLegend();
-        console.log(ctx.color(10))
-        console.log(ctx.color(1))
-
-        //ctx.questionCountryMeasure = questionCountryMeasure;
-    });*/
+        
+    });
     
 
 }
@@ -460,7 +430,6 @@ function createTextData() {
             if (d['type'] == 'ordinal') {
 
                 if (questions_encountered.includes(d['category']+d['question_eng'])) {
-                    console.log("trouvé");
                     for (i in refactored_data[d['category']]['questions']) {
 
                         if (refactored_data[d['category']]['questions'][i]['question'] == d['question_eng']) {
@@ -499,70 +468,6 @@ function createTextData() {
         console.error(error);
     });
 }
-    // TODO: créer un fichier séparé pour répertorier questions, options et dataKeys
-    const dropdownData = {
-        ethnie: {
-            title: "Discrimination ethnique",
-            questions: [
-                { question: "Vous sentiriez à l'aise ou non avec le fait qu'un collègue, avec lequel vous êtes quotidiennement en contact, appartienne à chacun des groupes suivants ?",
-                  options: [
-                    { 
-                        label: "Une personne noire",
-                        dataKey: "QB12_2" 
-                    },
-                    { 
-                        label: "Une personne asiatique", 
-                        dataKey: "QB12_3" 
-                    }]},
-                { question: "Question 2",
-                options: [
-                    { 
-                        label: "Option 1",
-                        dataKey: "0" 
-                    },
-                    { 
-                          label: "Option 2", 
-                          dataKey: "0" 
-                    }]},
-            ],
-        },
-        orientation: {
-            title: "Discrimination liée à l'orientation sexuelle",
-            questions: [
-                { question: "Vous sentiriez-vous à l'aise ou non avec le fait qu'un collègue, avec lequel vous êtes quotidiennement en contact, appartienne à chacun des groupes suivants ?",
-                  options: [
-                    { 
-                        label: "Une personne lesbienne, gay ou bisexuelle",
-                        dataKey: "QB12_10" 
-                    },
-                    { 
-                        label: "Une personne transgenre ou intersexe", 
-                        dataKey: "QB12_11" 
-                    }]},
-            ],
-        },
-        religion: {
-            title: "Discrimination religieuse",
-            questions: [
-                { question: "Vous sentiriez-vous à l'aise ou non avec le fait qu'un collègue, avec lequel vous êtes quotidiennement en contact, appartienne à chacun des groupes suivants ?",
-                  options: [
-                    {
-                        label:  "Une personne juive",
-                        dataKey: "QB12_5" 
-
-                    },
-                    {
-                        label:  "Une personne musulmane",
-                        dataKey: "QB12_6" 
-
-                    }]},
-            ],
-        },
-    };
-
-
-
-
 
 // NUTS data as JSON from https://github.com/eurostat/Nuts2json (translated from topojson to geojson)
 // density data from https://data.europa.eu/data/datasets/gngfvpqmfu5n6akvxqkpw?locale=en
